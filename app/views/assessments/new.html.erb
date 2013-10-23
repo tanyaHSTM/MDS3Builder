@@ -1,0 +1,7 @@
+<form action="/assessments/" method="post">
+  <input type="hidden" value="<%=form_authenticity_token%>">
+  <% @assessment_fields.each do |klass| %>
+    <%= render(:partial => "mds/field", locals: {klass: klass}) %>
+  <% end %>
+  <input type="submit">
+</form>
