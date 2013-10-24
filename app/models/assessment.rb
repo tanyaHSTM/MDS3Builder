@@ -1,6 +1,6 @@
 class Assessment
  def fields
-   %w( A0050 H0100a )
+   %w( ItmSbstCd A0050 )
  end
 end
 

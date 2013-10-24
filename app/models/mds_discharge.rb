@@ -6,5 +6,3 @@ class MdsDischarge < Assessment
    super + %w(A0310g)
  end
 end
-x = MdsDischarge.new
-p x.fields

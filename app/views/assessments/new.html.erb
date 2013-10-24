@@ -1,7 +1,11 @@
 <form action="/assessments/" method="post">
   <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
-  <% @assessment_fields.each do |klass| %>
-    <%= render(:partial => "mds/field", locals: {klass: klass}) %>
-  <% end %>
+    <% @assessment_fields.each do |klass| %>
+      <% if klass.field_type == 'radio' %>
+        <%= render(:partial => "mds/radio_field", locals: {klass: klass}) %>
+      <% elsif klass.field_type == 'text' %>
+        <%= render(:partial => "mds/text_field", locals: {klass: klass}) %>
+      <% end %>
+    <% end %>
   <input type="submit">
 </form>

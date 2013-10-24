@@ -1,9 +1,10 @@
 class A0050
-  attr_reader :name, :possible_values, :descriptions
+  attr_reader :name, :possible_values, :descriptions, :field_type
   def initialize
-    @name = "Mike"
-    @possible_values = [0, 1]
-    @descriptions = ["no", "yes"]
+    @name = "Type of Record (A0050)"
+    @possible_values = [1, 2, 3]
+    @descriptions = ["Add new record", "Modify existing record", "Inactivate existing record"]
+    @field_type = 'radio'
   end
 end
 
