@@ -5,9 +5,11 @@ class AssessmentsController < ApplicationController
 	end
 
   def create
-    render(nothing: true)
+    @foo = "foo"
+    respond_to do |format|
+       send_data(@foo, :type => "application/xml", :filename=>"MDS Assessment.xml", :disposition => 'attachment')
+    end
   end
-
 
   private
 
