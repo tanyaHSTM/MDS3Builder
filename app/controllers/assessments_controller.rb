@@ -5,17 +5,15 @@ class AssessmentsController < ApplicationController
 	end
 
   def create
-    builder = Nokogiri::XML::Builder.new do |xml|
-    xml.root {
-      xml.products {
-        xml.widget {
-          xml.id_ "10"
-          xml.name "Awesome widget"
-        }
-      }
-    }
+    @assessment = Assessment.new
+    send_data(@assessment.pull_xml_values.to_xml, :type => "application/xml", :filename=>"MDS.xml", :disposition => 'attachment')
+  end
+
+  def get_correct_assessment
+    discharge = MdsDischarge.new
+    case params[:type]
+    when "Discharge" then return discharge
     end
-    send_data(builder.to_xml, :type => "application/xml", :filename=>"MDS.xml", :disposition => 'attachment')
   end
 
   private

@@ -5,4 +5,5 @@ class MdsAdmission < MdsBase
  def fields
    super + %w()
  end
+ 
 end
