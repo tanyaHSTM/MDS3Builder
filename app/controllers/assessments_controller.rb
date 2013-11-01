@@ -1,25 +1,20 @@
 class AssessmentsController < ApplicationController
 
 	def new
-    @@assessment = get_correct_assessment_type
-    @assessment_fields = @@assessment.fields.map{|field| field.constantize.new }
+    @assessment = get_correct_assessment_type
 	end
 
   def create
-    @parameters = []
-    @params = params.each{|key, value| @parameters << value}
-    @parameters = @parameters.reverse.drop(2).reverse
-    @parameters = @parameters.drop(1)
-    p @parameters
-    send_data(@@assessment.pull_xml_values.to_xml, :type => "application/xml", :filename=>"MDS.xml", :disposition => 'attachment')
+    assessment = Assessment.new
+    assessment.attributes = params[:assessment]
+    send_data(assessment.to_xml, :type => "application/xml", :filename=>"MDS.xml", :disposition => 'attachment')
   end
 
   private
 
   def get_correct_assessment_type
-    discharge = MdsDischarge.new
     case params[:type]
-    when "Discharge" then return discharge
+    when "Discharge" then return MdsDischarge.new
     end
   end
 

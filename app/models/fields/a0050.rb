@@ -1,11 +1,17 @@
 class A0050
-  attr_reader :mds_field, :name, :possible_values, :descriptions, :field_type
+  attr_reader :options, :name, :field_type, :mds_field
+  # TODO, rename mds_field as a variable
+  # attr_reader :mds_field, :name, :possible_values, :descriptions, :field_type
+
   def initialize
-  	@mds_field = "A0050" 
     @name = "Type of Record (A0050)"
-    @possible_values = [1, 2, 3]
-    @descriptions = ["Add new record", "Modify existing record", "Inactivate existing record"]
-    @field_type = 'radio'
+  	@field_type = RADIO
+  	@mds_field = "A0050" 
+
+  	@options = []
+  	@options << FieldOption.new("1", "Add new record")
+  	@options << FieldOption.new("2", "Modify existing record")
+  	@options << FieldOption.new("3", "Inactivate existing record")
   end
 end
 

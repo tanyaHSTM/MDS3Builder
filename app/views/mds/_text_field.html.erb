@@ -1,7 +1,0 @@
-<strong><%=klass.name%></strong>
-<div class="text">
-  <% klass.possible_values.each_with_index do |possible_value, idx| %>
-    <label for="<%=klass.class.to_s.downcase + "_" + possible_value.to_s + "_" + idx.to_s%>"><%=klass.descriptions[idx]%>
-    <input type="text" name="<%=klass.class.to_s.downcase%>" value="<%=possible_value%>" id="<%=klass.class.to_s.downcase + "_" + possible_value.to_s + "_" + idx.to_s%>"></label>
-  <% end %>
-</div><br>

@@ -1,11 +1,15 @@
 class A0310g
-  attr_reader :mds_field, :name, :possible_values, :descriptions, :field_type
+  attr_reader :options, :name, :field_type, :mds_field
+
   def initialize
-  	@mds_field = "A0310G"
     @name = "Type of discharge (A0310g)"
-    @possible_values = [1, 2]
-    @descriptions = ["Planned", "Unplanned"]
-    @field_type = 'radio'
+  	@field_type = RADIO
+  	@mds_field = "A0310G" 
+
+  	@options = []
+  	@options << FieldOption.new("1", "Planned")
+  	@options << FieldOption.new("2", "Unplanned")
   end
+
 end
 
