@@ -6,6 +6,11 @@ class AssessmentsController < ApplicationController
 	end
 
   def create
+    @parameters = []
+    @params = params.each{|key, value| @parameters << value}
+    @parameters = @parameters.reverse.drop(2).reverse
+    @parameters = @parameters.drop(1)
+    p @parameters
     send_data(@@assessment.pull_xml_values.to_xml, :type => "application/xml", :filename=>"MDS.xml", :disposition => 'attachment')
   end
 
