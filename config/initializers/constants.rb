@@ -1,0 +1,2 @@
+RADIO = 1
+TEXT = 2

@@ -7,7 +7,7 @@ class AssessmentsController < ApplicationController
   def create
     assessment = Assessment.new
     assessment.attributes = params[:assessment]
-    send_data(assessment.to_xml, :type => "application/xml", :filename=>"MDS.xml", :disposition => 'attachment')
+    send_data(assessment.pull_xml, :type => "application/xml", :filename=>"MDS.xml", :disposition => 'attachment')
   end
 
   private

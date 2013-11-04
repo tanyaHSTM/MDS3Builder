@@ -10,7 +10,7 @@ class Assessment
     @attrs = attrs
   end
 
-  def to_xml
+  def pull_xml
     builder = Nokogiri::XML::Builder.new do |xml|
       xml.Assessment {
         @attrs.each do |key, value|
