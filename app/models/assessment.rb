@@ -22,21 +22,10 @@ class Assessment
   end
 
   def fields
-    %w( ItmSbstCd A0050 )
+    %w( ItmSbstCd StateCd FacId A0050 A0100b A0200 A0310a A0310b A0310c A0310d A0310e A0310f A0500a A0500b A0500c A0600a A0600b A0800 A0900
+        A1300a A1300b A1300c A1600 A2000 A2300 )
   end
 
-  # def pull_xml_values
-  #   parameters = $parameters
-  #   assessment_fields = self.fields.map{|field| field.constantize.new }
-  #   builder = Nokogiri::XML::Builder.new do |xml|
-  #     xml.Assessment {
-  #         assessment_fields.zip(parameters).each do |klass, param|
-  #         xml.send(klass.mds_field, param) 
-  #       end
-  #     }
-  #   end
-  #   return builder
-  # end
 end
 
 

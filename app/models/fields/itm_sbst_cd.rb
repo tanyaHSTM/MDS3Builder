@@ -1,10 +1,11 @@
 class ItmSbstCd
-  attr_reader :options, :name, :field_type, :mds_field
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
+    @title = "Identification Information"
     @name = "ITM_SBST_CD"
   	@field_type = TEXT
-  	@mds_field = "ITM_SBST_CD" 
+  	@node = "ITM_SBST_CD" 
 
   	@options = []
   	@options << FieldOption.new("NT")
