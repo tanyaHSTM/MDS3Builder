@@ -7,7 +7,7 @@ class A1300b
     @node = "A1300B" 
 
     @options = []
-    @options << FieldOption.new("")
+    @options << FieldOption.new("123")
   end
 
 end

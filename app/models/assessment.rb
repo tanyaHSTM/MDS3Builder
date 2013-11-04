@@ -12,7 +12,7 @@ class Assessment
 
   def pull_xml
     builder = Nokogiri::XML::Builder.new do |xml|
-      xml.Assessment {
+      xml.ASSESSMENT {
         @attrs.each do |key, value|
           xml.send "#{key}_", value
         end
