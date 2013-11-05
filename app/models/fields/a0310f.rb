@@ -3,7 +3,7 @@ class A0310f
 
   def initialize
     @name = "Entry/discharge reporting (A0310f)"
-    @field_type = RADIO
+    @field_type = DROPDOWN
     @node = "A0310F" 
 
     @options = []

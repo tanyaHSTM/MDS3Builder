@@ -5,7 +5,7 @@ class A0050
 
   def initialize
     @name = "Type of Record (A0050)"
-  	@field_type = RADIO
+  	@field_type = DROPDOWN
   	@node = "A0050" 
 
   	@options = []

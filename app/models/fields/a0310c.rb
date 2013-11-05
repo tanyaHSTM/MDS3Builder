@@ -3,7 +3,7 @@ class A0310c
 
   def initialize
     @name = "PPS Other Medicare Required Assessment (A0310c)"
-    @field_type = RADIO
+    @field_type = DROPDOWN
     @node = "A0310C" 
 
     @options = []

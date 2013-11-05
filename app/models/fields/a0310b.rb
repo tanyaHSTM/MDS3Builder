@@ -3,7 +3,7 @@ class A0310b
 
   def initialize
     @name = "PPS Assessment (A0310b)"
-    @field_type = RADIO
+    @field_type = DROPDOWN
     @node = "A0310B" 
 
     @options = []

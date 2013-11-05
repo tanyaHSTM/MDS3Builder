@@ -3,7 +3,7 @@ class A0310e
 
   def initialize
     @name = "Is this assessment the first assessment (OBRA, Scheduled PPS, or Discharge) since the most recent admission/entry or rentry? (A0310e)"
-    @field_type = RADIO
+    @field_type = DROPDOWN
     @node = "A0310E" 
 
     @options = []

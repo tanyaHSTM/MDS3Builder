@@ -3,7 +3,7 @@ class A0310d
 
   def initialize
     @name = "Is this a Swing Bed clinical change assessment? (A0310d) (Complete only if A0200 = Swing Bed)"
-    @field_type = RADIO
+    @field_type = DROPDOWN
     @node = "A0310D" 
 
     @options = []

@@ -3,7 +3,7 @@ class A0800
 
   def initialize
     @name = "Gender(A0800)"
-    @field_type = RADIO
+    @field_type = DROPDOWN
     @node = "A0800" 
 
     @options = []
