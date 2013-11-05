@@ -2,7 +2,7 @@ class ItmSbstCd
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Identification Information"
+    @title = "Record Information"
     @name = "ITM_SBST_CD"
   	@field_type = DROPDOWN
   	@node = "ITM_SBST_CD" 

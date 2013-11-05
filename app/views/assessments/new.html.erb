@@ -1,5 +1,6 @@
 <form action="/assessments/" method="post">
   <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
+  <h2><%= "#{@assessment.class} Assessment".sub('Mds', '') %></h2>
   <% @assessment.klasses.each do |klass| %>
     <h3><%= if defined? klass.title then "#{klass.title}" end %></h3><br>
     <strong><%=klass.name%></strong>
@@ -8,7 +9,7 @@
         <% klass.options.each do |option| %>
         <option id="<%=klass.node+"_"+option.value%>"value="<%=option.value%>"><%="#{option.value} - #{option.description}"%></option>
         <% end %>
-        </select> 
+      </select> 
     <% else %>
     <div class="<%=input_type(klass.field_type)%>">
     <% klass.options.each do |option| %>

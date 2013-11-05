@@ -2,8 +2,8 @@ class A0800
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Gender(A0800)"
-    @field_type = DROPDOWN
+    @name = "Gender (A0800)"
+    @field_type = RADIO
     @node = "A0800" 
 
     @options = []
