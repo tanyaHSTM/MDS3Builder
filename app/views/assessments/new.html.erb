@@ -7,14 +7,14 @@
     <% if klass.field_type == DROPDOWN %>
       <br><select name="assessment[<%=klass.node%>]">
         <% klass.options.each do |option| %>
-        <option id="<%=klass.node+"_"+option.value%>"value="<%=option.value%>"><%="#{option.value} - #{option.description}"%></option>
+        <option id="<%=klass.node+"_"+option.value%>"value="<%=option.value%>" selected="<%=klass.default%>" ><%="#{option.value} - #{option.description}"%></option>
         <% end %>
       </select> 
     <% else %>
     <div class="<%=input_type(klass.field_type)%>">
     <% klass.options.each do |option| %>
       <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
-      <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>"></label>
+      <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" checked="<%=klass.default%>" id="<%=klass.node+"_"+option.value%>"></label>
     <% end %>
     </div>
     <% end %>
