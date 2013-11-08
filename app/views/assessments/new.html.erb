@@ -2,19 +2,30 @@
   <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
   <h2><%= "#{@assessment.class} Assessment".sub('Mds', '') %></h2>
   <% @assessment.klasses.each do |klass| %>
-    <h3><%= if defined? klass.title then "#{klass.title}" end %></h3><br>
-    <strong><%=klass.name%></strong>
+    <% if @assessment.class == MdsDischarge then @default = klass.discharge_default %>
+    <% elsif @assessment.class == MdsAdmission then @default = klass.admission_default %>
+    <% end %>
+      <h3><%= if defined? klass.title then "#{klass.title}" end %></h3><br>
+        <strong><%=klass.name%></strong>
     <% if klass.field_type == DROPDOWN %>
       <br><select name="assessment[<%=klass.node%>]">
         <% klass.options.each do |option| %>
-        <option id="<%=klass.node+"_"+option.value%>"value="<%=option.value%>" selected="<%=klass.default%>" ><%="#{option.value} - #{option.description}"%></option>
+        <% if option.value == @default %>
+          <option id="<%=klass.node+"_"+option.value%>"value="<%=option.value%>" selected="selected" ><%="#{option.value} - #{option.description}" %></option>
+        <% end %>
+        <option id="<%=klass.node+"_"+option.value%>"value="<%=option.value%>" ><%="#{option.value} - #{option.description}"%></option>
         <% end %>
       </select> 
     <% else %>
     <div class="<%=input_type(klass.field_type)%>">
     <% klass.options.each do |option| %>
-      <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
-      <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" checked="<%=klass.default%>" id="<%=klass.node+"_"+option.value%>"></label>
+      <% if option.value == @default %>
+        <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
+        <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>" checked></label>
+      <% else %>
+        <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
+        <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>"></label>
+      <% end %>
     <% end %>
     </div>
     <% end %>

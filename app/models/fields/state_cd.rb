@@ -1,22 +1,16 @@
 class StateCd 
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node, :discharge_default, :admission_default
 
   def initialize
     @name = "STATE_CD"
     @field_type = TEXT
     @node = "STATE_CD" 
-    @default = default
+
+    @discharge_default = "CO"
+    @admission_default = "CO"
 
     @options = []
     @options << FieldOption.new("CO")
-  end
-
-  def set_values_for_type(klass)
-    case klass
-    when MdsDischarge then default = @options.detect{|option| option.value == "CO"}
-    when MdsAdmission then default = @options.detect{|option| option.value == "CO"}
-
-    end
   end
 
 end

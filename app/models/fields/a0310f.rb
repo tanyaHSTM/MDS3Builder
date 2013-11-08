@@ -1,11 +1,13 @@
 class A0310f 
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node, :discharge_default, :admission_default
 
   def initialize
     @name = "Entry/discharge reporting (A0310f)"
     @field_type = DROPDOWN
     @node = "A0310F" 
-    @default = default
+
+    @discharge_default = "99"
+    @admission_default = "99"
 
     @options = []
     @options << FieldOption.new("01", "Entry tracking record")
@@ -14,13 +16,5 @@ class A0310f
     @options << FieldOption.new("12", "Death in facility tracking record")
     @options << FieldOption.new("99", "None of the above")
   end
-
-  def set_values_for_type(klass)
-    case klass
-    when MdsDischarge then default = @options.detect{|option| option.value == "99"}
-    when MdsAdmission then default = @options.detect{|option| option.value == "99"}
-
-    end
-  end
-
+  
 end

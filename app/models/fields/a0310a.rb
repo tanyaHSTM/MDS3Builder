@@ -1,12 +1,14 @@
 class A0310a 
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node, :discharge_default, :admission_default
 
   def initialize
     @title = "Type of Assessment"
     @name = "Federal OBRA Reason for Assessment (A0310a)"
     @field_type = DROPDOWN
     @node = "A0310A" 
-    @default = default
+
+    @discharge_default = "99"
+    @admission_default = "01"
 
     @options = []
     @options << FieldOption.new("01", "Admission assessment (required by day 14)")
@@ -16,14 +18,6 @@ class A0310a
     @options << FieldOption.new("05", "Significant correction to prior comprehensive assessment")
     @options << FieldOption.new("06", "Significant correction to prior quarterly assessment")
     @options << FieldOption.new("99", "None of the above")
-  end
-
-  def set_values_for_type(klass)
-    case klass
-    when MdsDischarge then default = @options.detect{|option| option.value == "01"}
-    when MdsAdmission then default = @options.detect{|option| option.value == "01"}
-
-    end
   end
 
 end

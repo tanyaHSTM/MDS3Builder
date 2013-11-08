@@ -1,12 +1,14 @@
 class ItmSbstCd 
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node, :discharge_default, :admission_default
 
   def initialize
     @title = "Record Information"
     @name = "ITM_SBST_CD"
   	@field_type = DROPDOWN
   	@node = "ITM_SBST_CD" 
-    @default = default
+
+    @discharge_default = "ND"
+    @admission_default = "NC"
 
   	@options = []
   	@options << FieldOption.new("NC", "Admission")
@@ -19,14 +21,6 @@ class ItmSbstCd
   	@options << FieldOption.new("ND", "Discharge - return not anticipated")
   	@options << FieldOption.new("ND", "Discharge - return anticipated")
   	@options << FieldOption.new("NT", "Death in facility")
-  end
-
-  def set_values_for_type(klass)
-    case klass
-    when MdsDischarge then default = @options.detect{|option| option.value == "NC"}
-    when MdsAdmission then default = @options.detect{|option| option.value == "NC"}
-
-    end
   end
 
 end

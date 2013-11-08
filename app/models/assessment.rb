@@ -4,14 +4,11 @@ class Assessment
   def initialize
     @klasses = []
     fields.each{|f| klasses << f.constantize.new }
-    populate_assessment_field_values
   end
 
   def attributes=(attrs)
     @attrs = attrs
   end
-
-  def populate_assessment_field_values; end
 
   def pull_xml
     builder = Nokogiri::XML::Builder.new do |xml|
