@@ -3,7 +3,7 @@ class A0600b
 
 
   def initialize
-    @name = "Medicare Number (or comparable railroad insurance number) (A0600b)"
+    @name = "Medicare Number (or comparable railroad insurance number) (A0600b) (Leave ^ if NA)"
     @field_type = TEXT
     @node = "A0600B"
 

@@ -13,7 +13,7 @@ class B0100
     @options = []
     @options << FieldOption.new("00", "No")
     @options << FieldOption.new("01", "Yes -> Skip to G0110, ADL Assistance")
-    @options << FieldOption.new("^", "Optional")
+    @options << FieldOption.new("^", "NA")
   end
 
 end
