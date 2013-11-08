@@ -10,9 +10,9 @@ class B0300
     @admission_default = "^"
 
     @options = []
-    @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("00", "No")
     @options << FieldOption.new("01", "Yes")
+    @options << FieldOption.new("^", "NA")
   end
 
 end

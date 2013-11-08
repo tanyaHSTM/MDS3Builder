@@ -12,7 +12,7 @@ class A0310d
     @options = []
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")
-    @options << FieldOption.new("^", "NA(not a swing bed provider) ")
+    @options << FieldOption.new("^", "NA (not a swing bed provider) ")
   end
 
 end

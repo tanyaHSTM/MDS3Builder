@@ -11,7 +11,7 @@ class Assessment
   end
 
   def pull_xml
-    builder = Nokogiri::XML::Builder.new do |xml|
+    builder = Nokogiri::XML::Builder.new(:encoding => 'UTF-8') do |xml|
       xml.ASSESSMENT {
         @attrs.each do |key, value|
           xml.send "#{key}_", value
