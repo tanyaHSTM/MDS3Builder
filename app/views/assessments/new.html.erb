@@ -14,20 +14,20 @@
           <option id="<%=klass.node+"_"+option.value%>"value="<%=option.value%>" selected="selected" ><%="#{option.value} - #{option.description}" %></option>
         <% end %>
         <option id="<%=klass.node+"_"+option.value%>"value="<%=option.value%>" ><%="#{option.value} - #{option.description}"%></option>
-        <% end %>
+    <% end %>
       </select> 
     <% else %>
-    <div class="<%=input_type(klass.field_type)%>">
-    <% klass.options.each do |option| %>
-      <% if option.value == @default %>
-        <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
-        <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>" checked></label>
-      <% else %>
-        <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
-        <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>"></label>
-      <% end %>
-    <% end %>
-    </div>
+      <div class="<%=input_type(klass.field_type)%>">
+        <% klass.options.each do |option| %>
+          <% if option.value == @default %>
+            <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
+            <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>" checked></label>
+          <% else %>
+            <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
+            <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>"></label>
+          <% end %>
+        <% end %>
+      </div>
     <% end %>
   <% end %>
   <input type="submit">
