@@ -1,3 +1,17 @@
+<h2>ORBA Assessments</h2>
+<div align="center">
+<%= link_to "Admission", new_assessment_path({type: "Admission"}), class: "btn btn-submit" %><br><br>
+<%= link_to "Quarterly", '#', class: "btn btn-submit" %><br><br>
+<%= link_to "Annual", '#', class: "btn btn-submit" %><br><br>
+<%= link_to "Change in Status", '#', class: "btn btn-submit" %><br><br>
+<%= link_to "Change to Prior Comprehensive", '#', class: "btn btn-submit" %><br><br>
+<%= link_to "Correction to Prior Quarterly", '#', class: "btn btn-submit" %><br><br>
+</div>
 
-<%= link_to "Create Admission Assessment", new_assessment_path({type: "Admission"}), class: "btn btn-primary" %><br><br>
-<%= link_to "Create Discharge Assessment", new_assessment_path({type: "Discharge"}), class: "btn btn-primary" %>
+<div align="center">
+<h2>Entry and Discharge Records</h2>
+<%= link_to "Entry", '#', class: "btn btn-submit" %><br><br>
+<%= link_to "Discharge - return not anticipated", '#', class: "btn btn-submit" %><br><br>
+<%= link_to "Discharge - return anticipated", new_assessment_path({type: "Discharge"}), class: "btn btn-submit" %><br><br>
+<%= link_to "Death in Facility", '#', class: "btn btn-submit" %><br><br>
+</div>
