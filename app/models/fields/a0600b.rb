@@ -1,5 +1,5 @@
 class A0600b
-  attr_reader :options, :name, :field_type, :node, :discharge_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
 
 
   def initialize
@@ -7,7 +7,7 @@ class A0600b
     @field_type = TEXT
     @node = "A0600B"
 
-    @discharge_default = "^"
+    @discharge_ra_default = "^"
     @admission_default = "^"
 
     @options = []

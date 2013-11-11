@@ -2,7 +2,7 @@
   <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
   <h2><%= "#{@assessment.class} Assessment".sub('Mds', '') %></h2>
   <% @assessment.klasses.each do |klass| %>
-    <% if @assessment.class == MdsDischarge then @default = klass.discharge_default %>
+    <% if @assessment.class == MdsDischargeRa then @default = klass.discharge_ra_default %>
     <% elsif @assessment.class == MdsAdmission then @default = klass.admission_default %>
     <% end %>
       <h3><%= if defined? klass.title then "#{klass.title}" end %></h3><br>

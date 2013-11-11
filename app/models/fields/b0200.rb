@@ -1,12 +1,12 @@
 class B0200 
-  attr_reader :options, :name, :field_type, :node, :discharge_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
 
   def initialize
     @name = "Ability to hear (with hearing aid or hearing appliances if normally used) (B0200)"
     @field_type = DROPDOWN
     @node = "B0200"
 
-    @discharge_default = "^"
+    @discharge_ra_default = "^"
     @admission_default = "^"
     
     @options = []

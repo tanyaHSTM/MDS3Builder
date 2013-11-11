@@ -1,12 +1,12 @@
 class A0600a 
-  attr_reader :options, :name, :field_type, :node, :discharge_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
 
   def initialize
     @name = "Social Security Number (A0600a)"
     @field_type = TEXT
     @node = "A0600A"
 
-    @discharge_default = "123456789"
+    @discharge_ra_default = "123456789"
     @admission_default = "123456789"
 
     @options = []

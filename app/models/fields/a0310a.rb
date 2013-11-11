@@ -1,5 +1,5 @@
 class A0310a 
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
 
   def initialize
     @title = "Type of Assessment"
@@ -7,7 +7,7 @@ class A0310a
     @field_type = DROPDOWN
     @node = "A0310A" 
 
-    @discharge_default = "99"
+    @discharge_ra_default = "99"
     @admission_default = "01"
 
     @options = []

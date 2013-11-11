@@ -1,5 +1,5 @@
 class ItmSbstCd 
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
 
   def initialize
     @title = "Record Information"
@@ -7,7 +7,7 @@ class ItmSbstCd
   	@field_type = DROPDOWN
   	@node = "ITM_SBST_CD" 
 
-    @discharge_default = "ND"
+    @discharge_ra_default = "ND"
     @admission_default = "NC"
 
   	@options = []

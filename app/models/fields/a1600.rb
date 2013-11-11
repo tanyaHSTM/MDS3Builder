@@ -1,5 +1,5 @@
 class A1600 
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
 
   def initialize
     @title = "Stay Information"
@@ -7,7 +7,7 @@ class A1600
     @field_type = TEXT
     @node = "A1600" 
 
-    @discharge_default = "20120101"
+    @discharge_ra_default = "20120101"
     @admission_default = "20120101"
 
     @options = []
