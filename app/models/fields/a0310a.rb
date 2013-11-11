@@ -1,5 +1,5 @@
 class A0310a 
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :discharge_ra_default
 
   def initialize
     @title = "Type of Assessment"
@@ -7,8 +7,9 @@ class A0310a
     @field_type = DROPDOWN
     @node = "A0310A" 
 
-    @discharge_ra_default = "99"
     @admission_default = "01"
+    @quarterly_default = "02"
+    @discharge_ra_default = "99"
 
     @options = []
     @options << FieldOption.new("01", "Admission assessment (required by day 14)")

@@ -15,6 +15,7 @@ class AssessmentsController < ApplicationController
   def get_correct_assessment_type
     case params[:type]
     when "Admission" then return MdsAdmission.new
+    when "Quarterly" then return MdsQuarterly.new
     when "DischargeRa" then return MdsDischargeRa.new
     end
   end

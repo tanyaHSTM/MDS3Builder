@@ -1,13 +1,14 @@
 class A0310b 
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :discharge_ra_default
 
   def initialize
     @name = "PPS Assessment (A0310b)"
     @field_type = DROPDOWN
     @node = "A0310B" 
 
-    @discharge_ra_default = "99"
     @admission_default = "99"
+    @quarterly_default = "99"
+    @discharge_ra_default = "99"
 
     @options = []
     @options << FieldOption.new("01", "5-day scheduled assessment")

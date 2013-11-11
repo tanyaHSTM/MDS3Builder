@@ -1,6 +1,6 @@
 require 'assessment'
 
-class MdsAdmission < Assessment
+class MdsQuarterly < Assessment
 
   def fields
     super + %w( B0100 B0200 B0300 B1000 B1200 E0200a E0800 G0110a1 G0110b1 G0110e1 G0110g1 G0110h1 G0110i1 H0100a

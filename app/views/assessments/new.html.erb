@@ -1,9 +1,10 @@
 <form action="/assessments/" method="post">
   <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
-  <h2><%= "#{@assessment.class} Assessment".sub('Mds', '') %></h2>
+  <h2><%= "#{@assessment.class} Assessment".sub('Mds', '').sub('Ra', '') %></h2>
   <% @assessment.klasses.each do |klass| %>
-    <% if @assessment.class == MdsDischargeRa then @default = klass.discharge_ra_default %>
-    <% elsif @assessment.class == MdsAdmission then @default = klass.admission_default %>
+    <% if @assessment.class == MdsAdmission then @default = klass.admission_default %>
+    <% elsif @assessment.class == MdsQuarterly then @default = klass.quarterly_default %>
+    <% elsif @assessment.class == MdsDischargeRa then @default = klass.discharge_ra_default %>
     <% end %>
       <h3><%= if defined? klass.title then "#{klass.title}" end %></h3><br>
         <strong><%=klass.name%></strong>

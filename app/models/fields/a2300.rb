@@ -6,11 +6,11 @@ class A2300
     @field_type = TEXT
     @node = "A2300" 
 
-    @discharge_ra_default = "20120202"
-    @admission_default = "20120202"
+    @discharge_ra_default = "20130202"
+    @admission_default = "20130202"
 
     @options = []
-    @options << FieldOption.new("20120202")
+    @options << FieldOption.new("20130202")
   end
 
 end

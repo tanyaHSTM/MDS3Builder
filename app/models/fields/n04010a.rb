@@ -1,18 +1,19 @@
-class A0310d 
+class N04010a
   attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
 
   def initialize
-    @name = "Is this a Swing Bed clinical change assessment? (A0310d) (Complete only if A0200 = Swing Bed)"
-    @field_type = DROPDOWN
-    @node = "A0310D"
+    @title = "Medications"
+    @name = "Antipsycotic (N04010a)"
+    @field_type = RADIO
+    @node = "N04010A" 
 
     @discharge_ra_default = "^"
     @admission_default = "^"
 
     @options = []
+    @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")
-    @options << FieldOption.new("^", "NA (not a swing bed provider) ")
   end
-
+  
 end

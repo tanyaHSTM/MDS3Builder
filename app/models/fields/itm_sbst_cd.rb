@@ -1,5 +1,5 @@
 class ItmSbstCd 
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :discharge_ra_default
 
   def initialize
     @title = "Record Information"
@@ -7,20 +7,16 @@ class ItmSbstCd
   	@field_type = DROPDOWN
   	@node = "ITM_SBST_CD" 
 
-    @discharge_ra_default = "ND"
     @admission_default = "NC"
+    @quarterly_default = "NQ"
+    @discharge_ra_default = "ND"
 
   	@options = []
-  	@options << FieldOption.new("NC", "Admission")
-  	@options << FieldOption.new("NQ", "Quarterly")
-  	@options << FieldOption.new("NC", "Annual")
-  	@options << FieldOption.new("NC", "Significant change in status")
-  	@options << FieldOption.new("NC", "Significant change to prior comprehensive")
-  	@options << FieldOption.new("NQ", "Significant correction to prior quarterly")
-  	@options << FieldOption.new("NT", "Entry")
-  	@options << FieldOption.new("ND", "Discharge - return not anticipated")
-  	@options << FieldOption.new("ND", "Discharge - return anticipated")
-  	@options << FieldOption.new("NT", "Death in facility")
+  	@options << FieldOption.new("NC", "Admission, Annual, Significant Change")
+  	@options << FieldOption.new("NQ", "Quarterly, Significant Correction")
+  	@options << FieldOption.new("NT", "Entry, Death in Facility")
+  	@options << FieldOption.new("ND", "Discharge - Return Anticipated/Return not Anticipated")
+
   end
 
 end
