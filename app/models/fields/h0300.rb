@@ -1,13 +1,12 @@
 class H0300
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Uninary Continence (H0300)"
     @field_type = DROPDOWN
     @node = "H0300"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

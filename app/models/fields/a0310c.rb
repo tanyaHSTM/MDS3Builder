@@ -1,14 +1,12 @@
 class A0310c 
-  attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :discharge_ra_default
+  attr_reader :title, :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "PPS Other Medicare Required Assessment (A0310c)"
     @field_type = DROPDOWN
     @node = "A0310C" 
 
-    @admission_default = "0"
-    @quarterly_default = "0"
-    @discharge_ra_default = "0"
+    @default = "0"
 
     @options = []
     @options << FieldOption.new("0", "No")

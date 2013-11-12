@@ -1,13 +1,12 @@
 class L0200e
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Inflamed or bleeding gums or loose natural teeth (L0200e)"
     @field_type = RADIO
     @node = "L0200E"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

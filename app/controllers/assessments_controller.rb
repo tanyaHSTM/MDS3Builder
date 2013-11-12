@@ -16,6 +16,7 @@ class AssessmentsController < ApplicationController
     case params[:type]
     when "Admission" then return MdsAdmission.new
     when "Quarterly" then return MdsQuarterly.new
+    when "Annual" then return MdsAnnual.new
     when "DischargeRa" then return MdsDischargeRa.new
     end
   end

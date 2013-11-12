@@ -1,13 +1,12 @@
 class N04010g
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Diuretic (N04010g)"
     @field_type = RADIO
     @node = "N04010G" 
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

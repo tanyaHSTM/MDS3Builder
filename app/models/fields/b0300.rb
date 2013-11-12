@@ -1,13 +1,12 @@
 class B0300 
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Hearing aid or other aplliance used (B0300)"
     @field_type = RADIO
     @node = "B0300" 
     
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

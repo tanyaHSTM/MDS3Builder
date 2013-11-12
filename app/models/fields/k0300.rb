@@ -1,13 +1,12 @@
 class K0300
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Weight Loss - Loss of 5% or more in the last month or loss of 10% or more in the last 6 months. (K0300)"
     @field_type = DROPDOWN
     @node = "K0300"
 
-    @discharge_ra_default = "120"
-    @admission_default = "120"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

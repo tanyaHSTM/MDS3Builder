@@ -1,5 +1,5 @@
 class G0110e1
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Locomotion on Unit (Self Performance) - How resident moves between locations in his/her
@@ -7,8 +7,7 @@ class G0110e1
     @field_type = DROPDOWN
     @node = "G0110E1"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

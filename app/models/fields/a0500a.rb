@@ -1,5 +1,5 @@
 class A0500a 
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :default
 
   def initialize
     @title = "Resident Information"
@@ -7,8 +7,7 @@ class A0500a
     @field_type = TEXT
     @node = "A0500A"
 
-    @discharge_ra_default = "John"
-    @admission_default = "John"
+    @default = "John"
 
     @options = []
     @options << FieldOption.new("John")

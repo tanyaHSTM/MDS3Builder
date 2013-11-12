@@ -1,13 +1,12 @@
 class G0110h1
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Eating (Self Performance) - How resident eats and drinks, regardless of skill. (G0110h1)"
     @field_type = DROPDOWN
     @node = "G0110H1"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

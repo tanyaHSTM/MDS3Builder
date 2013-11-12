@@ -1,5 +1,5 @@
 class E0800
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Did the resident reject evaluation or care that is neccessary to achieve the resident's 
@@ -7,8 +7,7 @@ class E0800
     @field_type = DROPDOWN
     @node = "E0800"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

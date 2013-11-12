@@ -1,5 +1,5 @@
 class L0200a
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :default
 
   def initialize
     @title = "Oral/Dental Status"
@@ -7,8 +7,7 @@ class L0200a
     @field_type = RADIO
     @node = "L0200A"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

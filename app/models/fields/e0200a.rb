@@ -1,5 +1,5 @@
 class E0200a
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :default
 
   def initialize
     @title = "Behavior"
@@ -7,8 +7,7 @@ class E0200a
     @field_type = DROPDOWN
     @node = "E0200A"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

@@ -1,5 +1,5 @@
 class J1400
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :default
 
   def initialize
     @title = "Health Conditions"
@@ -8,8 +8,7 @@ class J1400
     @field_type = RADIO
     @node = "J1400"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

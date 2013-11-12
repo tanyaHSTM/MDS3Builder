@@ -1,5 +1,5 @@
 class O0400b4
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :default
 
   def initialize
     @title = "Special Treaments, Procedures and Programs"
@@ -8,8 +8,7 @@ class O0400b4
     @field_type = TEXT
     @node = "O0400B4" 
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^")

@@ -1,13 +1,12 @@
 class G0110i1
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Toilet Use (Self Performance) - How resident's use the toilet room, commode, bed pan, or urinal. (G0110i1)"
     @field_type = DROPDOWN
     @node = "G0110I1"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

@@ -1,5 +1,5 @@
 class G0110b1
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Transfer (Self Performance) - how resident moves between surfaces including to or from bed, chair, 
@@ -7,8 +7,7 @@ class G0110b1
     @field_type = DROPDOWN
     @node = "G0110B1"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

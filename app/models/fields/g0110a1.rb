@@ -1,5 +1,5 @@
 class G0110a1
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :default
 
   def initialize
     @title = "Functional Status"
@@ -8,8 +8,7 @@ class G0110a1
     @field_type = DROPDOWN
     @node = "G0110A1"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

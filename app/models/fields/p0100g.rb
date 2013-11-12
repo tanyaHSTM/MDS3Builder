@@ -1,13 +1,12 @@
 class P0100g
-  attr_reader :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
     @name = "Chair Prevents Rising - used in chair or out of bed (P0100g)"
     @field_type = RADIO
     @node = "P0100G" 
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")

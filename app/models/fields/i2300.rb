@@ -1,5 +1,5 @@
 class I2300
-  attr_reader :title, :options, :name, :field_type, :node, :discharge_ra_default, :admission_default
+  attr_reader :title, :options, :name, :field_type, :node, :default
 
   def initialize
     @title = "Active Diagnosis"
@@ -7,8 +7,7 @@ class I2300
     @field_type = RADIO
     @node = "I2300"
 
-    @discharge_ra_default = "^"
-    @admission_default = "^"
+    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")
