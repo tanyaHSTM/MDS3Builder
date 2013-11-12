@@ -5,6 +5,7 @@
     <% if @assessment.class == MdsAdmission then @default = defined?(klass.admission_default) ? klass.admission_default : klass.default %>
     <% elsif @assessment.class == MdsQuarterly then @default = defined?(klass.quarterly_default) ? klass.quarterly_default : klass.default %>
     <% elsif @assessment.class == MdsAnnual then @default = defined?(klass.annual_default) ? klass.annual_default : klass.default %>
+    <% elsif @assessment.class == CorrectionOfAdmission then @default = defined?(klass.cr_admission_default) ? klass.cr_admission_default : klass.default %>
     <% elsif @assessment.class == MdsDischargeRa then @default = defined?(klass.discharge_ra_default) ? klass.discharge_ra_default : klass.default %>
     <% end %>
       <h3><%= if defined? klass.title then "#{klass.title}" end %></h3><br>

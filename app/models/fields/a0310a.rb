@@ -1,5 +1,5 @@
 class A0310a 
-  attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :discharge_ra_default
+  attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :annual_default, :cr_admission_default, :discharge_ra_default
 
   def initialize
     @title = "Type of Assessment"
@@ -9,6 +9,8 @@ class A0310a
 
     @admission_default = "01"
     @quarterly_default = "02"
+    @annual_default = "03"
+    @cr_admission_default = "01"
     @discharge_ra_default = "99"
 
     @options = []
