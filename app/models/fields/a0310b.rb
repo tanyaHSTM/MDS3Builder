@@ -1,5 +1,5 @@
 class A0310b 
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node, :default, :pps5_day_default
 
   def initialize
     @name = "PPS Assessment (A0310b)"
@@ -7,6 +7,7 @@ class A0310b
     @node = "A0310B" 
 
     @default = "99"
+    @pps5_day_default = "01"
 
     @options = []
     @options << FieldOption.new("01", "5-day scheduled assessment")

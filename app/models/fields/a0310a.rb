@@ -1,6 +1,6 @@
 class A0310a 
   attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :annual_default, 
-              :significant_change_default, :entry_default, :cr_admission_default, :discharge_rna_default, :discharge_ra_default
+              :significant_change_default, :entry_default, :cr_admission_default, :discharge_rna_default, :discharge_ra_default, :pps5_day_default 
 
   def initialize
     @title = "Type of Assessment"
@@ -16,6 +16,7 @@ class A0310a
     @cr_admission_default = "01"
     @discharge_rna_default ="99"
     @discharge_ra_default = "99"
+    @pps5_day_default = "99"
 
     @options = []
     @options << FieldOption.new("01", "Admission assessment (required by day 14)")

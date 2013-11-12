@@ -22,6 +22,7 @@ class AssessmentsController < ApplicationController
     when "Entry" then return MdsEntry.new
     when "DischargeRna" then return MdsDischargeRna.new
     when "DischargeRa" then return MdsDischargeRa.new
+    when "Pps5Day" then return MdsPps5Day.new
     end
   end
 

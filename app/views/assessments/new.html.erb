@@ -10,6 +10,7 @@
     <% elsif @assessment.class == MdsEntry then @default = defined?(klass.entry_default) ? klass.entry_default : klass.default %>
     <% elsif @assessment.class == MdsDischargeRna then @default = defined?(klass.discharge_rna_default) ? klass.discharge_rna_default : klass.default %>
     <% elsif @assessment.class == MdsDischargeRa then @default = defined?(klass.discharge_ra_default) ? klass.discharge_ra_default : klass.default %>
+    <% elsif @assessment.class == MdsPps5Day then @default = defined?(klass.pps5_day_default) ? klass.pps5_day_default : klass.default %>
     <% end %>
       <h3><%= if defined? klass.title then "#{klass.title}" end %></h3><br>
         <strong><%=klass.name%></strong>
@@ -31,7 +32,7 @@
             <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>" checked></label>
           <% else %>
             <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
-            <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>"></label>
+            <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=@default%>" id="<%=klass.node+"_"+option.value%>"></label>
           <% end %>
         <% end %>
       </div>
