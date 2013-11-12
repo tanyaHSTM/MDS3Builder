@@ -1,14 +1,12 @@
-class A0310f 
-  attr_reader :options, :name, :field_type, :node, :default, :entry_default, :discharge_rna_default 
+class X0600f 
+  attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
-    @name = "Entry/discharge reporting (A0310f)"
+    @name = "Entry/discharge reporting (X0600f)"
     @field_type = DROPDOWN
-    @node = "A0310F" 
+    @node = "X0600F" 
 
     @default = "99"
-    @entry_default = "01"
-    @discharge_rna_default = "10"
 
     @options = []
     @options << FieldOption.new("01", "Entry tracking record")

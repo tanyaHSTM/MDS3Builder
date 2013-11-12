@@ -1,10 +1,10 @@
-class A0310c 
+class X0600c 
   attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
-    @name = "PPS Other Medicare Required Assessment (A0310c)"
+    @name = "PPS Other Medicare Required Assessment (X0600c)"
     @field_type = DROPDOWN
-    @node = "A0310C" 
+    @node = "X0600C" 
 
     @default = "0"
 

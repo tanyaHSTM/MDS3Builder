@@ -7,6 +7,7 @@ class A2000
     @node = "A2000" 
 
     @default = "^"
+    @discharge_rna_default = "20131111"
 
     @options = []
     @options << FieldOption.new("^")

@@ -17,7 +17,10 @@ class AssessmentsController < ApplicationController
     when "Admission" then return MdsAdmission.new
     when "Quarterly" then return MdsQuarterly.new
     when "Annual" then return MdsAnnual.new
+    when "SignificantChange" then return MdsSignificantChange.new
     when "CorrectionOfAdmission" then return CorrectionOfAdmission.new
+    when "Entry" then return MdsEntry.new
+    when "DischargeRna" then return MdsDischargeRna.new
     when "DischargeRa" then return MdsDischargeRa.new
     end
   end

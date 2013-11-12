@@ -1,10 +1,10 @@
-class A0310b 
+class X0600b 
   attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
-    @name = "PPS Assessment (A0310b)"
+    @name = "PPS Assessment (X0600b)"
     @field_type = DROPDOWN
-    @node = "A0310B" 
+    @node = "X0600B" 
 
     @default = "99"
 

@@ -1,10 +1,10 @@
-class A0310d 
+class X0600d 
   attr_reader :options, :name, :field_type, :node, :default
 
   def initialize
-    @name = "Is this a Swing Bed clinical change assessment? (A0310d) (Complete only if A0200 = Swing Bed)"
+    @name = "Is this a Swing Bed clinical change assessment? (X0600d) (Complete only if X0150 = Swing Bed)"
     @field_type = DROPDOWN
-    @node = "A0310D"
+    @node = "X0600d"
 
     @default = "^"
 

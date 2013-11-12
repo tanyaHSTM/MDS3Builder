@@ -1,21 +1,12 @@
-class A0310a 
-  attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :annual_default, 
-              :significant_change_default, :entry_default, :cr_admission_default, :discharge_rna_default, :discharge_ra_default
+class X0600a
+  attr_reader :options, :name, :field_type, :node, :cr_admission_default
 
   def initialize
-    @title = "Type of Assessment"
-    @name = "Federal OBRA Reason for Assessment (A0310a)"
+    @name = "Federal OBRA Reason for Assessment (X0600a)"
     @field_type = DROPDOWN
-    @node = "A0310A" 
+    @node = "X0600A" 
 
-    @admission_default = "01"
-    @quarterly_default = "02"
-    @annual_default = "03"
-    @significant_change_default = "04"
-    @entry_default = "99"
     @cr_admission_default = "01"
-    @discharge_rna_default ="99"
-    @discharge_ra_default = "99"
 
     @options = []
     @options << FieldOption.new("01", "Admission assessment (required by day 14)")

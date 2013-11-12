@@ -1,6 +1,6 @@
 class ItmSbstCd 
-  attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :annual_default, 
-              :cr_admission_default, :discharge_ra_default
+  attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :annual_default, :significant_change_default, 
+              :cr_admission_default, :entry_default, :discharge_rna_default, :discharge_ra_default
 
   def initialize
     @title = "Record Information"
@@ -11,7 +11,10 @@ class ItmSbstCd
     @admission_default = "NC"
     @quarterly_default = "NQ"
     @annual_default = "NC"
+    @significant_change_default = "NQ"
     @cr_admission_default = "NC"
+    @entry_default = "NT"
+    @discharge_rna_default = "ND"
     @discharge_ra_default = "ND"
 
   	@options = []
