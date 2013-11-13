@@ -23,7 +23,10 @@ class A0310a
     when "MdsQuarterly" then return "02"
     when "MdsAnnual" then return "03"
     when "MdsSignificantChange" then return "04"
-    when "CorrectionOfAdmission" then return "01" 
+    when "CorrectionOfAdmission" then return "01"
+    when "CorrectionOfQuarterly" then return "02"
+    when "CorrectionOfAnnual" then return "03"
+    when "CorrectionOfSignificantChange" then return "04"   
     else return "99"
     end
   end

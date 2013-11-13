@@ -14,6 +14,12 @@ class A0050
   def set_values_for_type(klass)
     case klass
     when "CorrectionOfAdmission" then return "2"
+    when "CorrectionOfQuarterly" then return "2"
+    when "CorrectionOfAnnual" then return "2"
+    when "CorrectionOfSignificantChange" then return "2" 
+    when "CorrectionOfPps5Day" then return "2"
+    when "CorrectionOfPps14Day" then return "2"
+    when "CorrectionOfPps30Day" then return "2"   
     else return "1"
     end
   end

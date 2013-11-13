@@ -5,9 +5,9 @@
   <%= link_to "Annual", new_assessment_path({type: "Annual"}), class: "btn btn-submit" %><br><br>
   <%= link_to "Change in Status", new_assessment_path({type: "SignificantChange"}), class: "btn btn-submit" %><br><br>
   <%= link_to "Correction of Admission", new_assessment_path({type: "CorrectionOfAdmission"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Quarterly", '#', class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Annual", '#', class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Change in Status", '#', class: "btn btn-submit" %><br><br>
+  <%= link_to "Correction of Quarterly", new_assessment_path({type: "CorrectionOfQuarterly"}), class: "btn btn-submit" %><br><br>
+  <%= link_to "Correction of Annual", new_assessment_path({type: "CorrectionOfAnnual"}), class: "btn btn-submit" %><br><br>
+  <%= link_to "Correction of Change in Status", new_assessment_path({type: "CorrectionOfSignificantChange"}), class: "btn btn-submit" %><br><br>
   <%= link_to "Inactivation of Admission", '#', class: "btn btn-submit" %><br><br>
   <%= link_to "Inactivation of Quarterly", '#', class: "btn btn-submit" %><br><br>
   <%= link_to "Inactivation of Annual", '#', class: "btn btn-submit" %><br><br>
@@ -37,9 +37,9 @@
   <%= link_to "PPS 30-day", new_assessment_path({type: "Pps30Day"}), class: "btn btn-submit" %><br><br>
   <%= link_to "PPS 60-day", new_assessment_path({type: "Pps60Day"}), class: "btn btn-submit" %><br><br>
   <%= link_to "PPS 90-day", new_assessment_path({type: "Pps90Day"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of PPS 5-day", '#', class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of PPS 14-day", '#', class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of PPS 30-day", '#', class: "btn btn-submit" %><br><br>
+  <%= link_to "Correction of PPS 5-day", new_assessment_path({type: "CorrectionOfPps5Day"}), class: "btn btn-submit" %><br><br>
+  <%= link_to "Correction of PPS 14-day", new_assessment_path({type: "CorrectionOfPps14Day"}), class: "btn btn-submit" %><br><br>
+  <%= link_to "Correction of PPS 30-day", new_assessment_path({type: "CorrectionOfPps30Day"}), class: "btn btn-submit" %><br><br>
   <%= link_to "Correction of PPS 60-day", '#', class: "btn btn-submit" %><br><br>
   <%= link_to "Correction of PPS 90-day", '#', class: "btn btn-submit" %><br><br>
   <%= link_to "Inactivation of PPS 5-day", '#', class: "btn btn-submit" %><br><br>

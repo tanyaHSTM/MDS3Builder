@@ -23,6 +23,9 @@ class ItmSbstCd
     when "MdsAnnual" then return "NC"
     when "MdsSignificantChange" then return "NQ"
     when "CorrectionOfAdmission" then return "NC"
+    when "CorrectionOfQuarterly" then return "NQ"
+    when "CorrectionOfAnnual" then return "NC"
+    when "CorrectionOfSignificantChange" then return "NQ"  
     when "MdsEntry" then return "NT"
     when "MdsDischargeRna" then return "ND"
     when "MdsDischargeRa" then return "ND"
@@ -31,6 +34,9 @@ class ItmSbstCd
     when "MdsPps30Day" then return "NP"
     when "MdsPps60Day" then return "NP"
     when "MdsPps90Day" then return "NP"
+    when "CorrectionOfPps5Day" then return "NP"
+    when "CorrectionOfPps14Day" then return "NP"
+    when "CorrectionOfPps30Day" then return "NP"
     end
   end
 

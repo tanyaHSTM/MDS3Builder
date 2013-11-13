@@ -19,6 +19,9 @@ class AssessmentsController < ApplicationController
     when "Annual" then return MdsAnnual.new
     when "SignificantChange" then return MdsSignificantChange.new
     when "CorrectionOfAdmission" then return CorrectionOfAdmission.new
+    when "CorrectionOfQuarterly" then return CorrectionOfQuarterly.new
+    when "CorrectionOfAnnual" then return CorrectionOfAnnual.new
+    when "CorrectionOfSignificantChange" then return CorrectionOfSignificantChange.new
     when "Entry" then return MdsEntry.new
     when "DischargeRna" then return MdsDischargeRna.new
     when "DischargeRa" then return MdsDischargeRa.new
@@ -27,6 +30,9 @@ class AssessmentsController < ApplicationController
     when "Pps30Day" then return MdsPps30Day.new
     when "Pps60Day" then return MdsPps60Day.new
     when "Pps90Day" then return MdsPps90Day.new
+    when "CorrectionOfPps5Day" then return CorrectionOfPps5Day.new
+    when "CorrectionOfPps14Day" then return CorrectionOfPps14Day.new
+    when "CorrectionOfPps30Day" then return CorrectionOfPps30Day.new
     end
   end
 

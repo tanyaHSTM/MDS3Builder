@@ -18,7 +18,13 @@ class X0600b
   end
 
   def set_values_for_type(klass)
-    return "99"
+    case klass
+    when "CorrectionOfPps5Day" then return "01"
+    when "CorrectionOfPps14Day" then return "02"
+    when "CorrectionOfPps30Day" then return "03" 
+    else return "99"
+    end
   end
-  
+
 end
+  

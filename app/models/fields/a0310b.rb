@@ -24,6 +24,9 @@ class A0310b
     when "MdsPps30Day" then return "03"
     when "MdsPps60Day" then return "04"
     when "MdsPps90Day" then return "05"
+    when "CorrectionOfPps5Day" then return "01"
+    when "CorrectionOfPps14Day" then return "02"
+    when "CorrectionOfPps30Day" then return "03" 
     else return "99"
     end
   end
