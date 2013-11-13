@@ -1,50 +1,60 @@
 <h2>OBRA Assessments</h2>
 <div align="center">
-  <%= link_to "Admission", new_assessment_path({type: "Admission"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Quarterly", new_assessment_path({type: "Quarterly"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Annual", new_assessment_path({type: "Annual"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Change in Status", new_assessment_path({type: "SignificantChange"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Admission", new_assessment_path({type: "CorrectionOfAdmission"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Quarterly", new_assessment_path({type: "CorrectionOfQuarterly"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Annual", new_assessment_path({type: "CorrectionOfAnnual"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Change in Status", new_assessment_path({type: "CorrectionOfSignificantChange"}), class: "btn btn-submit" %><br><br>
+  <%= link_to "Admission", new_assessment_path({type: "Admission"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of Admission", new_assessment_path({type: "CorrectionOfAdmission"}), class: "btn btn-submit" %>
   <%= link_to "Inactivation of Admission", '#', class: "btn btn-submit" %><br><br>
+
+  <%= link_to "Quarterly", new_assessment_path({type: "Quarterly"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of Quarterly", new_assessment_path({type: "CorrectionOfQuarterly"}), class: "btn btn-submit" %>
   <%= link_to "Inactivation of Quarterly", '#', class: "btn btn-submit" %><br><br>
+
+  <%= link_to "Annual", new_assessment_path({type: "Annual"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of Annual", new_assessment_path({type: "CorrectionOfAnnual"}), class: "btn btn-submit" %>
   <%= link_to "Inactivation of Annual", '#', class: "btn btn-submit" %><br><br>
+
+  <%= link_to "Change in Status", new_assessment_path({type: "SignificantChange"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of Change in Status", new_assessment_path({type: "CorrectionOfSignificantChange"}), class: "btn btn-submit" %>
   <%= link_to "Inactivation of Change in Status", '#', class: "btn btn-submit" %><br><br>
 </div>
 
 <h2>Entry and Discharge Records</h2>
 <div align="center">
-  <%= link_to "Entry", new_assessment_path({type: "Entry"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Discharge - return not anticipated", new_assessment_path({type: "DischargeRna"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Discharge - return anticipated", new_assessment_path({type: "DischargeRa"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Death", '#', class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Entry", '#', class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Discharge - return not anticipated", '#', class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Discharge - return anticipated", '#', class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of Death", '#', class: "btn btn-submit" %><br><br>
+  <%= link_to "Entry", new_assessment_path({type: "Entry"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of Entry", '#', class: "btn btn-submit" %>
   <%= link_to "Inactivation of Entry", '#', class: "btn btn-submit" %><br><br>
+
+  <%= link_to "Discharge - return not anticipated", new_assessment_path({type: "DischargeRna"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of Discharge - return not anticipated", '#', class: "btn btn-submit" %>
   <%= link_to "Inactivation of Discharge - return not anticipated", '#', class: "btn btn-submit" %><br><br>
+
+  <%= link_to "Discharge - return anticipated", new_assessment_path({type: "DischargeRa"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of Discharge - return anticipated", '#', class: "btn btn-submit" %>
   <%= link_to "Inactivation of Discharge - return anticipated",'#', class: "btn btn-submit" %><br><br>
+
+  <%= link_to "Death", '#', class: "btn btn-submit" %> 
+  <%= link_to "Correction of Death", '#', class: "btn btn-submit" %>
   <%= link_to "Inactivation of Death", '#', class: "btn btn-submit" %><br><br>
 </div>
 
 <h2>PPS Assessmetns</h2>
 <div align="center">
-  <%= link_to "PPS 5-day", new_assessment_path({type: "Pps5Day"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "PPS 14-day", new_assessment_path({type: "Pps14Day"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "PPS 30-day", new_assessment_path({type: "Pps30Day"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "PPS 60-day", new_assessment_path({type: "Pps60Day"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "PPS 90-day", new_assessment_path({type: "Pps90Day"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of PPS 5-day", new_assessment_path({type: "CorrectionOfPps5Day"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of PPS 14-day", new_assessment_path({type: "CorrectionOfPps14Day"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of PPS 30-day", new_assessment_path({type: "CorrectionOfPps30Day"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of PPS 60-day", '#', class: "btn btn-submit" %><br><br>
-  <%= link_to "Correction of PPS 90-day", '#', class: "btn btn-submit" %><br><br>
+  <%= link_to "PPS 5-day", new_assessment_path({type: "Pps5Day"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of PPS 5-day", new_assessment_path({type: "CorrectionOfPps5Day"}), class: "btn btn-submit" %>
   <%= link_to "Inactivation of PPS 5-day", '#', class: "btn btn-submit" %><br><br>
+
+  <%= link_to "PPS 14-day", new_assessment_path({type: "Pps14Day"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of PPS 14-day", new_assessment_path({type: "CorrectionOfPps14Day"}), class: "btn btn-submit" %>
   <%= link_to "Inactivation of PPS 14-day", '#', class: "btn btn-submit" %><br><br>
+
+  <%= link_to "PPS 30-day", new_assessment_path({type: "Pps30Day"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of PPS 30-day", new_assessment_path({type: "CorrectionOfPps30Day"}), class: "btn btn-submit" %>
   <%= link_to "Inactivation of PPS 30-day", '#', class: "btn btn-submit" %><br><br>
+
+  <%= link_to "PPS 60-day", new_assessment_path({type: "Pps60Day"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of PPS 60-day", '#', class: "btn btn-submit" %>
   <%= link_to "Inactivation of PPS 60-day", '#', class: "btn btn-submit" %><br><br>
+  
+  <%= link_to "PPS 90-day", new_assessment_path({type: "Pps90Day"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of PPS 90-day", '#', class: "btn btn-submit" %>
   <%= link_to "Inactivation of PPS 90-day", '#', class: "btn btn-submit" %><br><br>
 </div>
