@@ -8,7 +8,7 @@ class M0300f1
     @default = "^"
 
     @options = []
-    @options << FieldOption.new("^")
+    @options << FieldOption.new("")
   end
   
 end

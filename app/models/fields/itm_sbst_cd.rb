@@ -1,6 +1,7 @@
 class ItmSbstCd 
   attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :annual_default, :significant_change_default, 
-              :cr_admission_default, :entry_default, :discharge_rna_default, :discharge_ra_default, :pps5_day_default
+              :cr_admission_default, :entry_default, :discharge_rna_default, :discharge_ra_default, :pps5_day_default, :pps14_day_default, :pps30_day_default, 
+              :pps60_day_default, :pps90_day_default
 
   def initialize
     @title = "Record Information"
@@ -17,6 +18,10 @@ class ItmSbstCd
     @discharge_rna_default = "ND"
     @discharge_ra_default = "ND"
     @pps5_day_default = "NP"
+    @pps14_day_default = "NP"
+    @pps30_day_default = "NP"
+    @pps60_day_default = "NP"
+    @pps90_day_default = "NP"
 
   	@options = []
   	@options << FieldOption.new("NC", "Admission, Annual, Significant Change")

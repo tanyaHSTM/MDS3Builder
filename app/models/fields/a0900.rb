@@ -9,7 +9,7 @@ class A0900
     @default = "19400112"
 
     @options = []
-    @options << FieldOption.new("19400112")
+    @options << FieldOption.new("")
   end
   
 end

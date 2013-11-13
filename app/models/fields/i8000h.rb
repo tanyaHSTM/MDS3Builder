@@ -9,7 +9,7 @@ class I8000h
     @default = "^"
 
     @options = []
-    @options << FieldOption.new("^")
+    @options << FieldOption.new("")
   end
 
 end

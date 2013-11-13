@@ -9,7 +9,7 @@ class X0700c
     @default = "20130101"
 
     @options = []
-    @options << FieldOption.new("20130101")
+    @options << FieldOption.new("")
   end
 
 end

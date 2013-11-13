@@ -11,6 +11,10 @@
     <% elsif @assessment.class == MdsDischargeRna then @default = defined?(klass.discharge_rna_default) ? klass.discharge_rna_default : klass.default %>
     <% elsif @assessment.class == MdsDischargeRa then @default = defined?(klass.discharge_ra_default) ? klass.discharge_ra_default : klass.default %>
     <% elsif @assessment.class == MdsPps5Day then @default = defined?(klass.pps5_day_default) ? klass.pps5_day_default : klass.default %>
+    <% elsif @assessment.class == MdsPps14Day then @default = defined?(klass.pps14_day_default) ? klass.pps14_day_default : klass.default %>
+    <% elsif @assessment.class == MdsPps30Day then @default = defined?(klass.pps30_day_default) ? klass.pps30_day_default : klass.default %>
+    <% elsif @assessment.class == MdsPps60Day then @default = defined?(klass.pps60_day_default) ? klass.pps60_day_default : klass.default %>
+    <% elsif @assessment.class == MdsPps90Day then @default = defined?(klass.pps90_day_default) ? klass.pps90_day_default : klass.default %>
     <% end %>
       <h3><%= if defined? klass.title then "#{klass.title}" end %></h3><br>
         <strong><%=klass.name%></strong>
