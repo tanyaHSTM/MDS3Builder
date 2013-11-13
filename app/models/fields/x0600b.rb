@@ -22,6 +22,8 @@ class X0600b
     when "CorrectionOfPps5Day" then return "01"
     when "CorrectionOfPps14Day" then return "02"
     when "CorrectionOfPps30Day" then return "03" 
+    when "CorrectionOfPps60Day" then return "04"
+    when "CorrectionOfPps90Day" then return "05"
     else return "99"
     end
   end

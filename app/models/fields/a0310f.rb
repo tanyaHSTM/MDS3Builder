@@ -19,6 +19,11 @@ class A0310f
     when "MdsEntry" then return "01"
     when "MdsDischargeRna" then return "10"
     when "MdsDischargeRa" then return "11"
+    when "MdsDeath" then return "12"
+    when "CorrectionOfEntry" then return "01"
+    when "CorrectionOfDischargeRna" then return "10"
+    when "CorrectionOfDischargeRa" then return "11"
+    when "CorrectionOfDeath" then return "12" 
     else return "99"
     end
   end

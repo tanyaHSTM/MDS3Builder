@@ -15,7 +15,13 @@ class X0600f
   end
 
   def set_values_for_type(klass)
-    return "99"
+    case klass
+    when "CorrectionOfEntry" then return "01"
+    when "CorrectionOfDischargeRna" then return "10"
+    when "CorrectionOfDischargeRa" then return "11"
+    when "CorrectionOfDeath" then return "12" 
+    else return "99"
+    end
   end
   
 end

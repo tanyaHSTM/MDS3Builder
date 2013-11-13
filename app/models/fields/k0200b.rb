@@ -11,7 +11,7 @@ class K0200b
   end
 
   def set_values_for_type(klass)
-    return "120"
+    return "145"
   end
 
 end

@@ -29,6 +29,11 @@ class ItmSbstCd
     when "MdsEntry" then return "NT"
     when "MdsDischargeRna" then return "ND"
     when "MdsDischargeRa" then return "ND"
+    when "MdsDeath" then return "NT"
+    when "CorrectionOfEntry" then return "NT"
+    when "CorrectionOfDischargeRna" then return "ND"
+    when "CorrectionOfDischargeRa" then return "ND"
+    when "CorrectionOfDeath" then return "NT" 
     when "MdsPps5Day" then return "NP"
     when "MdsPps14Day" then return "NP"
     when "MdsPps30Day" then return "NP"
@@ -37,6 +42,8 @@ class ItmSbstCd
     when "CorrectionOfPps5Day" then return "NP"
     when "CorrectionOfPps14Day" then return "NP"
     when "CorrectionOfPps30Day" then return "NP"
+    when "CorrectionOfPps60Day" then return "NP"
+    when "CorrectionOfPps90Day" then return "NP"
     end
   end
 

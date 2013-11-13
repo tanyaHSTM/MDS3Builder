@@ -25,6 +25,11 @@ class AssessmentsController < ApplicationController
     when "Entry" then return MdsEntry.new
     when "DischargeRna" then return MdsDischargeRna.new
     when "DischargeRa" then return MdsDischargeRa.new
+    when "Death" then return MdsDeath.new
+    when "CorrectionOfEntry" then return CorrectionOfEntry.new
+    when "CorrectionOfDischargeRna" then return CorrectionOfDischargeRna.new
+    when "CorrectionOfDischargeRa" then return CorrectionOfDischargeRa.new
+    when "CorrectionOfDeath" then return CorrectionOfDeath.new
     when "Pps5Day" then return MdsPps5Day.new
     when "Pps14Day" then return MdsPps14Day.new
     when "Pps30Day" then return MdsPps30Day.new
@@ -33,6 +38,8 @@ class AssessmentsController < ApplicationController
     when "CorrectionOfPps5Day" then return CorrectionOfPps5Day.new
     when "CorrectionOfPps14Day" then return CorrectionOfPps14Day.new
     when "CorrectionOfPps30Day" then return CorrectionOfPps30Day.new
+    when "CorrectionOfPps60Day" then return CorrectionOfPps60Day.new
+    when "CorrectionOfPps90Day" then return CorrectionOfPps90Day.new
     end
   end
 

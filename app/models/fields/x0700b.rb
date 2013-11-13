@@ -1,10 +1,10 @@
-class A2000 
+class X0700b 
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Discharge Date (format = yyyyddmm) (A2000) (Complete only if A0310F = Discharge or Death)"
+    @name = "Discharge Date (format = yyyyddmm) (X0700b) (Complete only if X0600F = Discharge or Death)"
     @field_type = TEXT
-    @node = "A2000" 
+    @node = "X0700b" 
 
     @options = []
     @options << FieldOption.new("")
@@ -13,9 +13,6 @@ class A2000
 
   def set_values_for_type(klass)
     case klass
-    when "MdsDischargeRna" then return "20131111"
-    when "MdsDischargeRa" then return "20131111"
-    when "MdsDeath" then return "20131111"
     when "CorrectionOfDischargeRna" then return "20131111"
     when "CorrectionOfDischargeRa" then return "20131111"
     when "CorrectionOfDeath" then return "20131111"

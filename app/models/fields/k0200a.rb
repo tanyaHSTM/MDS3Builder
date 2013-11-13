@@ -12,7 +12,7 @@ class K0200a
   end
 
   def set_values_for_type(klass)
-    return "72"
+    return "70"
   end
 
 end

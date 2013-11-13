@@ -13,7 +13,7 @@ class N04010e
   end
 
   def set_values_for_type(klass)
-    return "^"
+    return "0"
   end
   
 end

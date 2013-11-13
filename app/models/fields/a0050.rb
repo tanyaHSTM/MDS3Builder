@@ -17,9 +17,15 @@ class A0050
     when "CorrectionOfQuarterly" then return "2"
     when "CorrectionOfAnnual" then return "2"
     when "CorrectionOfSignificantChange" then return "2" 
+    when "CorrectionOfEntry" then return "2"
+    when "CorrectionOfDischargeRna" then return "2"
+    when "CorrectionOfDischargeRa" then return "2"
+    when "CorrectionOfDeath" then return "2" 
     when "CorrectionOfPps5Day" then return "2"
     when "CorrectionOfPps14Day" then return "2"
     when "CorrectionOfPps30Day" then return "2"   
+    when "CorrectionOfPps60Day" then return "2"
+    when "CorrectionOfPps90Day" then return "2"  
     else return "1"
     end
   end
