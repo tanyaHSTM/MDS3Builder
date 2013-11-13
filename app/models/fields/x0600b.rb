@@ -6,8 +6,6 @@ class X0600b
     @field_type = DROPDOWN
     @node = "X0600B" 
 
-    @default = "99"
-
     @options = []
     @options << FieldOption.new("01", "5-day scheduled assessment")
     @options << FieldOption.new("02", "14-day scheduled assessment")
@@ -17,6 +15,10 @@ class X0600b
     @options << FieldOption.new("06", "Readmission/return assessment")
     @options << FieldOption.new("07", "Unscheduled assessment used for PPS (OMRA, significant or clinical change, or significant correction assessment")
     @options << FieldOption.new("99", "None of the above")
+  end
+
+  def set_values_for_type(klass)
+    return "99"
   end
   
 end

@@ -6,10 +6,12 @@ class X0500
     @field_type = TEXT
     @node = "X0500"
 
-    @default = "123456789"
-
     @options = []
     @options << FieldOption.new("")
+  end
+
+   def set_values_for_type(klass)
+    return "123456789"
   end
 
 end

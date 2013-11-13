@@ -4,15 +4,17 @@ class P0100f
   def initialize
     @name = "Limb Restraint - used in chair or out of bed (P0100f)"
     @field_type = RADIO
-    @node = "P0100F" 
-
-    @default = "^"
+    @node = "P0100F"     
 
     @options = []
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "Not used")
     @options << FieldOption.new("1", "Used less than daily")
     @options << FieldOption.new("2", "Used daily")
+  end
+
+  def set_values_for_type(klass)
+    return "^"
   end
   
 end

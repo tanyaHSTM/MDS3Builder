@@ -6,11 +6,13 @@ class X0300
     @field_type = RADIO
     @node = "X0300" 
 
-    @default = "1"
-
     @options = []
     @options << FieldOption.new("1", "Male")
     @options << FieldOption.new("2", "Female")
+  end
+
+  def set_values_for_type(klass)
+    return "1"
   end
 
 end

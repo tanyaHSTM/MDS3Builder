@@ -6,10 +6,12 @@ class X0700c
     @field_type = TEXT
     @node = "X0700C" 
 
-    @default = "20130101"
-
     @options = []
     @options << FieldOption.new("")
+  end
+
+  def set_values_for_type(klass)
+    return "20130101"
   end
 
 end

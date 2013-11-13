@@ -4,12 +4,14 @@ class M0300e2
   def initialize
     @name = "Number of the above unstageable pressure ulcers that were present upon admission/entry or reentry (M0300e2)"
     @field_type = TEXT
-    @node = "M0300E2" 
-
-    @default = "^"
+    @node = "M0300E2"     
 
     @options = []
     @options << FieldOption.new("")
+  end
+
+  def set_values_for_type(klass)
+    return "^"
   end
   
 end
