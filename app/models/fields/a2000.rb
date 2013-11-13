@@ -11,7 +11,7 @@ class A2000
     @discharge_ra_default = "20131111"
 
     @options = []
-    @options << FieldOption.new("^")
+    @options << FieldOption.new("")
   end
 
 end

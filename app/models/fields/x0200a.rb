@@ -9,7 +9,7 @@ class X0200a
     @default = "John"
 
     @options = []
-    @options << FieldOption.new("John")
+    @options << FieldOption.new("")
   end
 
 end

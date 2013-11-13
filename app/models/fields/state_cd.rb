@@ -9,7 +9,7 @@ class StateCd
     @default = "CO"
 
     @options = []
-    @options << FieldOption.new("CO")
+    @options << FieldOption.new("")
   end
 
 end

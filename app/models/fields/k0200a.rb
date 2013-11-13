@@ -10,7 +10,7 @@ class K0200a
     @default = "72"
 
     @options = []
-    @options << FieldOption.new("72")
+    @options << FieldOption.new("")
   end
 
 end

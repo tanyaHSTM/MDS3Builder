@@ -9,7 +9,7 @@ class A0500c
     @default = "Doe"
 
     @options = []
-    @options << FieldOption.new("Doe")
+    @options << FieldOption.new("")
   end
 
 end

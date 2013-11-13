@@ -9,7 +9,7 @@ class A1300c
     @default = "JD"
 
     @options = []
-    @options << FieldOption.new("JD")
+    @options << FieldOption.new("")
   end
 
 end
