@@ -1,5 +1,5 @@
 class P0100e
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Trunk Restraint - used in chair or out of bed (P0100e)"

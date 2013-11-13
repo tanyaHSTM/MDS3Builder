@@ -2,20 +2,7 @@
   <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
   <h2><%= "#{@assessment.class} Assessment".sub('Mds', '').sub('Ra', '') %></h2>
   <% @assessment.klasses.each do |klass| %>
-    <% if @assessment.class == MdsAdmission then @default = defined?(klass.admission_default) ? klass.admission_default : klass.default %>
-    <% elsif @assessment.class == MdsQuarterly then @default = defined?(klass.quarterly_default) ? klass.quarterly_default : klass.default %>
-    <% elsif @assessment.class == MdsAnnual then @default = defined?(klass.annual_default) ? klass.annual_default : klass.default %>
-    <% elsif @assessment.class == MdsSignificantChange then @default = defined?(klass.significant_change_default) ? klass.significant_change_default : klass.default %>
-    <% elsif @assessment.class == CorrectionOfAdmission then @default = defined?(klass.cr_admission_default) ? klass.cr_admission_default : klass.default %>
-    <% elsif @assessment.class == MdsEntry then @default = defined?(klass.entry_default) ? klass.entry_default : klass.default %>
-    <% elsif @assessment.class == MdsDischargeRna then @default = defined?(klass.discharge_rna_default) ? klass.discharge_rna_default : klass.default %>
-    <% elsif @assessment.class == MdsDischargeRa then @default = defined?(klass.discharge_ra_default) ? klass.discharge_ra_default : klass.default %>
-    <% elsif @assessment.class == MdsPps5Day then @default = defined?(klass.pps5_day_default) ? klass.pps5_day_default : klass.default %>
-    <% elsif @assessment.class == MdsPps14Day then @default = defined?(klass.pps14_day_default) ? klass.pps14_day_default : klass.default %>
-    <% elsif @assessment.class == MdsPps30Day then @default = defined?(klass.pps30_day_default) ? klass.pps30_day_default : klass.default %>
-    <% elsif @assessment.class == MdsPps60Day then @default = defined?(klass.pps60_day_default) ? klass.pps60_day_default : klass.default %>
-    <% elsif @assessment.class == MdsPps90Day then @default = defined?(klass.pps90_day_default) ? klass.pps90_day_default : klass.default %>
-    <% end %>
+     <% @default = klass.set_values_for_type("#{@assessment.class}") %>
       <h3><%= if defined? klass.title then "#{klass.title}" end %></h3><br>
         <strong><%=klass.name%></strong>
     <% if klass.field_type == DROPDOWN %>

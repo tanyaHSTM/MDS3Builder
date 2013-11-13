@@ -1,5 +1,5 @@
 class J1400
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Health Conditions"
@@ -8,12 +8,14 @@ class J1400
     @field_type = RADIO
     @node = "J1400"
 
-    @default = "^"
-
     @options = []
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")
+  end
+
+  def set_values_for_type(klass)
+    return "^"
   end
 
 end

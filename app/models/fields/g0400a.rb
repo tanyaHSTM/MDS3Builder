@@ -1,12 +1,10 @@
 class G0400a
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Range of Motion - Upper extremity (shoulder, elbow, wrist, hand) (G0400a)"
     @field_type = RADIO
     @node = "G0400A" 
-
-    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")
@@ -15,4 +13,8 @@ class G0400a
     @options << FieldOption.new("2", "Impairment on both sides")
   end
   
+  def set_values_for_type(klass)
+    return "^"
+  end
+
 end

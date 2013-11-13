@@ -1,5 +1,5 @@
 class P0100b
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Restraints"

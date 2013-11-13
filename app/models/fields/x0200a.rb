@@ -1,5 +1,5 @@
 class X0200a
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "First Name (X0200a)"

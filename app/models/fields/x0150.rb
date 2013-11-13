@@ -1,5 +1,5 @@
 class X0150
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Correction Request"

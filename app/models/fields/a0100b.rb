@@ -1,15 +1,17 @@
 class A0100b 
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Gov ID (A0100b)"
     @field_type = TEXT
     @node = "A0100B" 
-    
-    @default = "rock1"
 
     @options = []
     @options << FieldOption.new("")
+  end
+
+  def set_values_for_type(klass)
+    return "rock1"
   end
   
 end

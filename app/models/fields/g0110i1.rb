@@ -1,12 +1,10 @@
 class G0110i1
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Toilet Use (Self Performance) - How resident's use the toilet room, commode, bed pan, or urinal. (G0110i1)"
     @field_type = DROPDOWN
     @node = "G0110I1"
-
-    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")
@@ -18,5 +16,10 @@ class G0110i1
     @options << FieldOption.new("7", "Activity occred only once or twice - activity occured 2 or fewer times")
     @options << FieldOption.new("8", "Activity did not occur - activity occured 2 or fewer times")
   end
+
+  def set_values_for_type(klass)
+    return "^"
+  end
+
 
 end

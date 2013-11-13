@@ -1,5 +1,5 @@
 class X0600d 
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Is this a Swing Bed clinical change assessment? (X0600d) (Complete only if X0150 = Swing Bed)"

@@ -1,5 +1,5 @@
 class I2300
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Active Diagnosis"

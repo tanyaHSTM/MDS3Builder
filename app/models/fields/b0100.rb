@@ -1,5 +1,5 @@
 class B0100 
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Hearing, Speech, Vision"
@@ -7,12 +7,14 @@ class B0100
     @field_type = RADIO
     @node = "B0100" 
 
-    @default = "^"
-
     @options = []
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("00", "No")
     @options << FieldOption.new("01", "Yes -> Skip to G0110, ADL Assistance")
+  end
+
+  def set_values_for_type(klass)
+    return "^"
   end
 
 end

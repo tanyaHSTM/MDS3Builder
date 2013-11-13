@@ -1,5 +1,5 @@
 class N04010f
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Antibiotic (N04010f)"

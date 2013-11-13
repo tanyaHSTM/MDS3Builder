@@ -1,5 +1,5 @@
 class N04010d
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Hypnotic (N04010d)"

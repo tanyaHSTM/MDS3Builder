@@ -1,5 +1,5 @@
 class X0600c 
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "PPS Other Medicare Required Assessment (X0600c)"

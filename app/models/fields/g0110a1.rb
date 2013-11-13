@@ -1,5 +1,5 @@
 class G0110a1
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Functional Status"
@@ -7,8 +7,6 @@ class G0110a1
              body while in bed or alternate sleep furniture. (G0110a1)"
     @field_type = DROPDOWN
     @node = "G0110A1"
-
-    @default = "^"
 
     @options = []
     @options << FieldOption.new("^", "NA")
@@ -20,5 +18,10 @@ class G0110a1
     @options << FieldOption.new("7", "Activity occred only once or twice - activity occured 2 or fewer times")
     @options << FieldOption.new("8", "Activity did not occur - activity occured 2 or fewer times")
   end
+
+  def set_values_for_type(klass)
+    return "^"
+  end
+
 
 end

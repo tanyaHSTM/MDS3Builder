@@ -1,5 +1,5 @@
 class N04010b
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Antianxiety (N04010b)"

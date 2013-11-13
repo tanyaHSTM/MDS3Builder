@@ -1,5 +1,5 @@
 class M0210
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Skin Conditions"
@@ -7,12 +7,14 @@ class M0210
     @field_type = RADIO
     @node = "M0210" 
 
-    @default = "^"
-
     @options = []
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No - Skip to the Next Section")
     @options << FieldOption.new("1", "Yes - Continue to M0300, Current Number of Unhealed Pressure Ulcers at Each Stage.")
+  end
+
+  def set_values_for_type(klass)
+    return "^"
   end
   
 end

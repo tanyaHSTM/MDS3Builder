@@ -1,5 +1,5 @@
 class O0400c4
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Physical Therapy - Number of days this therapy was administered for at least 15 minutes 

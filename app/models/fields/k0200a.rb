@@ -1,5 +1,5 @@
 class K0200a
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Swallowing/Nutritional Status"
@@ -7,10 +7,12 @@ class K0200a
     @field_type = TEXT
     @node = "K0200A"
 
-    @default = "72"
-
     @options = []
     @options << FieldOption.new("")
+  end
+
+  def set_values_for_type(klass)
+    return "72"
   end
 
 end

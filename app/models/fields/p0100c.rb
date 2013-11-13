@@ -1,5 +1,5 @@
 class P0100c
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Limb Restraint - used in bed (P0100c)"

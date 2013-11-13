@@ -1,5 +1,5 @@
 class O0400b4
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Special Treaments, Procedures and Programs"

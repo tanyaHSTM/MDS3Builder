@@ -1,5 +1,5 @@
 class X0700c
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Entry Date (Complete only if X0600f = 01) (format = yyyyddmm) (X0700c)"

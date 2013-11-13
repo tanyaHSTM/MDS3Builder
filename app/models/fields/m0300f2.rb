@@ -1,5 +1,5 @@
 class M0300f2
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Number of above unstageable pressure ulcers that were present upon admission/entry or reentry (M0300f2)"

@@ -1,27 +1,11 @@
 class ItmSbstCd 
-  attr_reader :title, :options, :name, :field_type, :node, :admission_default, :quarterly_default, :annual_default, :significant_change_default, 
-              :cr_admission_default, :entry_default, :discharge_rna_default, :discharge_ra_default, :pps5_day_default, :pps14_day_default, :pps30_day_default, 
-              :pps60_day_default, :pps90_day_default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Record Information"
     @name = "ITM_SBST_CD"
   	@field_type = DROPDOWN
   	@node = "ITM_SBST_CD" 
-
-    @admission_default = "NC"
-    @quarterly_default = "NQ"
-    @annual_default = "NC"
-    @significant_change_default = "NQ"
-    @cr_admission_default = "NC"
-    @entry_default = "NT"
-    @discharge_rna_default = "ND"
-    @discharge_ra_default = "ND"
-    @pps5_day_default = "NP"
-    @pps14_day_default = "NP"
-    @pps30_day_default = "NP"
-    @pps60_day_default = "NP"
-    @pps90_day_default = "NP"
 
   	@options = []
   	@options << FieldOption.new("NC", "Admission, Annual, Significant Change")
@@ -30,6 +14,24 @@ class ItmSbstCd
   	@options << FieldOption.new("ND", "Discharge - Return Anticipated/Return not Anticipated")
     @options << FieldOption.new("NP", "Nursing Home PPS")
 
+  end
+
+  def set_values_for_type(klass)
+    case klass
+    when "MdsAdmission" then return "NC"
+    when "MdsQuarterly" then return "NQ"
+    when "MdsAnnual" then return "NC"
+    when "MdsSignificantChange" then return "NQ"
+    when "CorrectionOfAdmission" then return "NC"
+    when "MdsEntry" then return "NT"
+    when "MdsDischargeRna" then return "ND"
+    when "MdsDischargeRa" then return "ND"
+    when "MdsPps5Day" then return "NP"
+    when "MdsPps14Day" then return "NP"
+    when "MdsPps30Day" then return "NP"
+    when "MdsPps60Day" then return "NP"
+    when "MdsPps90Day" then return "NP"
+    end
   end
 
 end

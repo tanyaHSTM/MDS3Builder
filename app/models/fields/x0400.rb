@@ -1,5 +1,5 @@
 class X0400
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Bith Date (format = yyyyddmm) (X0400)"

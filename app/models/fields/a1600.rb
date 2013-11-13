@@ -1,5 +1,5 @@
 class A1600 
-  attr_reader :title, :options, :name, :field_type, :node, :default
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
     @title = "Stay Information"
@@ -7,10 +7,12 @@ class A1600
     @field_type = TEXT
     @node = "A1600" 
 
-    @default = "20130101"
-
     @options = []
     @options << FieldOption.new("")
+  end
+
+  def set_values_for_type(klass)
+    return "20130101"
   end
 
 end

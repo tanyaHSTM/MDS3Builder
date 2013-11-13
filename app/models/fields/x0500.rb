@@ -1,5 +1,5 @@
 class X0500 
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Social Security Number (X0500)"

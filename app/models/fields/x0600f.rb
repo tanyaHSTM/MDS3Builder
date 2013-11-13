@@ -1,5 +1,5 @@
 class X0600f 
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Entry/discharge reporting (X0600f)"

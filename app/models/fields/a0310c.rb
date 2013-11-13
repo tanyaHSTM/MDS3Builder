@@ -1,5 +1,5 @@
 class A0310c 
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "PPS Other Medicare Required Assessment (A0310c)"
@@ -14,6 +14,10 @@ class A0310c
     @options << FieldOption.new("2", "End of therapy aseessment")
     @options << FieldOption.new("3", "Both end and start of therapy aseessment")
     @options << FieldOption.new("4", "Change of therapy assessment")    
+  end
+
+  def set_values_for_type(klass)
+    return "0"
   end
 
 end

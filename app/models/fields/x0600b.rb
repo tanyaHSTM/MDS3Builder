@@ -1,5 +1,5 @@
 class X0600b 
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "PPS Assessment (X0600b)"

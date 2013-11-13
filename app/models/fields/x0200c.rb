@@ -1,5 +1,5 @@
 class X0200c
-  attr_reader :options, :name, :field_type, :node, :default
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Last Name (X0200c)"
