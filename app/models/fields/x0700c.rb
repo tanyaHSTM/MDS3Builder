@@ -2,7 +2,7 @@ class X0700c
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Entry Date (Complete only if X0600f = 01) (format = yyyyddmm) (X0700c)"
+    @name = "Entry Date (Complete only if X0600f = 01) (format = yyyymmdd) (X0700c)"
     @field_type = TEXT
     @node = "X0700C" 
 
@@ -11,7 +11,8 @@ class X0700c
   end
 
   def set_values_for_type(klass)
-    return Time.now.strftime("%Y%d%m").to_s
+    date = Date.today - 15.days
+    return date.strftime("%Y%m%d")
   end
 
 end

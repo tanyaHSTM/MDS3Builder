@@ -38,7 +38,8 @@ class A0050
     when "InactivationOfPps14Day" then return "3"
     when "InactivationOfPps30Day" then return "3"
     when "InactivationOfPps60Day" then return "3"
-    when "InactivationOfPps90Day" then return "3"   
+    when "InactivationOfPps90Day" then return "3"  
+    when "InactivationOfPpsCorrection" then return "3" 
     else return "1"
     end
   end

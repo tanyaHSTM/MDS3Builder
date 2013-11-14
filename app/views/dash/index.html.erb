@@ -14,22 +14,6 @@
   <%= link_to "Inactivation of Change in Status", new_assessment_path({type: "InactivationOfSignificantChange"}), class: "btn btn-submit" %><br><br>
 </div>
 
-<h2>Entry and Discharge Records</h2>
-<div align="center">
-  <%= link_to "Entry", new_assessment_path({type: "Entry"}), class: "btn btn-submit" %>
-  <%= link_to "Correction of Entry", new_assessment_path({type: "CorrectionOfEntry"}), class: "btn btn-submit" %>
-  <%= link_to "Inactivation of Entry", new_assessment_path({type: "InactivationOfEntry"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Discharge - return not anticipated", new_assessment_path({type: "DischargeRna"}), class: "btn btn-submit" %>
-  <%= link_to "Correction of Discharge - return not anticipated", new_assessment_path({type: "CorrectionOfDischargeRna"}), class: "btn btn-submit" %>
-  <%= link_to "Inactivation of Discharge - return not anticipated", new_assessment_path({type: "InactivationOfDischargeRna"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Discharge - return anticipated", new_assessment_path({type: "DischargeRa"}), class: "btn btn-submit" %>
-  <%= link_to "Correction of Discharge - return anticipated",new_assessment_path({type: "CorrectionOfDischargeRa"}), class: "btn btn-submit" %>
-  <%= link_to "Inactivation of Discharge - return anticipated",new_assessment_path({type: "InactivationOfDischargeRa"}), class: "btn btn-submit" %><br><br>
-  <%= link_to "Death", new_assessment_path({type: "Death"}), class: "btn btn-submit" %> 
-  <%= link_to "Correction of Death", new_assessment_path({type: "CorrectionOfDeath"}), class: "btn btn-submit" %>
-  <%= link_to "Inactivation of Death", new_assessment_path({type: "InactivationOfDeath"}), class: "btn btn-submit" %><br><br>
-</div>
-
 <h2>PPS Assessmetns</h2>
 <div align="center">
   <%= link_to "PPS 5-day", new_assessment_path({type: "Pps5Day"}), class: "btn btn-submit" %>
@@ -48,4 +32,20 @@
   <%= link_to "Correction of PPS 90-day", new_assessment_path({type: "CorrectionOfPps90Day"}), class: "btn btn-submit" %>
   <%= link_to "Inactivation of PPS 90-day", new_assessment_path({type: "InactivationOfPps90Day"}), class: "btn btn-submit" %><br><br>
   <%= link_to "Inactivation of PPS Correction", new_assessment_path({type: "InactivationOfPpsCorrection"}), class: "btn btn-submit" %><br><br>
+</div>
+
+<h2>Entry and Discharge Records</h2>
+<div align="center">
+  <%= link_to "Entry", new_assessment_path({type: "Entry"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of Entry", new_assessment_path({type: "CorrectionOfEntry"}), class: "btn btn-submit" %>
+  <%= link_to "Inactivation of Entry", new_assessment_path({type: "InactivationOfEntry"}), class: "btn btn-submit" %><br><br>
+  <%= link_to "Discharge - return not anticipated", new_assessment_path({type: "DischargeRna"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of Discharge - return not anticipated", new_assessment_path({type: "CorrectionOfDischargeRna"}), class: "btn btn-submit" %>
+  <%= link_to "Inactivation of Discharge - return not anticipated", new_assessment_path({type: "InactivationOfDischargeRna"}), class: "btn btn-submit" %><br><br>
+  <%= link_to "Discharge - return anticipated", new_assessment_path({type: "DischargeRa"}), class: "btn btn-submit" %>
+  <%= link_to "Correction of Discharge - return anticipated",new_assessment_path({type: "CorrectionOfDischargeRa"}), class: "btn btn-submit" %>
+  <%= link_to "Inactivation of Discharge - return anticipated",new_assessment_path({type: "InactivationOfDischargeRa"}), class: "btn btn-submit" %><br><br>
+  <%= link_to "Death", new_assessment_path({type: "Death"}), class: "btn btn-submit" %> 
+  <%= link_to "Correction of Death", new_assessment_path({type: "CorrectionOfDeath"}), class: "btn btn-submit" %>
+  <%= link_to "Inactivation of Death", new_assessment_path({type: "InactivationOfDeath"}), class: "btn btn-submit" %><br><br>
 </div>

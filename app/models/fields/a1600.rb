@@ -3,7 +3,7 @@ class A1600
 
   def initialize
     @title = "Stay Information"
-    @name = "Entry Date (date of this admission/entry or reentry into the facility) (format = yyyyddmm) (A1600)"
+    @name = "Entry Date (date of this admission/entry or reentry into the facility) (format = yyyymmdd) (A1600)"
     @field_type = TEXT
     @node = "A1600" 
 
@@ -12,7 +12,8 @@ class A1600
   end
 
   def set_values_for_type(klass)
-    return Time.now.strftime("%Y%d%m")
+    date = Date.today - 15.days
+    return date.strftime("%Y%m%d")
   end
 
 end

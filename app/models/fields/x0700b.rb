@@ -2,7 +2,7 @@ class X0700b
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Discharge Date (format = yyyyddmm) (X0700b) (Complete only if X0600F = Discharge or Death)"
+    @name = "Discharge Date (format = yyyymmdd) (X0700b) (Complete only if X0600F = Discharge or Death)"
     @field_type = TEXT
     @node = "X0700b" 
 
@@ -12,13 +12,14 @@ class X0700b
 
 
   def set_values_for_type(klass)
+    date = Date.today - 15.days
     case klass
-    when "CorrectionOfDischargeRna" then return "20131111"
-    when "CorrectionOfDischargeRa" then return "20131111"
-    when "CorrectionOfDeath" then return "20131111"
-    when "InactivationOfDischargeRna" then return "20131111"
-    when "InactivationOfDischargeRa" then return "20131111"
-    when "InactivationOfDeath" then return "20131111"  
+    when "CorrectionOfDischargeRna" then return date.strftime("%Y%m%d")
+    when "CorrectionOfDischargeRa" then return date.strftime("%Y%m%d")
+    when "CorrectionOfDeath" then return date.strftime("%Y%m%d")
+    when "InactivationOfDischargeRna" then return date.strftime("%Y%m%d")
+    when "InactivationOfDischargeRa" then return date.strftime("%Y%m%d")
+    when "InactivationOfDeath" then return date.strftime("%Y%m%d")
     else return "^"
     end
   end

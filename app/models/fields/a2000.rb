@@ -2,7 +2,7 @@ class A2000
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Discharge Date (format = yyyyddmm) (A2000) (Complete only if A0310F = Discharge or Death)"
+    @name = "Discharge Date (format = yyyymmdd) (A2000) (Complete only if A0310F = Discharge or Death)"
     @field_type = TEXT
     @node = "A2000" 
 
@@ -12,13 +12,14 @@ class A2000
 
 
   def set_values_for_type(klass)
+    date = Date.today - 15.days
     case klass
-    when "MdsDischargeRna" then return Time.now.strftime("%Y%d%m").to_s
-    when "MdsDischargeRa" then return Time.now.strftime("%Y%d%m").to_s
-    when "MdsDeath" then return Time.now.strftime("%Y%d%m").to_s
-    when "CorrectionOfDischargeRna" then return Time.now.strftime("%Y%d%m").to_s
-    when "CorrectionOfDischargeRa" then return Time.now.strftime("%Y%d%m").to_s
-    when "CorrectionOfDeath" then return Time.now.strftime("%Y%d%m").to_s
+    when "MdsDischargeRna" then return date.strftime("%Y%m%d")
+    when "MdsDischargeRa" then return date.strftime("%Y%m%d")
+    when "MdsDeath" then return date.strftime("%Y%m%d")
+    when "CorrectionOfDischargeRna" then return date.strftime("%Y%m%d")
+    when "CorrectionOfDischargeRa" then return date.strftime("%Y%m%d")
+    when "CorrectionOfDeath" then return date.strftime("%Y%m%d")
     else return "^"
     end
   end
