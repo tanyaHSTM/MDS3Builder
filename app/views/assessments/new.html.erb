@@ -1,6 +1,6 @@
 <form action="/assessments/" method="post">
   <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
-  <h2><%= "#{@assessment.class} Assessment".sub('Mds', '').sub('Ra', '') %></h2>
+  <h2><%= "#{@assessment.title}" %></h2>
   <% @assessment.klasses.each do |klass| %>
      <% @default = klass.set_values_for_type("#{@assessment.class}") %>
       <h3><%= if defined? klass.title then "#{klass.title}" end %></h3><br>

@@ -12,7 +12,7 @@ class A1600
   end
 
   def set_values_for_type(klass)
-    return "20130101"
+    return Time.now.strftime("%Y%d%m")
   end
 
 end

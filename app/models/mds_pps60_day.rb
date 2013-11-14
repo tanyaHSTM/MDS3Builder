@@ -2,6 +2,10 @@ require 'assessment'
 
 class MdsPps60Day < Assessment
 
+  def title
+  	"60 Day PPS Assessment"
+  end
+
   def fields
     super + %w( B0100 B0200 B0300 B1000 B1200 E0200a E0800 G0110a1 G0110b1 G0110e1 G0110g1 G0110h1 G0110i1 G0400a G0400b H0100a
               H0300 I2300 I2500 I8000a I8000b I8000c I8000d I8000e I8000f I8000g I8000h I8000i I8000j J1400 K0200a 

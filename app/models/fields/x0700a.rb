@@ -11,7 +11,7 @@ class X0700a
   end
 
   def set_values_for_type(klass)
-    return "20130202"
+    return Time.now.strftime("%Y%d%m").to_s
   end
 
 end
