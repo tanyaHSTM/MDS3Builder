@@ -19,7 +19,11 @@ class X0600f
     when "CorrectionOfEntry" then return "01"
     when "CorrectionOfDischargeRna" then return "10"
     when "CorrectionOfDischargeRa" then return "11"
-    when "CorrectionOfDeath" then return "12" 
+    when "CorrectionOfDeath" then return "12"
+    when "InactivationOfEntry" then return "01"
+    when "InactivationOfDischargeRna" then return "10"
+    when "InactivationOfDischargeRa" then return "11"
+    when "InactivationOfDeath" then return "12"   
     else return "99"
     end
   end

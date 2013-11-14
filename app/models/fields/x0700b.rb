@@ -16,6 +16,9 @@ class X0700b
     when "CorrectionOfDischargeRna" then return "20131111"
     when "CorrectionOfDischargeRa" then return "20131111"
     when "CorrectionOfDeath" then return "20131111"
+    when "InactivationOfDischargeRna" then return "20131111"
+    when "InactivationOfDischargeRa" then return "20131111"
+    when "InactivationOfDeath" then return "20131111"  
     else return "^"
     end
   end
