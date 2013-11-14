@@ -21,7 +21,11 @@ class X0600a
     when "CorrectionOfAdmission" then return "01"
     when "CorrectionOfQuarterly" then return "02"
     when "CorrectionOfAnnual" then return "03"
-    when "CorrectionOfSignificantChange" then return "04" 
+    when "CorrectionOfSignificantChange" then return "04"
+    when "InactivationOfAdmission" then return "01"
+    when "InactivationOfQuarterly" then return "02"
+    when "InactivationOfAnnual" then return "03"
+    when "InactivationOfSignificantChange" then return "04"    
     else return "99"
     end
   end

@@ -24,6 +24,12 @@ class X0600b
     when "CorrectionOfPps30Day" then return "03" 
     when "CorrectionOfPps60Day" then return "04"
     when "CorrectionOfPps90Day" then return "05"
+    when "InactivationOfPps5Day" then return "01"
+    when "InactivationOfPps14Day" then return "02"
+    when "InactivationOfPps30Day" then return "03"
+    when "InactivationOfPps60Day" then return "04" 
+    when "InactivationOfPps90Day" then return "05"
+    when "InactivationOfPpsCorrection" then return "07" 
     else return "99"
     end
   end

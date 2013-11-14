@@ -13,9 +13,12 @@ class X0700b
 
   def set_values_for_type(klass)
     case klass
-    when "CorrectionOfDischargeRna" then return Time.now.strftime("%Y%d%m").to_s
-    when "CorrectionOfDischargeRa" then return Time.now.strftime("%Y%d%m").to_s
-    when "CorrectionOfDeath" then return Time.now.strftime("%Y%d%m").to_s
+    when "CorrectionOfDischargeRna" then return "20131111"
+    when "CorrectionOfDischargeRa" then return "20131111"
+    when "CorrectionOfDeath" then return "20131111"
+    when "InactivationOfDischargeRna" then return "20131111"
+    when "InactivationOfDischargeRa" then return "20131111"
+    when "InactivationOfDeath" then return "20131111"  
     else return "^"
     end
   end

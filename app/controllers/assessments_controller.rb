@@ -22,6 +22,10 @@ class AssessmentsController < ApplicationController
     when "CorrectionOfQuarterly" then return CorrectionOfQuarterly.new
     when "CorrectionOfAnnual" then return CorrectionOfAnnual.new
     when "CorrectionOfSignificantChange" then return CorrectionOfSignificantChange.new
+    when "InactivationOfAdmission" then return InactivationOfAdmission.new
+    when "InactivationOfQuarterly" then return InactivationOfQuarterly.new
+    when "InactivationOfAnnual" then return InactivationOfAnnual.new
+    when "InactivationOfSignificantChange" then return InactivationOfSignificantChange.new      
     when "Entry" then return MdsEntry.new
     when "DischargeRna" then return MdsDischargeRna.new
     when "DischargeRa" then return MdsDischargeRa.new
@@ -30,6 +34,10 @@ class AssessmentsController < ApplicationController
     when "CorrectionOfDischargeRna" then return CorrectionOfDischargeRna.new
     when "CorrectionOfDischargeRa" then return CorrectionOfDischargeRa.new
     when "CorrectionOfDeath" then return CorrectionOfDeath.new
+    when "InactivationOfEntry" then return InactivationOfEntry.new
+    when "InactivationOfDischargeRna" then return InactivationOfDischargeRna.new 
+    when "InactivationOfDischargeRa" then return InactivationOfDischargeRa.new
+    when "InactivationOfDeath" then return InactivationOfDeath.new   
     when "Pps5Day" then return MdsPps5Day.new
     when "Pps14Day" then return MdsPps14Day.new
     when "Pps30Day" then return MdsPps30Day.new
@@ -40,6 +48,12 @@ class AssessmentsController < ApplicationController
     when "CorrectionOfPps30Day" then return CorrectionOfPps30Day.new
     when "CorrectionOfPps60Day" then return CorrectionOfPps60Day.new
     when "CorrectionOfPps90Day" then return CorrectionOfPps90Day.new
+    when "InactivationOfPps5Day" then return InactivationOfPps5Day.new
+    when "InactivationOfPps14Day" then return InactivationOfPps14Day.new 
+    when "InactivationOfPps30Day" then return InactivationOfPps30Day.new
+    when "InactivationOfPps60Day" then return InactivationOfPps60Day.new 
+    when "InactivationOfPps90Day" then return InactivationOfPps90Day.new 
+    when "InactivationOfPpsCorrection" then return InactivationOfPpsCorrection.new 
     end
   end
 

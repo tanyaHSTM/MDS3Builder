@@ -13,6 +13,7 @@ class ItmSbstCd
   	@options << FieldOption.new("NT", "Entry, Death in Facility")
   	@options << FieldOption.new("ND", "Discharge - Return Anticipated/Return not Anticipated")
     @options << FieldOption.new("NP", "Nursing Home PPS")
+    @options << FieldOption.new("XX", "Inactivation")
 
   end
 
@@ -25,7 +26,11 @@ class ItmSbstCd
     when "CorrectionOfAdmission" then return "NC"
     when "CorrectionOfQuarterly" then return "NQ"
     when "CorrectionOfAnnual" then return "NC"
-    when "CorrectionOfSignificantChange" then return "NQ"  
+    when "CorrectionOfSignificantChange" then return "NQ"
+    when "InactivationOfAdmission" then return "XX"
+    when "InactivationOfQuarterly" then return "XX"
+    when "InactivationOfAnnual" then return "XX" 
+    when "InactivationOfSignificantChange" then return "XX" 
     when "MdsEntry" then return "NT"
     when "MdsDischargeRna" then return "ND"
     when "MdsDischargeRa" then return "ND"
@@ -33,7 +38,11 @@ class ItmSbstCd
     when "CorrectionOfEntry" then return "NT"
     when "CorrectionOfDischargeRna" then return "ND"
     when "CorrectionOfDischargeRa" then return "ND"
-    when "CorrectionOfDeath" then return "NT" 
+    when "CorrectionOfDeath" then return "NT"
+    when "InactivationOfEntry" then return "XX"
+    when "InactivationOfDischargeRna" then return "XX"
+    when "InactivationOfDischargeRa" then return "XX"
+    when "InactivationOfDeath" then return "XX"  
     when "MdsPps5Day" then return "NP"
     when "MdsPps14Day" then return "NP"
     when "MdsPps30Day" then return "NP"
@@ -44,6 +53,12 @@ class ItmSbstCd
     when "CorrectionOfPps30Day" then return "NP"
     when "CorrectionOfPps60Day" then return "NP"
     when "CorrectionOfPps90Day" then return "NP"
+    when "InactivationOfPps5Day" then return "XX"
+    when "InactivationOfPps14Day" then return "XX"
+    when "InactivationOfPps30Day" then return "XX"
+    when "InactivationOfPps60Day" then return "XX"
+    when "InactivationOfPps90Day" then return "XX"
+    when "InactivationOfPpsCorrection" then return "XX"
     end
   end
 
