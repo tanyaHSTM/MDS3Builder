@@ -3,18 +3,54 @@
     <input type="checkbox" name="orba" id="orba" value="1", style="visibility: hidden">
     <h2>OBRA Assessments</h2>
       <div class="orba_assessments" align="center">
-        <%= link_to "Admission", new_assessment_path({type: "Admission"}), class: "btn btn-submit" %>
-        <%= link_to "Correction of Admission", new_assessment_path({type: "CorrectionOfAdmission"}), class: "btn btn-submit" %>
-        <%= link_to "Inactivation of Admission", new_assessment_path({type: "InactivationOfAdmission"}), class: "btn btn-submit" %><br><br>
-        <%= link_to "Quarterly", new_assessment_path({type: "Quarterly"}), class: "btn btn-submit" %>
-        <%= link_to "Correction of Quarterly", new_assessment_path({type: "CorrectionOfQuarterly"}), class: "btn btn-submit" %>
-        <%= link_to "Inactivation of Quarterly", new_assessment_path({type: "InactivationOfQuarterly"}), class: "btn btn-submit" %><br><br>
-        <%= link_to "Annual", new_assessment_path({type: "Annual"}), class: "btn btn-submit" %>
-        <%= link_to "Correction of Annual", new_assessment_path({type: "CorrectionOfAnnual"}), class: "btn btn-submit" %>
-        <%= link_to "Inactivation of Annual", new_assessment_path({type: "InactivationOfAnnual"}), class: "btn btn-submit" %><br><br>
-        <%= link_to "Change in Status", new_assessment_path({type: "SignificantChange"}), class: "btn btn-submit" %>
-        <%= link_to "Correction of Change in Status", new_assessment_path({type: "CorrectionOfSignificantChange"}), class: "btn btn-submit" %>
-        <%= link_to "Inactivation of Change in Status", new_assessment_path({type: "InactivationOfSignificantChange"}), class: "btn btn-submit" %><br><br>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">Admission</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Admission", new_assessment_path({type: "Admission"})%></li>
+            <li><%= link_to "Correction of Admission", new_assessment_path({type: "CorrectionOfAdmission"})%></li>
+            <li><%= link_to "Inactivation of Admission", new_assessment_path({type: "InactivationOfAdmission"})%></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">Quarterly</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Quarterly", new_assessment_path({type: "Quarterly"})%></li>
+            <li><%= link_to "Correction of Quarterly", new_assessment_path({type: "CorrectionOfQuarterly"})%></li>
+            <li><%= link_to "Inactivation of Quarterly", new_assessment_path({type: "InactivationOfQuarterly"})%></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">Annual</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Annual", new_assessment_path({type: "Annual"})%></li>
+            <li><%= link_to "Correction of Annual", new_assessment_path({type: "CorrectionOfAnnual"})%></li>
+            <li><%= link_to "Inactivation of Annual", new_assessment_path({type: "InactivationOfAnnual"})%></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">Change in Status</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Change in Status", new_assessment_path({type: "SignificantChange"})%></li>
+            <li><%= link_to "Correction of Change in Status", new_assessment_path({type: "CorrectionOfSignificantChange"})%></li>
+            <li><%= link_to "Inactivation of Change in Status", new_assessment_path({type: "InactivationOfSignificantChange"})%></li>
+            </ul>
+        </div><br><br>
       </div>
   </label>
 </div>
@@ -24,22 +60,67 @@
     <input type="checkbox" name="pps" id="pps" value="2", style="visibility: hidden">
     <h2>PPS Assessments</h2>
       <div class="pps_assessments" align="center">
-        <%= link_to "PPS 5-day", new_assessment_path({type: "Pps5Day"}), class: "btn btn-submit" %>
-        <%= link_to "Correction of PPS 5-day", new_assessment_path({type: "CorrectionOfPps5Day"}), class: "btn btn-submit" %>
-        <%= link_to "Inactivation of PPS 5-day", new_assessment_path({type: "InactivationOfPps5Day"}), class: "btn btn-submit" %><br><br>
-        <%= link_to "PPS 14-day", new_assessment_path({type: "Pps14Day"}), class: "btn btn-submit" %>
-        <%= link_to "Correction of PPS 14-day", new_assessment_path({type: "CorrectionOfPps14Day"}), class: "btn btn-submit" %>
-        <%= link_to "Inactivation of PPS 14-day", new_assessment_path({type: "InactivationOfPps14Day"}), class: "btn btn-submit" %><br><br>
-        <%= link_to "PPS 30-day", new_assessment_path({type: "Pps30Day"}), class: "btn btn-submit" %>
-        <%= link_to "Correction of PPS 30-day", new_assessment_path({type: "CorrectionOfPps30Day"}), class: "btn btn-submit" %>
-        <%= link_to "Inactivation of PPS 30-day", new_assessment_path({type: "InactivationOfPps30Day"}), class: "btn btn-submit" %><br><br>
-        <%= link_to "PPS 60-day", new_assessment_path({type: "Pps60Day"}), class: "btn btn-submit" %>
-        <%= link_to "Correction of PPS 60-day", new_assessment_path({type: "CorrectionOfPps60Day"}), class: "btn btn-submit" %>
-        <%= link_to "Inactivation of PPS 60-day", new_assessment_path({type: "InactivationOfPps60Day"}), class: "btn btn-submit" %><br><br>  
-        <%= link_to "PPS 90-day", new_assessment_path({type: "Pps90Day"}), class: "btn btn-submit" %>
-        <%= link_to "Correction of PPS 90-day", new_assessment_path({type: "CorrectionOfPps90Day"}), class: "btn btn-submit" %>
-        <%= link_to "Inactivation of PPS 90-day", new_assessment_path({type: "InactivationOfPps90Day"}), class: "btn btn-submit" %><br><br>
-        <%= link_to "Inactivation of PPS Correction", new_assessment_path({type: "InactivationOfPpsCorrection"}), class: "btn btn-submit" %><br><br>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">PPS 5-day</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "PPS 5-day", new_assessment_path({type: "Pps5Day"})%></li>
+            <li><%= link_to "Correction of PPS 5-day", new_assessment_path({type: "CorrectionOfPps5Day"})%></li>
+            <li><%= link_to "Inactivation of PPS 5-day", new_assessment_path({type: "InactivationOfPps5Day"})%></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">PPS 14-day</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "PPS 14-day", new_assessment_path({type: "Pps14Day"})%></li>
+            <li><%= link_to "Correction of PPS 14-day", new_assessment_path({type: "CorrectionOfPps14Day"})%></li>
+            <li><%= link_to "Inactivation of PPS 14-day", new_assessment_path({type: "InactivationOfPps14Day"})%></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">PPS 30-day</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "PPS 30-day", new_assessment_path({type: "Pps30Day"})%></li>
+            <li><%= link_to "Correction of PPS 30-day", new_assessment_path({type: "CorrectionOfPps30Day"})%></li>
+            <li><%= link_to "Inactivation of PPS 30-day", new_assessment_path({type: "InactivationOfPps30Day"})%></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">PPS 60-day</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "PPS 60-day", new_assessment_path({type: "Pps60Day"})%></li>
+            <li><%= link_to "Correction of PPS 60-day", new_assessment_path({type: "CorrectionOfPps60Day"})%></li>
+            <li><%= link_to "Inactivation of PPS 60-day", new_assessment_path({type: "InactivationOfPps60Day"})%></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">PPS 90-day</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "PPS 90-day", new_assessment_path({type: "Pps90Day"})%></li>
+            <li><%= link_to "Correction of PPS 90-day", new_assessment_path({type: "CorrectionOfPps90Day"})%></li>
+            <li><%= link_to "Inactivation of PPS 90-day", new_assessment_path({type: "InactivationOfPps90Day"})%></li>
+          </ul>
+        </div>
+        <br><br><%= link_to "Inactivation of PPS Correction", new_assessment_path({type: "InactivationOfPpsCorrection"}), class: "btn btn-submit" %><br><br>
       </div>
   </label>
 </div>
@@ -49,18 +130,54 @@
     <input type="checkbox" name="transfers" id="transfers" value="3", style="visibility: hidden">
     <h2>Entry and Discharge Records</h2>
       <div class="transfer_assessments" align="center">
-      <%= link_to "Entry", new_assessment_path({type: "Entry"}), class: "btn btn-submit" %>
-      <%= link_to "Correction of Entry", new_assessment_path({type: "CorrectionOfEntry"}), class: "btn btn-submit" %>
-      <%= link_to "Inactivation of Entry", new_assessment_path({type: "InactivationOfEntry"}), class: "btn btn-submit" %><br><br>
-      <%= link_to "Discharge - return not anticipated", new_assessment_path({type: "DischargeRna"}), class: "btn btn-submit" %>
-      <%= link_to "Correction of Discharge - return not anticipated", new_assessment_path({type: "CorrectionOfDischargeRna"}), class: "btn btn-submit" %>
-      <%= link_to "Inactivation of Discharge - return not anticipated", new_assessment_path({type: "InactivationOfDischargeRna"}), class: "btn btn-submit" %><br><br>
-      <%= link_to "Discharge - return anticipated", new_assessment_path({type: "DischargeRa"}), class: "btn btn-submit" %>
-      <%= link_to "Correction of Discharge - return anticipated",new_assessment_path({type: "CorrectionOfDischargeRa"}), class: "btn btn-submit" %>
-      <%= link_to "Inactivation of Discharge - return anticipated",new_assessment_path({type: "InactivationOfDischargeRa"}), class: "btn btn-submit" %><br><br>
-      <%= link_to "Death", new_assessment_path({type: "Death"}), class: "btn btn-submit" %> 
-      <%= link_to "Correction of Death", new_assessment_path({type: "CorrectionOfDeath"}), class: "btn btn-submit" %>
-      <%= link_to "Inactivation of Death", new_assessment_path({type: "InactivationOfDeath"}), class: "btn btn-submit" %><br><br>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">Entry</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Entry", new_assessment_path({type: "Entry"})%></li>
+            <li><%= link_to "Correction of Entry", new_assessment_path({type: "CorrectionOfEntry"})%></li>
+            <li><%= link_to "Inactivation of Entry", new_assessment_path({type: "InactivationOfEntry"})%></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown" style="white-space: normal">Discharge return not anticipated</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Discharge - return not anticipated", new_assessment_path({type: "DischargeRna"})%></li>
+            <li><%= link_to "Correction of Discharge - return not anticipated", new_assessment_path({type: "CorrectionOfDischargeRna"})%></li>
+            <li><%= link_to "Inactivation of Discharge - return not anticipated", new_assessment_path({type: "InactivationOfDischargeRna"})%></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown" style="white-space: normal">Discharge return anticipated</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Discharge - return anticipated", new_assessment_path({type: "DischargeRa"})%></li>
+            <li><%= link_to "Correction of Discharge - return anticipated",new_assessment_path({type: "CorrectionOfDischargeRa"})%></li>
+            <li><%= link_to "Inactivation of Discharge - return anticipated",new_assessment_path({type: "InactivationOfDischargeRa"})%></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-submit2" data-toggle="dropdown">Death</button>
+          <button type="button" class="btn btn-side dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Death", new_assessment_path({type: "Death"})%></li>
+            <li><%= link_to "Correction of Death", new_assessment_path({type: "CorrectionOfDeath"})%></li>
+            <li><%= link_to "Inactivation of Death", new_assessment_path({type: "InactivationOfDeath"})%></li>
+          </ul>
+        </div>
       </div>
   </label>
 </div>
