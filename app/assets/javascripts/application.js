@@ -13,6 +13,7 @@
 //= require turbolinks
 //= require bootstrap
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= 'dash'
 //= require_tree .
