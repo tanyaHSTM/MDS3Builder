@@ -20,8 +20,6 @@ gem 'nokogiri'
 
 gem "actionpack-xml_parser"
 
-gem "puma"
-
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

@@ -11,7 +11,7 @@ class FacId
   end
 
   def set_values_for_type(klass)
-    return "^"
+    return "whisp"
   end
 
 end
