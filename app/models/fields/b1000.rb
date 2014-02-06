@@ -8,11 +8,11 @@ class B1000
 
     @options = []
     @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("00", "Adequate")
-    @options << FieldOption.new("01", "Impaired")
-    @options << FieldOption.new("02", "Moderately impaired")
-    @options << FieldOption.new("03", "Highly impaired")
-    @options << FieldOption.new("04", "Severely impaired")
+    @options << FieldOption.new("0", "Adequate")
+    @options << FieldOption.new("1", "Impaired")
+    @options << FieldOption.new("2", "Moderately impaired")
+    @options << FieldOption.new("3", "Highly impaired")
+    @options << FieldOption.new("4", "Severely impaired")
   end
 
   def set_values_for_type(klass)

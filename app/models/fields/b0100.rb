@@ -9,8 +9,8 @@ class B0100
 
     @options = []
     @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("00", "No")
-    @options << FieldOption.new("01", "Yes -> Skip to G0110, ADL Assistance")
+    @options << FieldOption.new("0", "No")
+    @options << FieldOption.new("1", "Yes -> Skip to G0110, ADL Assistance")
   end
 
   def set_values_for_type(klass)
