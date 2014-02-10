@@ -14,7 +14,7 @@ class I2300
   end
 
   def set_values_for_type(klass)
-    return "^"
+    return "0"
   end
 
 end

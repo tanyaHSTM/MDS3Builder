@@ -15,7 +15,7 @@ class P0100b
   end
 
   def set_values_for_type(klass)
-    return "^"
+    return "0"
   end
   
 end
