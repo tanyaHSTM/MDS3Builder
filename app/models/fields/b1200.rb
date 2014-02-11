@@ -4,7 +4,7 @@ class B1200
   def initialize
     @name = "Corrective Lenses (Contacts, glasses or maginifying glass) used in completing B100, Vision. (B1200)"
     @field_type = RADIO
-    @node = "B2000" 
+    @node = "B1200" 
 
     @options = []
     @options << FieldOption.new("^", "NA")
