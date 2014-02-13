@@ -1,10 +1,10 @@
-class X0700a
+class A2200 
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Assessment Reference Date (Complete only if X0600f = 99) (format = yyyymmdd) (X0700a)"
+    @name = "Previous Assessment Reference Date for Significat Correction (format = yyyymmdd) (A2200)"
     @field_type = TEXT
-    @node = "X0700A" 
+    @node = "A2200" 
 
     @options = []
     @options << FieldOption.new("")
