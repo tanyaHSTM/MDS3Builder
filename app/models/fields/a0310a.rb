@@ -12,8 +12,8 @@ class A0310a
     @options << FieldOption.new("02", "Quarterly review assessment")
     @options << FieldOption.new("03", "Annual assessment")
     @options << FieldOption.new("04", "Significant change in status assessment")
-    #@options << FieldOption.new("05", "Significant correction to prior comprehensive assessment")
-    #@options << FieldOption.new("06", "Significant correction to prior quarterly assessment")
+    @options << FieldOption.new("05", "Significant correction to prior comprehensive assessment")
+    @options << FieldOption.new("06", "Significant correction to prior quarterly assessment")
     @options << FieldOption.new("99", "None of the above")
   end
 
@@ -23,10 +23,10 @@ class A0310a
     when "MdsQuarterly" then return "02"
     when "MdsAnnual" then return "03"
     when "MdsSignificantChange" then return "04"
-    when "CorrectionOfAdmission" then return "01"
-    when "CorrectionOfQuarterly" then return "02"
-    when "CorrectionOfAnnual" then return "03"
-    when "CorrectionOfSignificantChange" then return "04"   
+    when "CorrectionOfAdmission" then return "05"
+    when "CorrectionOfQuarterly" then return "06"
+    when "CorrectionOfAnnual" then return "05"
+    when "CorrectionOfSignificantChange" then return "05"   
     else return "99"
     end
   end

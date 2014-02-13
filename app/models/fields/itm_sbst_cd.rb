@@ -9,7 +9,7 @@ class ItmSbstCd
 
   	@options = []
   	@options << FieldOption.new("NC", "Admission, Annual, Significant Change")
-  	@options << FieldOption.new("NQ", "Quarterly, Significant Correction")
+  	@options << FieldOption.new("NQ", "Quarterly")
   	@options << FieldOption.new("NT", "Entry, Death in Facility")
   	@options << FieldOption.new("ND", "Discharge - Return Anticipated/Return not Anticipated")
     @options << FieldOption.new("NP", "Nursing Home PPS")
