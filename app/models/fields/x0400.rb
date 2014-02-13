@@ -11,7 +11,8 @@ class X0400
   end
 
   def set_values_for_type(klass)
-    return "19400112"
+    date = Date.today - 80.years
+    return date.strftime("%Y%m%d")
   end
   
 end
