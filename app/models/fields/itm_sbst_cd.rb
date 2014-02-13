@@ -26,7 +26,7 @@ class ItmSbstCd
     when "CorrectionOfAdmission" then return "NC"
     when "CorrectionOfQuarterly" then return "NQ"
     when "CorrectionOfAnnual" then return "NC"
-    when "CorrectionOfSignificantChange" then return "NQ"
+    when "CorrectionOfSignificantChange" then return "NC"
     when "InactivationOfAdmission" then return "XX"
     when "InactivationOfQuarterly" then return "XX"
     when "InactivationOfAnnual" then return "XX" 
