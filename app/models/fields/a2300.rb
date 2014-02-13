@@ -11,8 +11,24 @@ class A2300
   end
 
   def set_values_for_type(klass)
-    date = Date.today - 10.days
-    return date.strftime("%Y%m%d")
+    date1 = Date.today - 10.days
+    date2 = Date.today - 5.days
+    case klass
+    when "MdsAdmission" then return date1.strftime("%Y%m%d")
+    when "MdsQuarterly" then return date1.strftime("%Y%m%d")
+    when "MdsAnnual" then return date1.strftime("%Y%m%d")
+    when "MdsSignificantChange" then return date1.strftime("%Y%m%d")
+    when "MdsEntry" then return date1.strftime("%Y%m%d")
+    when "MdsDischargeRna" then return date1.strftime("%Y%m%d")
+    when "MdsDischargeRa" then return date1.strftime("%Y%m%d")
+    when "MdsDeath" then return date1.strftime("%Y%m%d")
+    when "MdsPps5Day" then return date1.strftime("%Y%m%d")
+    when "MdsPps14Day" then return date1.strftime("%Y%m%d")
+    when "MdsPps30Day" then return date1.strftime("%Y%m%d")
+    when "MdsPps60Day" then return date1.strftime("%Y%m%d")
+    when "MdsPps90Day" then return date1.strftime("%Y%m%d")
+    else return date2.strftime("%Y%m%d")
+    end
   end
 
 end
