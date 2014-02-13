@@ -22,7 +22,7 @@ class ItmSbstCd
     when "MdsAdmission" then return "NC"
     when "MdsQuarterly" then return "NQ"
     when "MdsAnnual" then return "NC"
-    when "MdsSignificantChange" then return "NQ"
+    when "MdsSignificantChange" then return "NC"
     when "CorrectionOfAdmission" then return "NC"
     when "CorrectionOfQuarterly" then return "NQ"
     when "CorrectionOfAnnual" then return "NC"
