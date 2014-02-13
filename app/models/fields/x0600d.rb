@@ -4,7 +4,7 @@ class X0600d
   def initialize
     @name = "Is this a Swing Bed clinical change assessment? (X0600d) (Complete only if X0150 = Swing Bed)"
     @field_type = DROPDOWN
-    @node = "X0600d"    
+    @node = "X0600D"    
 
     @options = []
     @options << FieldOption.new("0", "No")
