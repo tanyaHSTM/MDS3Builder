@@ -1,8 +1,8 @@
 class AssessmentsController < ApplicationController
 
-	def new
+  def new
     @assessment = get_correct_assessment_type
-	end
+  end
 
   def create
     assessment = Assessment.new

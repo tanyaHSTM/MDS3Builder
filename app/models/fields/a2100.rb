@@ -22,6 +22,7 @@ class A2100
   def set_values_for_type(klass)
     case klass
     when "MdsDeath" then return "08"
+    when "CorrectionOfDeath" then return "08"
     else return "01"
     end
   end
