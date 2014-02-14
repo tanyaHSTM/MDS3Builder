@@ -12,7 +12,11 @@ class X0700c
 
   def set_values_for_type(klass)
     date = Date.today - 15.days
-    return date.strftime("%Y%m%d")
+    case klass
+    when "CorrectionOfEntry" then return date.strftime("%Y%m%d")
+    when "InactivationOfEntry" then return date.strftime("%Y%m%d")
+    else return "^"
+    end
   end
 
 end
