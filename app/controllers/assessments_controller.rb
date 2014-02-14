@@ -53,7 +53,6 @@ class AssessmentsController < ApplicationController
     when "InactivationOfPps30Day" then return InactivationOfPps30Day.new
     when "InactivationOfPps60Day" then return InactivationOfPps60Day.new 
     when "InactivationOfPps90Day" then return InactivationOfPps90Day.new 
-    when "InactivationOfPpsCorrection" then return InactivationOfPpsCorrection.new 
     end
   end
 

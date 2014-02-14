@@ -12,7 +12,7 @@ class A2000
 
 
   def set_values_for_type(klass)
-    date = Date.today - 15.days
+    date = Date.today - 13.days
     case klass
     when "MdsDischargeRna" then return date.strftime("%Y%m%d")
     when "MdsDischargeRa" then return date.strftime("%Y%m%d")

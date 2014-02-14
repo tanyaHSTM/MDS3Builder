@@ -12,7 +12,7 @@ class X0700b
 
 
   def set_values_for_type(klass)
-    date = Date.today - 15.days
+    date = Date.today - 13.days
     case klass
     when "CorrectionOfDischargeRna" then return date.strftime("%Y%m%d")
     when "CorrectionOfDischargeRa" then return date.strftime("%Y%m%d")
