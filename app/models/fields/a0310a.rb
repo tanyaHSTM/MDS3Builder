@@ -26,7 +26,7 @@ class A0310a
     when "CorrectionOfAdmission" then return "05"
     when "CorrectionOfQuarterly" then return "06"
     when "CorrectionOfAnnual" then return "05"
-    when "CorrectionOfSignificantChange" then return "05"   
+    when "CorrectionOfSignificantChange" then return "04"   
     else return "99"
     end
   end
