@@ -21,7 +21,7 @@
     <% elsif klass.field_type == RADIO %>
       <div class="<%=input_type(klass.field_type)%>">
         <% klass.options.each do |option| %>
-          <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
+          <label class="checkbox" for="<%=klass.node+"_"+option.value%>"><%=option.description%>
           <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>" <%if option.value==@default%>checked><%else%>><%end%></label>
         <% end %>
       </div>

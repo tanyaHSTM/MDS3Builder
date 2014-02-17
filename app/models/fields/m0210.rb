@@ -10,7 +10,7 @@ class M0210
     @options = []
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No - Skip to the Next Section")
-    @options << FieldOption.new("1", "Yes - Continue to M0300, Current Number of Unhealed Pressure Ulcers at Each Stage.")
+    @options << FieldOption.new("1", "Yes - Continue to M0300")
   end
 
   def set_values_for_type(klass)
