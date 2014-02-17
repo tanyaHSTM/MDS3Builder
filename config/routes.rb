@@ -3,7 +3,8 @@ MDS3Builder::Application.routes.draw do
   resources :fields
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  match '/about',   to: 'dash#about',   via: 'get'
+  match '/about',        to: 'dash#about',        via: 'get'
+  match '/test_cases',   to: 'dash#test_cases',   via: 'get'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

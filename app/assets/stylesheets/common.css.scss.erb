@@ -139,6 +139,48 @@ p {
   line-height: 1.7em;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  display:inline-block;
+ }
+
+span{
+  display:inline-block;
+  padding-right:100px;
+  vertical-align: top;
+  -moz-column-count:2; /* Firefox */
+  -webkit-column-count:2; /* Safari and Chrome */
+  column-count:2;
+  -moz-column-gap:100px; /* Firefox */
+  -webkit-column-gap:100px; /* Safari and Chrome */
+  column-gap:100px;
+}
+
+#green li a {
+    color: green;
+    &:hover {
+      color: green;
+    }
+  }
+
+#red li a {
+  color: red;
+    &:hover {
+      color: red;
+    }
+  }
+
+#grey li a {
+  color: $gray;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+
 /* header */
 
 #logo {

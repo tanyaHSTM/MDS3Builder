@@ -4,7 +4,13 @@
       <%= link_to "MDS 3.0 Builder", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "About", about_path %></li>
+          <% if current_page?(root_url) %>
+            <li class="active"><%= link_to "Assessments", root_path %></li>
+            <li><%= link_to "Test Cases", test_cases_path %></li>
+          <% else %>
+            <li><%= link_to "Assessments", root_path %></li>
+            <li class="active"><%= link_to "Test Cases", test_cases_path %></li>
+          <% end %>
         </ul>
       </nav>
     </div>
