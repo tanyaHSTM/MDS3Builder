@@ -1,5 +1,5 @@
 class A0310e 
-  attr_reader :title, :options, :name, :field_type, :node
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
     @name = "Is this assessment the first assessment (OBRA, Scheduled PPS, or Discharge) since the most recent admission/entry or rentry? (A0310e)"
