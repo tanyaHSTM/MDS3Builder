@@ -2,6 +2,12 @@ class AssessmentsController < ApplicationController
 
   def new
     @assessment = get_correct_assessment_type
+    #@assessment_secondary = get_correct_assessment_type
+    #ApplyQpParameterContext.call(@assessment, @assessment_secondary, params[:qp_name], params[:pos_or_neg])
+  end
+
+  def get_requested_attribute_module
+    params[:module_type].constantize if params[:module_type] # {"moduletype"=>"Qp017"}
   end
 
   def create
