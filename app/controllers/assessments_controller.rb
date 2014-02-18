@@ -54,6 +54,7 @@ class AssessmentsController < ApplicationController
     when "InactivationOfPps60Day" then return InactivationOfPps60Day.new 
     when "InactivationOfPps90Day" then return InactivationOfPps90Day.new 
     when "QP017AdmissionPos" then return QP017AdmissionPos.new
+    when "QP017QuarterlyPos" then return QP017QuarterlyPos.new
     end
   end
 

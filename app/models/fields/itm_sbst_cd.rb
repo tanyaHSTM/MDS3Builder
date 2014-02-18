@@ -59,6 +59,8 @@ class ItmSbstCd
     when "InactivationOfPps60Day" then return "XX"
     when "InactivationOfPps90Day" then return "XX"
     when "InactivationOfPpsCorrection" then return "XX"
+    when "QP017AdmissionPos" then "NC"
+    when "QP017AdmissionPos" then "NQ"
     end
   end
 

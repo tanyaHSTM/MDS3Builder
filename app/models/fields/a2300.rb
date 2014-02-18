@@ -27,6 +27,8 @@ class A2300
     when "MdsPps30Day" then return date1.strftime("%Y%m%d")
     when "MdsPps60Day" then return date1.strftime("%Y%m%d")
     when "MdsPps90Day" then return date1.strftime("%Y%m%d")
+    when "QP017AdmissionPos" then return date1.strftime("%Y%m%d")
+    when "QP017QuarterlyPos" then return date1.strftime("%Y%m%d")
     else return date2.strftime("%Y%m%d")
     end
   end

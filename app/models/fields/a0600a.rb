@@ -11,7 +11,11 @@ class A0600a
   end
 
   def set_values_for_type(klass)
-    return "123456789"
+    case klass
+    when "QP017AdmissionPos" then return "111111111"
+    when "QP017QuarterlyPos" then return "111111111"
+    else return "123456789"
+    end
   end
 
 end

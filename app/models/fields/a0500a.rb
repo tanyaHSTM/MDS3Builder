@@ -12,7 +12,11 @@ class A0500a
   end
 
   def set_values_for_type(klass)
-    return "John"
+    case klass
+    when "QP017AdmissionPos" then return "Positive"
+    when "QP017QuarterlyPos" then return "Positive"
+    else return "John"
+    end
   end
 
 end
