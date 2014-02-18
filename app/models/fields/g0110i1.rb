@@ -59,6 +59,8 @@ class G0110i1
     when "InactivationOfPps60Day" then return "0"
     when "InactivationOfPps90Day" then return "0"
     when "InactivationOfPpsCorrection" then return "0"
+    when "QP017AdmissionPos" then return "0"
+    when "QP017QuarterlyPos" then return "0"
     else return "^"
     end
   end

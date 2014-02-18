@@ -11,7 +11,7 @@ class A2200
   end
 
   def set_values_for_type(klass)
-    date = Date.today - 10.days
+    date = Date.today - 20.days
     return date.strftime("%Y%m%d")
   end
 
