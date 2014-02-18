@@ -2,7 +2,7 @@
   <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"/>
   <h2><%= "#{@assessment.title}" %></h2>
   <div align="center">
-    <input value="Print to XML" class="btn default btn-submit" type="submit">
+    <input value="Export XML" class="btn default btn-submit" type="submit">
   </div>
   <% @assessment.klasses.each do |klass| %>
      <% @default = klass.set_values_for_type("#{@assessment.class}") %>
@@ -35,7 +35,7 @@
     <% end %>
   <% end %>
   <div align="center">
-    <input value="Print to XML" class="btn default btn-submit" type="submit">
+    <input value="Export XML" class="btn default btn-submit" type="submit">
   </div><br>
   <div align="center">
     <a class="btn default btn-submit" href="/">Back to Create</a>
