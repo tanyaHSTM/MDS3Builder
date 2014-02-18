@@ -1,28 +1,9 @@
-== README
+== MDS 3.0 Builder
+ruby 2.0.0p353
+rails 4.0.0
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This program will generate MDS 3.0 files in XML format. Each assessment type has default data that will produce a working MDS file. The assessments only contain questions that are relevant to CMS. The data may be edited to suit your purpose, but keep in mind that entering invalid characters or answering inappropriate fields per assessment type may cause the MDS file to be rejected. Validations were left as loose as possible so that we may use this program for in-house MDS testing.
 
-Things you may want to cover:
+Inactivations of corrections are not explicitly handled by this application. To make an inactivation of correction set the inactivation reference date to match the reference date of the correction.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This is an open-source project created by Mike Doise and Phillip Doise at Providigm.LLC for testing purposes only. 
