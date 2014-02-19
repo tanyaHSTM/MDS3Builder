@@ -14,6 +14,7 @@ class ApplyQpParameterContext
 
   def call
     return unless @qp_name.present?
+    @assessment.set_all_to_nil
     @assessment.apply_requested_primary_qp_attributes
   end
 
