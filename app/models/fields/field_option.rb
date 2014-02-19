@@ -4,7 +4,7 @@ class FieldOption
 
   def initialize(value, description=nil)
     @value, @description = value, description
-    
+    @selected = false
   end
 
 end
