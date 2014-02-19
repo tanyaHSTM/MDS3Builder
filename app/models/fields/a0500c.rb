@@ -11,11 +11,7 @@ class A0500c
   end
 
   def set_values_for_type(klass)
-    case klass
-    when "QP017AdmissionPos" then return "QP017"
-    when "QP017QuarterlyPos" then return "QP017"
-    else return "Doe"
-    end
+    return "Doe"
   end
 
 end

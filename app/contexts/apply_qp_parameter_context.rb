@@ -1,34 +1,27 @@
 class ApplyQpParameterContext
-  attr_accessor :primary_assesment, :secondary_assessment, :qp_name, :pos_or_neg
+  attr_accessor :assessment, :qp_name
 
-  def self.call(primary_assesment, secondary_assessment, qp_name, pos_or_neg)
-    ApplyQpParameterContext.new(primary_assesment, secondary_assessment, , qp_name, pos_or_neg).call
+  def self.call(assessment, qp_name)
+    ApplyQpParameterContext.new(assessment, qp_name).call
   end
 
-  def initialize(primary_assesment, secondary_assessment, , qp_name, pos_or_neg)
-    @primary_assesment, @secondary_assessment, @qp_name, @pos_or_neg = primary_assesment, secondary_assessment, qp_name, pos_or_neg
+  def initialize(assessment, qp_name)
+    @assessment, @qp_name = assessment, qp_name
 
-    @primary_assesment.extend QpAttributeSettings
-    @primary_assesment.extend qp_primary_attribute_module
-
-    @secondary_assessment.extend QpAttributeSettings
-    @secondary_assessment.extend qp_secondary_attribute_module
+    @assessment.extend Qps::AttributeSetter
+    @assessment.extend qp_primary_attribute_module(@qp_name)
   end
 
   def call
-    @primary_assesment.apply_positive_or_negative(@pos_or_neg)
-    @primary_assesment.apply_requested_primary_qp_attributes
-    @secondary_assesment.apply_requested_secondary_qp_attributes
+    return unless @qp_name.present?
+    @assessment.apply_requested_primary_qp_attributes
   end
 
   private
 
-  def qp_primary_attribute_module
-    @qp_name.constantize
+  def qp_primary_attribute_module(qp_name)
+    "Qps::#{@qp_name}".constantize
   end
 
-  def qp_secondary_attribute_module
-    @qp_name.constantize
-  end
 
 end

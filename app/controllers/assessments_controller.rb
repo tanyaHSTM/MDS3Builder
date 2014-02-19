@@ -2,12 +2,7 @@ class AssessmentsController < ApplicationController
 
   def new
     @assessment = get_correct_assessment_type
-    #@assessment_secondary = get_correct_assessment_type
-    #ApplyQpParameterContext.call(@assessment, @assessment_secondary, params[:qp_name], params[:pos_or_neg])
-  end
-
-  def get_requested_attribute_module
-    params[:module_type].constantize if params[:module_type] # {"moduletype"=>"Qp017"}
+    ApplyQpParameterContext.call(@assessment, params[:qp_name])
   end
 
   def create
@@ -59,8 +54,6 @@ class AssessmentsController < ApplicationController
     when "InactivationOfPps30Day" then return InactivationOfPps30Day.new
     when "InactivationOfPps60Day" then return InactivationOfPps60Day.new 
     when "InactivationOfPps90Day" then return InactivationOfPps90Day.new 
-    when "QP017AdmissionPos" then return QP017AdmissionPos.new
-    when "QP017QuarterlyPos" then return QP017QuarterlyPos.new
     end
   end
 
