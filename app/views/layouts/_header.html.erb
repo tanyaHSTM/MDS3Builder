@@ -7,9 +7,12 @@
           <% if current_page?(root_url) %>
             <li class="active"><%= link_to "Assessments", root_path %></li>
             <li><%= link_to "Test Cases", test_cases_path %></li>
-          <% else %>
+          <% elsif current_page?(test_cases_path) %>
             <li><%= link_to "Assessments", root_path %></li>
             <li class="active"><%= link_to "Test Cases", test_cases_path %></li>
+           <% else %>
+            <li><%= link_to "Assessments", root_path %></li>
+            <li><%= link_to "Test Cases", test_cases_path %></li>
           <% end %>
         </ul>
       </nav>
