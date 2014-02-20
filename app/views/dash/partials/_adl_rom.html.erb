@@ -1,12 +1,12 @@
 <span>
 	<li><strong>QP017-</strong>Decline in Late Loss ADLs</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp017"})%></li>
-    <li><%= link_to "Quarterly", new_assessment_path({type: "Quarterly"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp017", pos_or_neg: "pos"})%></li>
+    <li><%= link_to "Quarterly", new_assessment_path({type: "Quarterly", qp_name: "Qp017", pos_or_neg: "pos"})%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "Admission", new_assessment_path({type: "CorrectionOfAdmission"})%></li>
-    <li><%= link_to "Quarterly", new_assessment_path({type: "InactivationOfAdmission"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp017", pos_or_neg: "pos"})%></li>
+    <li><%= link_to "Quarterly", new_assessment_path({type: "Quarterly", qp_name: "Qp017", pos_or_neg: "neg"})%></li>
   </ul>
 </span>
 <span>
