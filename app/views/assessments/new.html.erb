@@ -30,10 +30,16 @@
             <% end %>
           </div>
         <% else %>
+        <% have_selected = klass.options.detect{|o| o.selected } %>
           <div class="<%=input_type(klass.field_type)%>">
             <% klass.options.each do |option| %>
-              <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
-              <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=default%>" id="<%=klass.node+"_"+option.value%>"></label>
+              <% if have_selected %>
+                <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
+                <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=option.value%>" id="<%=klass.node+"_"+option.value%>"></label>
+              <% else %>
+                <label for="<%=klass.node+"_"+option.value%>"><%=option.description%>
+                <input class="input-small search-query" type="<%=input_type(klass.field_type)%>" name="assessment[<%=klass.node%>]" value="<%=default%>" id="<%=klass.node+"_"+option.value%>"></label>
+              <% end %>
             <% end %>
           </div>
        <% end %>
