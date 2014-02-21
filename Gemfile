@@ -18,7 +18,6 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'factory_girl_rails'
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
 end
@@ -31,3 +30,4 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
+
