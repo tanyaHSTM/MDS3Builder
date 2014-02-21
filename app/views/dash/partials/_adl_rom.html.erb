@@ -34,11 +34,11 @@
 <span>
 	<li><strong>QP039b-</strong>Locomotion Severe Decline</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "CorrectionOfAdmission"})%></li>
-    <li><%= link_to "Quarterly", new_assessment_path({type: "InactivationOfAdmission"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp039b", pos_or_neg: "pos"})%></li>
+    <li><%= link_to "Quarterly", new_assessment_path({type: "Quarterly", qp_name: "Qp039b", pos_or_neg: "pos"})%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "Admission", new_assessment_path({type: "CorrectionOfAdmission"})%></li>
-    <li><%= link_to "Quarterly", new_assessment_path({type: "InactivationOfAdmission"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp039b", pos_or_neg: "pos"})%></li>
+    <li><%= link_to "Quarterly", new_assessment_path({type: "Quarterly", qp_name: "Qp039b", pos_or_neg: "neg"})%></li>
   </ul>
 </span>
