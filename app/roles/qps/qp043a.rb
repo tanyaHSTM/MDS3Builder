@@ -1,5 +1,10 @@
+#-----------------------------------
+# MDS
+# QP043a Increase in Physical Abuse
+#-----------------------------------
+
 module Qps::Qp043a
-  #:e0200a
+  #e0200a
 
   def apply_requested_qp_attributes(pos_or_neg)
     if pos_or_neg == "pos"

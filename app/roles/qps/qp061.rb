@@ -1,32 +1,32 @@
-#--------------------------------------
+#-----------------------------------
 # MDS
-# QP106a Increase in Resistance to Care
-#--------------------------------------
+# QP061 - Wound Infection 
+#-----------------------------------
 
-module Qps::Qp106a
-  #e0800
+module Qps::Qp061
+  #i2500
 
   def apply_requested_qp_attributes(pos_or_neg)
     if pos_or_neg == "pos"
-      set_E0800_pos 
+      set_I2500_pos
     elsif pos_or_neg == "neg"
-      set_E0800_neg
+      set_I2500_neg
     end
   end
 
-  def set_E0800_pos
-    field = klasses.detect {|x| x.node == "E0800"}
+  def set_I2500_pos
+    field = klasses.detect {|x| x.node == "I2500"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
     field_option = field.options.detect{|x| x.value == "0"} 
     field_option.selected = true
   end
 
-  def set_E0800_neg
-    field = klasses.detect {|x| x.node == "E0800"}
+  def set_I2500_neg
+    field = klasses.detect {|x| x.node == "I2500"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "2"} 
+    field_option = field.options.detect{|x| x.value == "1"} 
     field_option.selected = true
   end
 

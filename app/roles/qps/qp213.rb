@@ -1,5 +1,10 @@
+#----------------------------------------------------
+# MDS
+# QP213 Lack of Corrective Action for Visual Problems
+#----------------------------------------------------
+
 module Qps::Qp213
-  #:b1000, :b1200, :b0100
+  #b1000, b1200, b0100
 
   def apply_requested_qp_attributes(pos_or_neg)
     if pos_or_neg == "pos"

@@ -1,5 +1,10 @@
+#-----------------------------------
+# MDS
+# QP028b Dressing Severe Decline
+#-----------------------------------
+
 module Qps::Qp028b
-  #:g0110g1, :j1400
+  #g0110g1, j1400
 
   def apply_requested_qp_attributes(pos_or_neg)
     if pos_or_neg == "pos"

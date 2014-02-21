@@ -1,5 +1,10 @@
+#---------------------------------------------------------
+# MDS
+# QP039b Locomotion Severe Decline (Previous & Most Recent)
+#---------------------------------------------------------
+
 module Qps::Qp039b
-  #:g0110e1, :j1400
+  #g0110e1, j1400
 
   def apply_requested_qp_attributes(pos_or_neg)
     if pos_or_neg == "pos"

@@ -1,5 +1,10 @@
+#------------------------------------------------------
+# MDS
+# QP214 Lack of Corrective Action for Auditory Problems
+#------------------------------------------------------
+
 module Qps::Qp214
-  #:b0100, :b0200, :b0300
+  #b0100, b0200, b0300
 
   def apply_requested_qp_attributes(pos_or_neg)
     if pos_or_neg == "pos"

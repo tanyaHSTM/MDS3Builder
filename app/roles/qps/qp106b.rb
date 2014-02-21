@@ -1,5 +1,10 @@
+#--------------------------------------
+# MDS
+# QP106b Increase in Resistance to Care
+#--------------------------------------
+
 module Qps::Qp106b
-  #:e0800
+  #e0800
 
   def apply_requested_qp_attributes(pos_or_neg)
     if pos_or_neg == "pos"

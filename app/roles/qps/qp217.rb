@@ -1,5 +1,10 @@
+#-----------------------------------
+# MDS
+# QP217 Oral/Dental Problems
+#-----------------------------------
+
 module Qps::Qp217
-  #:l0200a, :l0200b, :l0200c, :l0200d, :l0200e, :l0200f, :l0200g, :l0200z
+  #l0200a, l0200b, l0200c, l0200d, l0200e, l0200f, l0200g, l0200z
 
   def apply_requested_qp_attributes(pos_or_neg)
     if pos_or_neg == "pos"

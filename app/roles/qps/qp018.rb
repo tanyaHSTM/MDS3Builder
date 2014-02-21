@@ -1,5 +1,10 @@
+#---------------------------------------------
+# MDS
+# QP018 Incidence of Decline in Range of Motion
+#---------------------------------------------
+
 module Qps::Qp018
-  #:g0400a, :g0400b
+  #g0400a, g0400b
 
   def apply_requested_qp_attributes(pos_or_neg)
     if pos_or_neg == "pos"
