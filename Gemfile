@@ -4,6 +4,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 
 gem 'nokogiri'
+gem 'rubyzip', '~> 1.1.0', :require=>'zip'
 gem "actionpack-xml_parser"
 gem 'jquery-rails'
 gem 'turbolinks'

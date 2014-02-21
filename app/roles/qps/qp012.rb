@@ -1,5 +1,4 @@
 #---------------------------------------------
-# MDS
 # QP012 Prevalence of Urinary Tract Infections
 #---------------------------------------------
 module Qps::Qp012

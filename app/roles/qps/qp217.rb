@@ -1,5 +1,4 @@
 #-----------------------------------
-# MDS
 # QP217 Oral/Dental Problems
 #-----------------------------------
 
@@ -76,7 +75,7 @@ module Qps::Qp217
     field = klasses.detect {|x| x.node == "L0200Z"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "2"} 
+    field_option = field.options.detect{|x| x.value == "0"} 
     field_option.selected = true
   end
 
@@ -84,7 +83,7 @@ module Qps::Qp217
     field = klasses.detect {|x| x.node == "L0200A"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "2"} 
+    field_option = field.options.detect{|x| x.value == "1"} 
     field_option.selected = true
   end
 
@@ -92,7 +91,7 @@ module Qps::Qp217
     field = klasses.detect {|x| x.node == "L0200B"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "2"} 
+    field_option = field.options.detect{|x| x.value == "1"} 
     field_option.selected = true
   end
 
@@ -100,7 +99,7 @@ module Qps::Qp217
     field = klasses.detect {|x| x.node == "L0200C"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "2"} 
+    field_option = field.options.detect{|x| x.value == "1"} 
     field_option.selected = true
   end
 
@@ -108,7 +107,7 @@ module Qps::Qp217
     field = klasses.detect {|x| x.node == "L0200D"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "2"} 
+    field_option = field.options.detect{|x| x.value == "1"} 
     field_option.selected = true
   end
 
@@ -116,7 +115,7 @@ module Qps::Qp217
     field = klasses.detect {|x| x.node == "L0200E"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "2"} 
+    field_option = field.options.detect{|x| x.value == "1"} 
     field_option.selected = true
   end
 
@@ -124,7 +123,7 @@ module Qps::Qp217
     field = klasses.detect {|x| x.node == "L0200F"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "2"} 
+    field_option = field.options.detect{|x| x.value == "1"} 
     field_option.selected = true
   end
 
@@ -132,7 +131,7 @@ module Qps::Qp217
     field = klasses.detect {|x| x.node == "L0200G"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "1"} 
+    field_option = field.options.detect{|x| x.value == "0"} 
     field_option.selected = true
   end
 
@@ -140,7 +139,7 @@ module Qps::Qp217
     field = klasses.detect {|x| x.node == "L0200Z"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "1"} 
+    field_option = field.options.detect{|x| x.value == "^"} 
     field_option.selected = true
   end
 
