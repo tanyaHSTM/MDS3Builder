@@ -8,7 +8,8 @@ class AssessmentsController < ApplicationController
   def create
     assessment = Assessment.new
     assessment.attributes = params[:assessment]
-    send_data(assessment.pull_xml, :type => "application/xml", :filename=>"MDS.xml", :disposition => 'attachment')
+    gzip = ActiveSupport::Gzip.compress(assessment.pull_xml)
+    send_data(gzip, :type => "application/zip", :filename=>"MDS.zip", :disposition => 'attachment')
   end
 
   private
