@@ -5,7 +5,7 @@
 module Qps::Qp018
   #g0400a, g0400b
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_G0400A_pos; set_G0400B_pos; 
     elsif pos_or_neg == "neg"

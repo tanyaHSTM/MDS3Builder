@@ -4,7 +4,7 @@
 module Qps::Qp012
   #i2300
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_I2300_pos
     elsif pos_or_neg == "neg"

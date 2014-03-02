@@ -5,7 +5,7 @@
 module Qps::Qp217
   #l0200a, l0200b, l0200c, l0200d, l0200e, l0200f, l0200g, l0200z
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_L0200A_pos; set_L0200B_pos; set_L0200C_pos; set_L0200D_pos; set_L0200E_pos;
       set_L0200F_pos; set_L0200G_pos; set_L0200Z_pos; 

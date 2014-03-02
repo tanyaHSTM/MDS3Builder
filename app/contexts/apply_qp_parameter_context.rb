@@ -1,12 +1,12 @@
 class ApplyQpParameterContext
-  attr_accessor :assessment, :qp_name, :pos_or_neg, :resident, :ssn
+  attr_accessor :assessment, :qp_name, :pos_or_neg, :resident, :ssn, :type
 
-  def self.call(assessment, qp_name, pos_or_neg, resident, ssn)
-    ApplyQpParameterContext.new(assessment, qp_name, pos_or_neg, resident, ssn).call
+  def self.call(assessment, qp_name, pos_or_neg, resident, ssn, type)
+    ApplyQpParameterContext.new(assessment, qp_name, pos_or_neg, resident, ssn, type).call
   end
 
-  def initialize(assessment, qp_name, pos_or_neg, resident, ssn)
-    @assessment, @qp_name, @pos_or_neg, @resident, @ssn = assessment, qp_name, pos_or_neg, resident, ssn
+  def initialize(assessment, qp_name, pos_or_neg, resident, ssn, type)
+    @assessment, @qp_name, @pos_or_neg, @resident, @ssn, @type = assessment, qp_name, pos_or_neg, resident, ssn, type
 
     @assessment.extend Qps::AttributeSetter
     @assessment.extend ResidentSetter
@@ -16,7 +16,7 @@ class ApplyQpParameterContext
   def call
     return unless @qp_name.present?
     @assessment.set_all_to_nil
-    @assessment.apply_requested_qp_attributes(@pos_or_neg)
+    @assessment.apply_requested_qp_attributes(@pos_or_neg, @type)
     @assessment.apply_resident_info(@qp_name, @resident, @ssn)
   end
 

@@ -5,7 +5,7 @@
 module Qps::Qp017
   #b0100, g0110a1, g0110b1, g0110h1, g0110i1
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_G0110A1_pos; set_G0110B1_pos; set_G0110H1_pos; set_G0110I1_pos;
     elsif pos_or_neg == "neg"

@@ -6,7 +6,7 @@
 module Qps::Qp024_h
   #b0100, g0110a1, g0110b1, m0210, j1400, i8000a, i8000b, i8000c, i8000d, i8000e, i8000f, i8000g, i8000h, i8000i, i8000j
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_G0110A1_pos; set_G0110B1_pos; set_M0210_pos;
     elsif pos_or_neg == "neg"

@@ -5,7 +5,7 @@
 module Qps::Qp106b
   #e0800
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_E0800_pos 
     elsif pos_or_neg == "neg"

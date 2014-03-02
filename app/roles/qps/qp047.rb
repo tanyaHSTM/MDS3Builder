@@ -5,7 +5,7 @@
 module Qps::Qp047
   #h0300, j1400
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_H0300_pos
     elsif pos_or_neg == "neg"

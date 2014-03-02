@@ -5,7 +5,7 @@
 module Qps::Qp015
   #j1550c
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_J1550C_pos
     elsif pos_or_neg == "neg"

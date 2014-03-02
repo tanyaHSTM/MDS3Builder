@@ -5,7 +5,7 @@
 module Qps::Qp022
   #p0100b, p0100c, p0100e, p0100f, p0100g
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_P0100B_pos; set_P0100C_pos; set_P0100E_pos; set_P0100F_pos; set_P0100G_pos;
     elsif pos_or_neg == "neg"

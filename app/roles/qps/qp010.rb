@@ -5,7 +5,7 @@
 module Qps::Qp010
   #h0100a
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_H0100A_pos
     elsif pos_or_neg == "neg"

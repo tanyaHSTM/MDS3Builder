@@ -5,7 +5,7 @@
 module Qps::Qp213
   #b1000, b1200, b0100
 
-  def apply_requested_qp_attributes(pos_or_neg)
+  def apply_requested_qp_attributes(pos_or_neg, options = {})
     if pos_or_neg == "pos"
       set_B1000_pos; set_B1200_pos;
     elsif pos_or_neg == "neg"
