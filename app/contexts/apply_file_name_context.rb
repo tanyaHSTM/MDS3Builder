@@ -11,9 +11,9 @@ class ApplyFileNameContext
 
   def call
     if @qp_name.present?
-      "#{@qp_name}_#{@resident}_#{@type}.zip"
+      "#{@qp_name}_#{@resident}_#{@type}.xml"
     else
-      "#{@type}.zip"
+      "#{@type}.xml"
     end
   end
 
