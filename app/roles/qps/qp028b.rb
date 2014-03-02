@@ -17,7 +17,7 @@ module Qps::Qp028b
     field = klasses.detect {|x| x.node == "G0110G1"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "0"} 
+    field_option = field.options.detect{|x| x.value == "1"} 
     field_option.selected = true
   end
 
@@ -25,7 +25,7 @@ module Qps::Qp028b
     field = klasses.detect {|x| x.node == "G0110G1"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "2"} 
+    field_option = field.options.detect{|x| x.value == "3"} 
     field_option.selected = true
   end
 

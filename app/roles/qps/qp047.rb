@@ -17,7 +17,7 @@ module Qps::Qp047
     field = klasses.detect {|x| x.node == "H0300"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "0"} 
+    field_option = field.options.detect{|x| x.value == "1"} 
     field_option.selected = true
   end
 

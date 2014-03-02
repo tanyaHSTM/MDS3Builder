@@ -20,10 +20,10 @@
 	<li><strong>QP047-</strong>Continence Decline Since Admission</li>
   <ul id="green">
     <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128"})%></li>
-    <li><%= link_to "PPS 90-Day", new_assessment_path({type: "Pps90Day", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128"})%></li>
+    <li><%= link_to "Change in Status", new_assessment_path({type: "SignificantChange", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128"})%></li>
   </ul>
   <ul id="red">
     <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos", resident: "Negative", ssn: "111111129"})%></li>
-    <li><%= link_to "PPS 90-Day", new_assessment_path({type: "Pps90Day", qp_name: "Qp047", pos_or_neg: "neg", resident: "Negative", ssn: "111111129"})%></li>
+    <li><%= link_to "Change in Status", new_assessment_path({type: "SignificantChange", qp_name: "Qp047", pos_or_neg: "neg", resident: "Negative", ssn: "111111129"})%></li>
   </ul>
 </span>

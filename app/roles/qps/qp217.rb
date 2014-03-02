@@ -139,7 +139,7 @@ module Qps::Qp217
     field = klasses.detect {|x| x.node == "L0200Z"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "^"} 
+    field_option = field.options.detect{|x| x.value == "1"} 
     field_option.selected = true
   end
 
