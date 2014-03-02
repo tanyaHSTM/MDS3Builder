@@ -3,13 +3,14 @@ class AssessmentsController < ApplicationController
   def new
     @assessment = get_correct_assessment_type
     ApplyQpParameterContext.call(@assessment, params[:qp_name], params[:pos_or_neg], params[:resident], params[:ssn])
+    @@filename = ApplyFileNameContext.call(@assessment, params[:type], params[:qp_name], params[:resident])
   end
 
   def create
     assessment = Assessment.new
     assessment.attributes = params[:assessment]
     gzip = ActiveSupport::Gzip.compress(assessment.pull_xml)
-    send_data(gzip, :type => "application/zip", :filename=>"MDS.zip", :disposition => 'attachment')
+    send_data(gzip, :type => "application/zip", :filename=>@@filename, :disposition => 'attachment')
   end
 
   private
