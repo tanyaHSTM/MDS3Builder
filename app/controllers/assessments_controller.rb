@@ -2,7 +2,7 @@ class AssessmentsController < ApplicationController
 
   def new
     @assessment = get_correct_assessment_type
-    ApplyQpParameterContext.call(@assessment, params[:qp_name], params[:pos_or_neg])
+    ApplyQpParameterContext.call(@assessment, params[:qp_name], params[:pos_or_neg], params[:resident], params[:ssn])
   end
 
   def create

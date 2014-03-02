@@ -1,11 +1,11 @@
 <span>
   <li><strong>QP119-</strong>Lack of Transferring Rehabilitation Progress</li>
   <ul id="green">
-    <li><%= link_to "PPS 5-Day", new_assessment_path({type: "Pps5Day", qp_name: "Qp119", pos_or_neg: "pos"})%></li>
-    <li><%= link_to "PPS 90-Day", new_assessment_path({type: "Pps90Day", qp_name: "Qp119", pos_or_neg: "pos"})%></li>
+    <li><%= link_to "PPS 5-Day", new_assessment_path({type: "Pps5Day", qp_name: "Qp119", pos_or_neg: "pos", resident: "Positive", ssn: "111111142"})%></li>
+    <li><%= link_to "PPS 90-Day", new_assessment_path({type: "Pps90Day", qp_name: "Qp119", pos_or_neg: "pos", resident: "Positive", ssn: "111111142"})%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "PPS 5-Day", new_assessment_path({type: "Pps5Day", qp_name: "Qp119", pos_or_neg: "pos"})%></li>
-    <li><%= link_to "PPS 90-Day", new_assessment_path({type: "Pps90Day", qp_name: "Qp119", pos_or_neg: "neg"})%></li>
+    <li><%= link_to "PPS 5-Day", new_assessment_path({type: "Pps5Day", qp_name: "Qp119", pos_or_neg: "pos", resident: "Negative", ssn: "111111143"})%></li>
+    <li><%= link_to "PPS 90-Day", new_assessment_path({type: "Pps90Day", qp_name: "Qp119", pos_or_neg: "neg", resident: "Negative", ssn: "111111143"})%></li>
   </ul>
 <span>

@@ -1,29 +1,29 @@
 <span>
 	<li><strong>QP010-</strong>Prevalence of Indwelling Catheters</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp010", pos_or_neg: "pos"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp010", pos_or_neg: "pos", resident: "Positive", ssn: "111111124"})%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp010", pos_or_neg: "neg"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp010", pos_or_neg: "neg", resident: "Negative", ssn: "111111125"})%></li>
   </ul>
 </span>
 <span>
 	<li><strong>QP012-</strong>Prevalence of Urinary Tract Infections</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "pos"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "pos"}), resident: "Positive", ssn: "111111126"%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "neg"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "neg", resident: "Negative", ssn: "111111127"})%></li>
   </ul>
 </span>
 <span>
 	<li><strong>QP047-</strong>Continence Decline Since Admission</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos"})%></li>
-    <li><%= link_to "PPS 90-Day", new_assessment_path({type: "Pps90Day", qp_name: "Qp047", pos_or_neg: "pos"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128"})%></li>
+    <li><%= link_to "PPS 90-Day", new_assessment_path({type: "Pps90Day", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128"})%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos"})%></li>
-    <li><%= link_to "PPS 90-Day", new_assessment_path({type: "Pps90Day", qp_name: "Qp047", pos_or_neg: "neg"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos", resident: "Negative", ssn: "111111129"})%></li>
+    <li><%= link_to "PPS 90-Day", new_assessment_path({type: "Pps90Day", qp_name: "Qp047", pos_or_neg: "neg", resident: "Negative", ssn: "111111129"})%></li>
   </ul>
 </span>

@@ -1,9 +1,9 @@
 <span>
 	<li><strong>QP022-</strong>Prevalence of a Daily Device</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp022", pos_or_neg: "pos"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp022", pos_or_neg: "pos", resident: "Positive", ssn: "111111144"})%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp022", pos_or_neg: "neg"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp022", pos_or_neg: "neg", resident: "Negative", ssn: "111111145"})%></li>
   </ul>
 </span>
