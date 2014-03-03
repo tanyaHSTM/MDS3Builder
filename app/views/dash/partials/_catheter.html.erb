@@ -10,7 +10,7 @@
 <span>
 	<li><strong>QP012-</strong>Prevalence of Urinary Tract Infections</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "pos"}), resident: "Positive", ssn: "111111126"%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "pos", resident: "Positive", ssn: "111111126"})%></li>
   </ul>
   <ul id="red">
     <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "neg", resident: "Negative", ssn: "111111127"})%></li>
