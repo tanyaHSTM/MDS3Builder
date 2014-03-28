@@ -28,7 +28,7 @@ class A2300
     when "MdsEntry" then return "^"
     when "MdsDischargeRna" then return "^"
     when "MdsDischargeRa" then return "^"
-    when "MdsDeath" then return d"^"
+    when "MdsDeath" then return "^"
     when "MdsPps5Day" then return date5.strftime("%Y%m%d")
     when "MdsPps14Day" then return date6.strftime("%Y%m%d")
     when "MdsPps30Day" then return date7.strftime("%Y%m%d")
