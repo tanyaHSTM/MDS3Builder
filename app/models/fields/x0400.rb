@@ -2,7 +2,7 @@ class X0400
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Bith Date (format = yyyyddmm) (X0400)"
+    @name = "Birth Date (format = yyyyddmm) (X0400)"
     @field_type = TEXT
     @node = "X0400"
 
@@ -14,5 +14,5 @@ class X0400
     date = Date.today - 80.years
     return date.strftime("%Y%m%d")
   end
-  
+
 end
