@@ -1,13 +1,13 @@
-class J1400
+class I4500
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Prognosis - Does the resident have a condition or chronic disease that may result in a life
-             expectancey of less than 6 months? (J1400)"
+    @name = "Has the resident had a Cerebrovascular Accident(CVA), Transient Ischemic Attack(TIA), or Stroke? (I4500)"
     @field_type = RADIO
-    @node = "J1400"
+    @node = "I4500"
 
     @options = []
+
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")

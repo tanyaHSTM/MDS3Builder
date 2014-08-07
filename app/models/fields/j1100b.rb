@@ -1,11 +1,11 @@
-class O0250a
+class J1100b
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Special Treaments, Procedures and Programs"
-    @name = "Did the resident receive the influenza vaccine in this facility for this years influenza season? (O0250a)"
+    @title = "Health Conditions"
+    @name = "Does the resident have shortness of breath when sitting at rest (J1100b)"
     @field_type = RADIO
-    @node = "O0250A"
+    @node = "J1100B"
 
     @options = []
     @options << FieldOption.new("^", "NA")

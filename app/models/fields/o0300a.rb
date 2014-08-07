@@ -7,6 +7,7 @@ class O0300a
     @node = "O0300A"
 
     @options = []
+    @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")
   end
