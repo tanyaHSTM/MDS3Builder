@@ -2,7 +2,7 @@ class A1900
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Admission Date (format = yyyymmdd) (A1900)"
+    @name = "Admission Date (Date this episode of care in this facility began, should be less than or equal to the Entry Date) (format = yyyymmdd) (A1900)"
     @field_type = TEXT
     @node = "A1900"
 
