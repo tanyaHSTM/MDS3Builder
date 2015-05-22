@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.2'
 
-gem 'rails', '4.0.0'
+gem 'rails', '~> 4.1.9'
 
 gem 'nokogiri'
 gem 'rubyzip', '~> 1.1.0', :require=>'zip'
@@ -19,7 +19,7 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
+  gem 'sqlite3', '1.3.10'
   gem 'rspec-rails', '2.13.1'
 end
 
