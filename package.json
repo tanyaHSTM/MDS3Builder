@@ -1,0 +1,19 @@
+{
+  "name": "MDS3Builder",
+  "version": "1.0.0",
+  "description": "== MDS 3.0 Builder ruby 2.0.0p353 rails 4.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GitHubAdmin/MDS3Builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitHubAdmin/MDS3Builder/issues"
+  },
+  "homepage": "https://github.com/GitHubAdmin/MDS3Builder"
+}
