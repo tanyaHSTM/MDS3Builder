@@ -9,8 +9,6 @@ gem "actionpack-xml_parser"
 gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '2.3.2.0'
-gem 'bower-rails'
-gem "foreman"
 
 group :production, :staging do
   gem "rails_12factor"
