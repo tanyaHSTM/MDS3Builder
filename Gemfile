@@ -9,6 +9,14 @@ gem "actionpack-xml_parser"
 gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'bower-rails'
+gem "foreman"
+
+group :production, :staging do
+  gem "rails_12factor"
+  gem "rails_stdout_logging"
+  gem "rails_serve_static_assets"
+end
 
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
@@ -27,6 +35,5 @@ end
 
 group :production do
   gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
 end
 
