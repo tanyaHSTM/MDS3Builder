@@ -16,3 +16,7 @@ Mds3Builder.controller "DashController", ($scope) ->
     return
 
   return
+
+DashController.$inject = [
+  '$scope'
+]
