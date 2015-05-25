@@ -29,6 +29,10 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    angular-rails-templates (0.2.0)
+      railties (>= 3.1)
+      sprockets (~> 2)
+      tilt
     arel (5.0.1.20140414130214)
     bootstrap-sass (2.3.2.0)
       sass (~> 3.2)
@@ -133,6 +137,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack-xml_parser
+  angular-rails-templates
   bootstrap-sass (= 2.3.2.0)
   bower-rails
   coffee-rails (~> 4.0.0)
