@@ -16,5 +16,6 @@
 //= require angular
 //= require angular-ui-router
 //= require angular-rails-templates
+//= require vkbeautify-wrapper
 //= require main
 //= require_tree .
