@@ -1,7 +1,8 @@
 <div ng-controller="AdmissionAssessementController">
   <form>
     <div align="center">
-      <input type="button" class="btn default btn-submit" ng-click="showJson()" value="Export JSON" />
+      <input type="button" class="btn default btn-submit" ng-click="exportXml()" value="Export XML" />
+      <input type="button" class="btn default btn-submit" ng-click="viewXml()" value="View XML" />
     </div>
     <h3>Record Information</h3><br>
     <strong>ITM_SBST_CD</strong><br>
@@ -14,5 +15,5 @@
       <option value="XX">Inactivation</option>
     </select>
   </form>
-  <pre>{{xml}}</pre>
+  <pre>{{xml_view}}</pre>
 </div>
