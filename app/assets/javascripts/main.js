@@ -18,8 +18,8 @@ function($stateProvider, $urlRouterProvider) {
 
     .state('admission_assessment', {
       url: '/admission_assessment',
-      templateUrl: 'assessments/_admission_assessment.html',
-      controller: 'assessementController'
+      templateUrl: 'assessments/admission_assessment/_admission_assessment.html',
+      controller: 'AdmissionAssessementController'
     });
 
   $urlRouterProvider.otherwise('dash');
