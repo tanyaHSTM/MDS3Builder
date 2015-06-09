@@ -5,6 +5,11 @@ angular.module('Mds3Builder')
   $scope.assessment.ITM_SBST_CD = "NC";
   $scope.assessment.STATE_CD = "CO";
 
+  $scope.fields = [
+    {name: "item_sbst_cd"},
+    {name: "state_cd"}
+  ]
+
   $scope.viewXml = function() {
     $scope.xml_view = json2xml($scope.assessment, "ASSESSMENT");
     $scope.xml_view = vkbeautify.xml($scope.xml_view);
