@@ -16,10 +16,10 @@ function($stateProvider, $urlRouterProvider) {
       templateUrl: 'test_cases/_test_cases.html',
     })
 
-    .state('admission_assessment', {
-      url: '/admission_assessment',
-      templateUrl: 'assessments/admission_assessment/_admission_assessment.html',
-      controller: 'AdmissionAssessementController'
+    .state('mds_admission', {
+      url: '/mds_admission',
+      templateUrl: 'assessments/mds_admission/_mds_admission.html',
+      controller: 'mdsAdmissionController'
     });
 
   $urlRouterProvider.otherwise('dash');
