@@ -1,0 +1,17 @@
+<div>
+  <h2>{{header}}</h2>
+  <form>
+    <div align="center">
+      <input type="button" class="btn default btn-submit" ng-click="exportXml()" value="Export XML" />
+    </div>
+    <div ng-repeat="field in fields" class="form-item">
+      <div ng-include="'fields/_'+field+'.html'"></div>
+    </div>
+
+  </form>
+  <div align="center">
+    <input type="button" class="btn default btn-submit" ng-click="exportXml()" value="Export XML" />
+    <input type="button" class="btn default btn-submit" ng-click="viewXml()" value="View XML" />
+  </div><br>
+  <pre ng-show="xmlPreview">{{xml_view}}</pre>
+</div>

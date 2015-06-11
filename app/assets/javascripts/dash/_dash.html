@@ -9,32 +9,32 @@
       <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">Admission</button>
       <ul class="dropdown-menu" role="menu">
         <li><a href="#/mds_admission">Admission</a></li>
-        <li><%= link_to "Correction of Admission", new_assessment_path({type: "CorrectionOfAdmission"})%></li>
-        <li><%= link_to "Inactivation of Admission", new_assessment_path({type: "InactivationOfAdmission"})%></li>
+        <li><a href="#/correction_of_admission">Correction of Admission</a></li>
+        <li><a href="#/inactivation_of_admission">Inactivation of Admission</a></li>
       </ul>
     </div>
     <div class="btn-group" ng-class='{open: open}'>
       <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">Quarterly</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "Quarterly", new_assessment_path({type: "Quarterly"})%></li>
-        <li><%= link_to "Correction of Quarterly", new_assessment_path({type: "CorrectionOfQuarterly"})%></li>
-        <li><%= link_to "Inactivation of Quarterly", new_assessment_path({type: "InactivationOfQuarterly"})%></li>
+        <li><a href="#/mds_quarterly">Quarterly</a></li>
+        <li><a href="#/correction_of_quarterly">Correction of Quarterly</a></li>
+        <li><a href="#/inactivation_of_quarterly">Inactivation of Quarterly</a></li>
       </ul>
     </div>
     <div class="btn-group" ng-class='{open: open}'>
       <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">Annual</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "Annual", new_assessment_path({type: "Annual"})%></li>
-        <li><%= link_to "Correction of Annual", new_assessment_path({type: "CorrectionOfAnnual"})%></li>
-        <li><%= link_to "Inactivation of Annual", new_assessment_path({type: "InactivationOfAnnual"})%></li>
+        <li><a href="#/mds_annual">Annual</a></li>
+        <li><a href="#/correction_of_annual">Correction of Annual</a></li>
+        <li><a href="#/inactivation_of_annual">Inactivation of Annual</a></li>
       </ul>
     </div>
     <div class="btn-group" ng-class='{open: open}'>
       <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">Change in Status</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "Change in Status", new_assessment_path({type: "SignificantChange"})%></li>
-        <li><%= link_to "Correction of Change in Status", new_assessment_path({type: "CorrectionOfSignificantChange"})%></li>
-        <li><%= link_to "Inactivation of Change in Status", new_assessment_path({type: "InactivationOfSignificantChange"})%></li>
+        <li><a href="#/mds_significant_change">Significant Change</a></li>
+        <li><a href="#/correction_of_significant_change">Correction of Significant Change</a></li>
+        <li><a href="#/inactivation_of_significant_change">Inactivation of Significant Change</a></li>
       </ul>
     </div>
   </div>
@@ -45,43 +45,43 @@
 <div ng-show="ppsButtonList">
   <div class="pps_assessments" align="center">
     <div class="btn-group" ng-class='{open: open}'>
-      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">PPS 5-day</button>
+      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">PPS 5-Day</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "PPS 5-day", new_assessment_path({type: "Pps5Day"})%></li>
-        <li><%= link_to "Correction of PPS 5-day", new_assessment_path({type: "CorrectionOfPps5Day"})%></li>
-        <li><%= link_to "Inactivation of PPS 5-day", new_assessment_path({type: "InactivationOfPps5Day"})%></li>
+        <li><a href="#/mds_pps_5day">PPS 5-Day</a></li>
+        <li><a href="#/correction_of_pps_5day">Correction of PPS 5-Day</a></li>
+        <li><a href="#/inactivation_of_pps_5day">Inactivation of PPS 5-Day</a></li>
       </ul>
     </div>
     <div class="btn-group" ng-class='{open: open}'>
-      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">PPS 14-day</button>
+      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">PPS 14-Day</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "PPS 14-day", new_assessment_path({type: "Pps14Day"})%></li>
-        <li><%= link_to "Correction of PPS 14-day", new_assessment_path({type: "CorrectionOfPps14Day"})%></li>
-        <li><%= link_to "Inactivation of PPS 14-day", new_assessment_path({type: "InactivationOfPps14Day"})%></li>
+        <li><a href="#/mds_pps_14day">PPS 14-Day</a></li>
+        <li><a href="#/correction_of_pps_14day">Correction of PPS 14-Day</a></li>
+        <li><a href="#/inactivation_of_pps_14day">Inactivation of PPS 14-Day</a></li>
       </ul>
     </div>
     <div class="btn-group" ng-class='{open: open}'>
-      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">PPS 30-day</button>
+      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">PPS 30-Day</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "PPS 30-day", new_assessment_path({type: "Pps30Day"})%></li>
-        <li><%= link_to "Correction of PPS 30-day", new_assessment_path({type: "CorrectionOfPps30Day"})%></li>
-        <li><%= link_to "Inactivation of PPS 30-day", new_assessment_path({type: "InactivationOfPps30Day"})%></li>
+        <li><a href="#/mds_pps_30day">PPS 30-Day</a></li>
+        <li><a href="#/correction_of_pps_30day">Correction of PPS 30-Day</a></li>
+        <li><a href="#/inactivation_of_pps_30day">Inactivation of PPS 30-Day</a></li>
       </ul>
     </div>
     <div class="btn-group" ng-class='{open: open}'>
-      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">PPS 60-day</button>
+      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">PPS 60-Day</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "PPS 60-day", new_assessment_path({type: "Pps60Day"})%></li>
-        <li><%= link_to "Correction of PPS 60-day", new_assessment_path({type: "CorrectionOfPps60Day"})%></li>
-        <li><%= link_to "Inactivation of PPS 60-day", new_assessment_path({type: "InactivationOfPps60Day"})%></li>
+        <li><a href="#/mds_pps_60day">PPS 60-Day</a></li>
+        <li><a href="#/correction_of_pps_60day">Correction of PPS 60-Day</a></li>
+        <li><a href="#/inactivation_of_pps_60day">Inactivation of PPS 60-Day</a></li>
       </ul>
     </div>
     <div class="btn-group" ng-class='{open: open}'>
-      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">PPS 90-day</button>
+      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">PPS 90-Day</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "PPS 90-day", new_assessment_path({type: "Pps90Day"})%></li>
-        <li><%= link_to "Correction of PPS 90-day", new_assessment_path({type: "CorrectionOfPps90Day"})%></li>
-        <li><%= link_to "Inactivation of PPS 90-day", new_assessment_path({type: "InactivationOfPps90Day"})%></li>
+        <li><a href="#/mds_pps_90day">PPS 90-Day</a></li>
+        <li><a href="#/correction_of_pps_90day">Correction of PPS 90-Day</a></li>
+        <li><a href="#/inactivation_of_pps_90day">Inactivation of PPS 90-Day</a></li>
       </ul>
     </div>
   </div>
@@ -94,33 +94,33 @@
     <div class="btn-group" ng-class='{open: open}'>
       <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">Entry</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "Entry", new_assessment_path({type: "Entry"})%></li>
-        <li><%= link_to "Correction of Entry", new_assessment_path({type: "CorrectionOfEntry"})%></li>
-        <li><%= link_to "Inactivation of Entry", new_assessment_path({type: "InactivationOfEntry"})%></li>
-      </ul>
-    </div>
-    <div class="btn-group" ng-class='{open: open}'>
-      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">Discharge RNA</button>
-      <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "Discharge - return not anticipated", new_assessment_path({type: "DischargeRna"})%></li>
-        <li><%= link_to "Correction of Discharge - return not anticipated", new_assessment_path({type: "CorrectionOfDischargeRna"})%></li>
-        <li><%= link_to "Inactivation of Discharge - return not anticipated", new_assessment_path({type: "InactivationOfDischargeRna"})%></li>
+        <li><a href="#/mds_entry">Entry</a></li>
+        <li><a href="#/correction_of_entry">Correction of Entry</a></li>
+        <li><a href="#/inactivation_of_entry">Inactivation of Entry</a></li>
       </ul>
     </div>
     <div class="btn-group" ng-class='{open: open}'>
       <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">Discharge RA</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "Discharge - return anticipated", new_assessment_path({type: "DischargeRa"})%></li>
-        <li><%= link_to "Correction of Discharge - return anticipated",new_assessment_path({type: "CorrectionOfDischargeRa"})%></li>
-        <li><%= link_to "Inactivation of Discharge - return anticipated",new_assessment_path({type: "InactivationOfDischargeRa"})%></li>
+        <li><a href="#/mds_discharge_ra">Discharge RA</a></li>
+        <li><a href="#/correction_of_discharge_ra">Correction of Discharge RA</a></li>
+        <li><a href="#/inactivation_of_discharge_ra">Inactivation of Discharge RA</a></li>
+      </ul>
+    </div>
+    <div class="btn-group" ng-class='{open: open}'>
+      <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">Discharge RNA</button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#/mds_discharge_rna">Discharge RNA</a></li>
+        <li><a href="#/correction_of_discharge_rna">Correction of Discharge RNA</a></li>
+        <li><a href="#/inactivation_of_discharge_rna">Inactivation of Discharge RNA</a></li>
       </ul>
     </div>
     <div class="btn-group" ng-class='{open: open}'>
       <button type="pure-button" class="pure-button-disabled" data-toggle="dropdown">Death</button>
       <ul class="dropdown-menu" role="menu">
-        <li><%= link_to "Death", new_assessment_path({type: "Death"})%></li>
-        <li><%= link_to "Correction of Death", new_assessment_path({type: "CorrectionOfDeath"})%></li>
-        <li><%= link_to "Inactivation of Death", new_assessment_path({type: "InactivationOfDeath"})%></li>
+        <li><a href="#/mds_death">Death</a></li>
+        <li><a href="#/correction_of_death">Correction of Death</a></li>
+        <li><a href="#/inactivation_of_death">Inactivation of Death</a></li>
       </ul>
     </div>
   </div>

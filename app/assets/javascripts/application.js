@@ -17,6 +17,5 @@
 //= require angular-ui-router
 //= require angular-rails-templates
 //= require vkbeautify-wrapper
-//= require xml-builder
 //= require main
 //= require_tree .
