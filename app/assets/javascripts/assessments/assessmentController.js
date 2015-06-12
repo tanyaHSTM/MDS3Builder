@@ -1,6 +1,6 @@
 angular.module('Mds3Builder')
 
-.controller('assessmentController', ['$scope', function($scope) {
+.controller('assessmentController', ['$scope', '$filter', function($scope, $filter) {
   $scope.assessment = {};
   $scope.ITM_SBST_CD = $scope.ITM_SBST_CD;
   $scope.assessment.ITM_SBST_CD = "NC";
@@ -20,13 +20,25 @@ angular.module('Mds3Builder')
   $scope.assessment.A0500C = "Doe";
   $scope.assessment.A0600A = "123456789";
   $scope.assessment.A0600B = "^";
+  $scope.assessment.A0800 = "1";
+  $scope.assessment.A0900 = moment().subtract(80, 'years').format('YYYYDDMM');
+  $scope.assessment.A1300A = "^";
+  $scope.assessment.A1300B = "A100";
+  $scope.assessment.A1300C = "JD";
+  $scope.assessment.A1600 = moment().subtract(29, 'days').format('YYYYMMDD');
+  $scope.assessment.A1800 = "01"
+  $scope.assessment.A1900 = moment().subtract(29, 'days').format('YYYYMMDD');
+  $scope.assessment.A2000 = "^"
+  $scope.assessment.A2300 = moment().subtract(19, 'days').format('YYYYMMDD');
+  $scope.assessment.A2200 = moment().subtract(19, 'days').format('YYYYMMDD');
 
   $scope.baseFields = [
     "item_sbst_cd", "state_cd", "fac_id", "a0050", "a0100b", "a0200", "a0310a", "a0310b", "a0310c",
-    "a0310d", "a0310e", "a0310f", "a0500a", "a0500b", "a0500c", 'a0600a', 'a0600b'
+    "a0310d", "a0310e", "a0310f", "a0500a", "a0500b", "a0500c", "a0600a", "a0600b", "a0800", "a0900",
+    "a1300a", "a1300b", "a1300c", "a1600", "a1800", "a1900", "a2000", "a2300"
   ]
 
- //A0800 A0900 A1300a A1300b A1300c A1600 A1800 A1900 A2000 A2300
+  $scope.correctionField = ["a2200"]
 
   $scope.viewXml = function() {
     $scope.xmlPreview = !$scope.xmlPreview;
@@ -40,7 +52,7 @@ angular.module('Mds3Builder')
     var blob = new Blob(['<?xml version="1.0" encoding="UTF-8"?>\n' + $scope.xml], {
         type: "application/xml;charset=utf-8"
     });
-    saveAs(blob, "Admission Assessment.xml");
+    saveAs(blob, "MDS Assessment.xml");
   }
 
   // Xml Builder

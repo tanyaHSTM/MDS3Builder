@@ -8,8 +8,10 @@ angular.module('Mds3Builder')
   $scope.assessment.ITM_SBST_CD = "NQ";
   $scope.assessment.A0050 = "2";
   $scope.assessment.A0310A = "06";
+  $scope.assessment.A2300 = moment().subtract(12, 'days').format('YYYYMMDD');
+  $scope.assessment.A2200 = moment().subtract(13, 'days').format('YYYYMMDD');
 
   
   $scope.fields = $scope.baseFields
-  $scope.fields.push();
+  $scope.fields.push($scope.correctionField);
 }]);
