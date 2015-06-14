@@ -9,9 +9,9 @@ angular.module('Mds3Builder')
   $scope.initCorrectionValues();
   $scope.initComprehisiveValues();
   //traits
-  $scope.assessment.ITM_SBST_CD = "NT";
-  $scope.assessment.A0050 = "2";
-  $scope.assessment.A0310F = "01";
+  $scope.assessment.itm_sbst_cd = "NT";
+  $scope.assessment.a0050 = "2";
+  $scope.assessment.a0310f = "01";
   //fields
   $scope.fields = $scope.baseFields
   $scope.fields = $scope.fields.concat($scope.correctionFields);

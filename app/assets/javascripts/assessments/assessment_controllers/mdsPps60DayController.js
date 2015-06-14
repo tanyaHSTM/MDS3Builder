@@ -8,10 +8,10 @@ angular.module('Mds3Builder')
   $scope.initBaseValues();
   $scope.initComprehisiveValues();
   //traits
-  $scope.assessment.ITM_SBST_CD = "NP";
-  $scope.assessment.A0050 = "1";
-  $scope.assessment.A0310B = "04";
-  $scope.assessment.A2300 = moment().subtract(13, 'days').format('YYYYMMDD');
+  $scope.assessment.itm_sbst_cd = "NP";
+  $scope.assessment.a0050 = "1";
+  $scope.assessment.a0310b = "04";
+  $scope.assessment.a2300 = moment().subtract(13, 'days').format('YYYYMMDD');
   //fields
   $scope.fields = $scope.baseFields;
   $scope.fields = $scope.fields.concat($scope.comprehensiveFields);

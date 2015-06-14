@@ -8,10 +8,10 @@ angular.module('Mds3Builder')
   $scope.initBaseValues();
   $scope.initComprehisiveValues();
   //traits
-  $scope.assessment.ITM_SBST_CD = "NT";
-  $scope.assessment.A0050 = "1";
-  $scope.assessment.A0310F = "01";
-  $scope.assessment.A2300 = "^";
+  $scope.assessment.itm_sbst_cd = "NT";
+  $scope.assessment.a0050 = "1";
+  $scope.assessment.a0310f = "01";
+  $scope.assessment.a2300 = "^";
   //fields
   $scope.fields = $scope.baseFields;
   $scope.fields = $scope.fields.concat($scope.comprehensiveFields);

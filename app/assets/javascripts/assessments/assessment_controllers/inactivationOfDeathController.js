@@ -5,8 +5,8 @@ angular.module('Mds3Builder')
 
   $scope.header = "Inactivation of Death"
 
-  $scope.assessment.ITM_SBST_CD = "XX";
-  $scope.assessment.A0050 = "3";
+  $scope.assessment.itm_sbst_cd = "XX";
+  $scope.assessment.a0050 = "3";
 
   $scope.fields = []
   $scope.fields.push();
