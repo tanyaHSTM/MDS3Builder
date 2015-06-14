@@ -1,17 +1,2 @@
-class M0300a
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Number of stage 1 pressure ulcers (M0300a)"
-    @field_type = TEXT
-    @node = "M0300A" 
-
-    @options = []
-    @options << FieldOption.new("")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-  
-end
+<strong>Number of stage 1 pressure ulcers (m0300a)</strong><br>
+<input name="input" ng-model="assessment.m0300a" class="input-small search-query">

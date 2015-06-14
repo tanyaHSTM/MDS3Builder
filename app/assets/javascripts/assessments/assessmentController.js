@@ -98,6 +98,50 @@ angular.module('Mds3Builder')
   $scope.assessment.j1400 = "0";
   $scope.assessment.j1550a = "0";
   $scope.assessment.j1550c = "0";
+  $scope.assessment.k0200a = "70";
+  $scope.assessment.k0200b = "145";
+  $scope.assessment.k0300 = "0";
+  $scope.assessment.k0510b2 = "0";
+  $scope.assessment.l0200a = "0";
+  $scope.assessment.l0200b = "0";
+  $scope.assessment.l0200c = "0";
+  $scope.assessment.l0200d = "0";
+  $scope.assessment.l0200e = "0";
+  $scope.assessment.l0200f = "0";
+  $scope.assessment.l0200g = "0";
+  $scope.assessment.l0200z = "0";
+  $scope.assessment.m0210 = "0";
+  $scope.assessment.m0300a = "0";
+  $scope.assessment.m0300b1 = "0";
+  $scope.assessment.m0300b2 = "0";
+  $scope.assessment.m0300c1 = "0";
+  $scope.assessment.m0300c2 = "0";
+  $scope.assessment.m0300d1 = "0";
+  $scope.assessment.m0300d2 = "0";
+  $scope.assessment.m0300e1 = "0";
+  $scope.assessment.m0300e2 = "0";
+  $scope.assessment.m0300f1 = "0";
+  $scope.assessment.m0300f2 = "0";
+  $scope.assessment.m0300g1 = "0";
+  $scope.assessment.m0300g2 = "0";
+  $scope.assessment.n0410a = "0";
+  $scope.assessment.n0410b = "0";
+  $scope.assessment.n0410c = "0";
+  $scope.assessment.n0410d = "0";
+  $scope.assessment.n0410e = "0";
+  $scope.assessment.n0410f = "0";
+  $scope.assessment.n0410g = "0";
+  $scope.assessment.o0250a = "0";
+  $scope.assessment.o0300a = "0";
+  $scope.assessment.o0400b4 = "0";
+  $scope.assessment.o0400c4 = "0";
+
+  $scope.assessment.p0100b = "0";
+  $scope.assessment.p0100c = "0";
+  $scope.assessment.p0100d = "0";
+  $scope.assessment.p0100e = "0";
+  $scope.assessment.p0100f = "0";
+  $scope.assessment.p0100g = "0";
   }
 
   $scope.baseFields = [
@@ -113,13 +157,12 @@ angular.module('Mds3Builder')
     "g0600c", "h0100a", "h0300", "h0400", "i0200", "i0600", "i1550", "i1700", "i2000", "i2100", "i2300", 
     "i2500", "i2900", "i3700", "i3800", "i4200", "i4500", "i4800", "i4900", "i5100", "i5400", "i6200", 
     "i6300", "i8000a", "i8000b", "i8000c", "i8000d", "i8000e", "i8000f", "i8000g", "i8000h", "i8000i", 
-    "i8000j", "j1100b", "j1400", "j1550a", "j1550c"
+    "i8000j", "j1100b", "j1400", "j1550a", "j1550c", "k0200a", "k0200b", "k0300", "k0510b2", "l0200a",
+    "l0200b", "l0200c", "l0200d", "l0200e", "l0200f", "l0200g", "l0200z", "m0210", "m0300a", "m0300b1", 
+    "m0300b2", "m0300c1", "m0300c2", "m0300d1", "m0300d2", "m0300e1", "m0300e2", "m0300f1", "m0300f2",
+    "m0300g1", "m0300g2", "n0410a", "n0410b", "n0410c", "n0410d", "n0410e", "n0410f","n0410g", "o0250a",
+    "o0300a", "o0400b4", "o0400c4", "p0100b", "p0100c", "p0100d", "p0100e", "p0100f", "p0100g"
   ]
-
-  //K0200a K0200b K0300 K0510b2 L0200a
-  //L0200b L0200c L0200d L0200e L0200f L0200g L0200z M0210 M0300a M0300b1 M0300b2 M0300c1 M0300c2
-  //M0300d1 M0300d2 M0300e1 M0300e2 M0300f1 M0300f2 M0300g1 M0300g2 N0410a N0410b N0410c N0410d N0410e
-  //N0410f N0410g O0250a O0300a O0400b4 O0400c4 P0100b P0100c P0100d P0100e P0100f P0100g
 
   $scope.viewXml = function() {
     $scope.xmlPreview = !$scope.xmlPreview;

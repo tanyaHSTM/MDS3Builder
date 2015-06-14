@@ -1,26 +1,12 @@
-class O0400c4
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Physical Therapy - Number of days this therapy was administered for at least 15 minutes 
-             a day in the last 7 days (O0400c4)"
-    @field_type = DROPDOWN
-    @node = "O0400C4"     
-
-    @options = []
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "None")
-    @options << FieldOption.new("1", "1 Day")
-    @options << FieldOption.new("2", "2 Days")
-    @options << FieldOption.new("3", "3 Days")
-    @options << FieldOption.new("4", "4 Days")
-    @options << FieldOption.new("5", "5 Days")
-    @options << FieldOption.new("6", "6 Days")
-    @options << FieldOption.new("7", "7 Days")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-  
-end
+<strong>Physical Therapy - Number of days this therapy was administered for at least 15 minutes a day in the last 7 days (o0400c4)</strong><br>
+<select ng-model="assessment.o0400c4">
+  <option value="^">^ - NA</option>
+  <option value="0">0 - None</option>
+  <option value="1">1 - 1 Day</option>
+  <option value="2">2 - 2 Days</option>
+  <option value="3">3 - 3 Days</option>
+  <option value="4">4 - 4 Days</option>
+  <option value="5">5 - 5 Days</option>
+  <option value="6">6 - 6 Days</option>
+  <option value="7">7 - 7 Days</option>
+</select>

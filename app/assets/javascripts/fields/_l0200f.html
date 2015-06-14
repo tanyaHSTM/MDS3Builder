@@ -1,19 +1,10 @@
-class L0200f
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Mouth or facial pain, discomfort or difficulty chewing (L0200f)"
-    @field_type = RADIO
-    @node = "L0200F"
-
-    @options = []
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "No")
-    @options << FieldOption.new("1", "Yes")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-
-end
+<strong>Mouth or facial pain, discomfort or difficulty chewing (l0200f)</strong><br>
+<label>
+  <input type="radio" ng-model="assessment.l0200f" value="^"> NA
+</label>
+<label>
+  <input type="radio" ng-model="assessment.l0200f" value="0"> No
+</label>
+<label>
+  <input type="radio" ng-model="assessment.l0200f" value="1"> Yes
+</label>

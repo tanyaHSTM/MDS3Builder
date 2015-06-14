@@ -1,19 +1,10 @@
-class K0510b2
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Feeding Tube (K0510b2)"
-    @field_type = RADIO
-    @node = "K0510B2"
-    
-    @options = []
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "No")
-    @options << FieldOption.new("1", "Yes")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-
-end
+<strong>Feeding Tube (k0510b2)</strong><br>
+<label>
+  <input type="radio" ng-model="assessment.k0510b2" value="^"> NA
+</label>
+<label>
+  <input type="radio" ng-model="assessment.k0510b2" value="0"> No
+</label>
+<label>
+  <input type="radio" ng-model="assessment.k0510b2" value="1"> Yes
+</label>

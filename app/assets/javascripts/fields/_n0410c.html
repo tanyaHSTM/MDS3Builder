@@ -1,25 +1,12 @@
-class N0410c
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Antidepressant (N0410c)"
-    @field_type = DROPDOWN
-    @node = "N0410C"     
-
-    @options = []
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "None")
-    @options << FieldOption.new("1", "1 Day")
-    @options << FieldOption.new("2", "2 Days")
-    @options << FieldOption.new("3", "3 Days")
-    @options << FieldOption.new("4", "4 Days")
-    @options << FieldOption.new("5", "5 Days")
-    @options << FieldOption.new("6", "6 Days")
-    @options << FieldOption.new("7", "7 Days")
-  end
-  
-  def set_values_for_type(klass)
-    return "0"
-  end
-  
-end
+<strong>Antidepressant (n0410c)</strong><br>
+<select ng-model="assessment.n0410c">
+  <option value="^">^ - NA</option>
+  <option value="0">0 - None</option>
+  <option value="1">1 - 1 Day</option>
+  <option value="2">2 - 2 Days</option>
+  <option value="3">3 - 3 Days</option>
+  <option value="4">4 - 4 Days</option>
+  <option value="5">5 - 5 Days</option>
+  <option value="6">6 - 6 Days</option>
+  <option value="7">7 - 7 Days</option>
+</select>

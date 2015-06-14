@@ -1,17 +1,2 @@
-class M0300c1
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Number of stage 3 pressure ulcers (M0300c1) (If 0 or NA skip to M0300d stage 4)"
-    @field_type = TEXT
-    @node = "M0300C1" 
-
-    @options = []
-    @options << FieldOption.new("")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-  
-end
+<strong>Number of stage 3 pressure ulcers (m0300c1) (If 0 or NA skip to m0300d stage 4)</strong><br>
+<input name="input" ng-model="assessment.m0300c1" class="input-small search-query">

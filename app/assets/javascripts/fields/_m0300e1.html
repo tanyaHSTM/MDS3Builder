@@ -1,17 +1,2 @@
-class M0300e1
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Number of unstageable pressure ulcers due to non-removable dressing/device (M0300e1) (If 0 or NA skip to M0300f, Unstageable)"
-    @field_type = TEXT
-    @node = "M0300E1"     
-
-    @options = []
-    @options << FieldOption.new("")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-  
-end
+<strong>Number of unstageable pressure ulcers due to non-removable dressing/device (m0300e1) (If 0 or NA skip to m0300f, Unstageable)</strong><br>
+<input name="input" ng-model="assessment.m0300e1" class="input-small search-query">

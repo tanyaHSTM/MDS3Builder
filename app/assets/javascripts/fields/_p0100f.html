@@ -1,20 +1,13 @@
-class P0100f
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Limb Restraint - used in chair or out of bed (P0100f)"
-    @field_type = RADIO
-    @node = "P0100F"     
-
-    @options = []
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "Not used")
-    @options << FieldOption.new("1", "Used less than daily")
-    @options << FieldOption.new("2", "Used daily")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-  
-end
+<strong>Limb Restraint - used in chair or out of bed (p0100f)</strong><br>
+<label>
+  <input type="radio" ng-model="assessment.p0100f" value="^"> NA
+</label>
+<label>
+  <input type="radio" ng-model="assessment.p0100f" value="0"> Not used
+</label>
+<label>
+  <input type="radio" ng-model="assessment.p0100f" value="1"> Used less than daily
+</label>
+<label>
+  <input type="radio" ng-model="assessment.p0100f" value="2"> Used daily
+</label>

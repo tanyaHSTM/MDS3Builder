@@ -1,18 +1,3 @@
-class K0200a
-  attr_reader :title, :options, :name, :field_type, :node
-
-  def initialize
-    @title = "Swallowing/Nutritional Status"
-    @name = "Height (in inches) Record most recent height measure since admission/entry or reentry (K0200a)"
-    @field_type = TEXT
-    @node = "K0200A"
-
-    @options = []
-    @options << FieldOption.new("")
-  end
-
-  def set_values_for_type(klass)
-    return "70"
-  end
-
-end
+<h3>Swallowing/Nutritional Status</h3>
+<strong>Height (in inches) Record most recent height measure since admission/entry or reentry (k0200a)</strong><br>
+<input name="input" ng-model="assessment.k0200a" class="input-small search-query">

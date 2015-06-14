@@ -1,20 +1,11 @@
-class O0250a
-  attr_reader :title, :options, :name, :field_type, :node
-
-  def initialize
-    @title = "Special Treaments, Procedures and Programs"
-    @name = "Did the resident receive the influenza vaccine in this facility for this years influenza season? (O0250a)"
-    @field_type = RADIO
-    @node = "O0250A"
-
-    @options = []
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "No")
-    @options << FieldOption.new("1", "Yes")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-
-end
+<h3>Special Treaments, Procedures and Programs</h3>
+<strong>Did the resident receive the influenza vaccine in this facility for this years influenza season? (o0250a)</strong><br>
+<label>
+  <input type="radio" ng-model="assessment.o0250a" value="^"> NA
+</label>
+<label>
+  <input type="radio" ng-model="assessment.o0250a" value="0"> No
+</label>
+<label>
+  <input type="radio" ng-model="assessment.o0250a" value="1"> Yes
+</label>
