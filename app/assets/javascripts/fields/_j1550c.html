@@ -1,19 +1,10 @@
-class J1550c
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Dehydration - Is the resident dehydrated? (J1550c)"
-    @field_type = RADIO
-    @node = "J1550C"
-
-    @options = []
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "No")
-    @options << FieldOption.new("1", "Yes")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-
-end
+<strong>Dehydration - Is the resident dehydrated? (J1550c)</strong><br>
+<label>
+  <input type="radio" ng-model="assessment.J1550C" value="^"> NA
+</label>
+<label>
+  <input type="radio" ng-model="assessment.J1550C" value="0"> No
+</label>
+<label>
+  <input type="radio" ng-model="assessment.J1550C" value="1"> Yes
+</label>

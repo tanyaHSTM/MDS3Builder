@@ -6,7 +6,7 @@ angular.module('Mds3Builder')
   $scope.header = "Death Assessment"
   //default values
   $scope.initBaseValues();
-  $scope.initComprehisiveValues();
+  $scope.initDischargeValues();
   //traits
   $scope.assessment.ITM_SBST_CD = "NT";
   $scope.assessment.A0050 = "1";

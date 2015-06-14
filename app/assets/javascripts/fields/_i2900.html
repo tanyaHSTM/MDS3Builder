@@ -1,20 +1,10 @@
-class I2900
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Does the resident have Diabetes Mellitus? (I2900)"
-    @field_type = RADIO
-    @node = "I2900"
-
-    @options = []
-
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "No")
-    @options << FieldOption.new("1", "Yes")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-
-end
+<strong>Does the resident have Diabetes Mellitus? (I2900)</strong><br>
+<label>
+  <input type="radio" ng-model="assessment.I2900" value="^"> NA
+</label>
+<label>
+  <input type="radio" ng-model="assessment.I2900" value="0"> No
+</label>
+<label>
+  <input type="radio" ng-model="assessment.I2900" value="1"> Yes
+</label>

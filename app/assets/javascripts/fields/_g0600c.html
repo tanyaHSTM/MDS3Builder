@@ -1,19 +1,10 @@
-class G0600c
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Wheelchair - Normally used (G0600c)"
-    @field_type = RADIO
-    @node = "G0600C" 
-
-    @options = []
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "Not used")
-    @options << FieldOption.new("1", "Used")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-  
-end
+<strong>Wheelchair - Normally used (G0600c)</strong><br>
+<label>
+  <input type="radio" ng-model="assessment.G0600C" value="^"> NA
+</label>
+<label>
+  <input type="radio" ng-model="assessment.G0600C" value="0"> No
+</label>
+<label>
+  <input type="radio" ng-model="assessment.G0600C" value="1"> Yes
+</label>

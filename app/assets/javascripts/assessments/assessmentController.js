@@ -1,8 +1,8 @@
 angular.module('Mds3Builder')
 
 .controller('assessmentController', ['$scope', '$filter', function($scope, $filter) {
-  //base fields
   $scope.assessment = {};
+  //base values
   $scope.initBaseValues = function() {
     $scope.assessment.ITM_SBST_CD = "NC";
     $scope.assessment.STATE_CD = "CO";
@@ -32,15 +32,15 @@ angular.module('Mds3Builder')
     $scope.assessment.A2000 = "^";
     $scope.assessment.A2300 = moment().subtract(19, 'days').format('YYYYMMDD');
   }
-  //discharge field
+  //discharge values
   $scope.initDischargeValues = function() {
   $scope.assessment.A2100 = "01";
   }
-  //correction field
+  //correction values
   $scope.initCorrectionValues = function() {
   $scope.assessment.A2200 = moment().subtract(19, 'days').format('YYYYMMDD');
   }
-  //comprehisvie fields
+  //comprehisvie values
   $scope.initComprehisiveValues = function() {
   $scope.assessment.B0100 = "0";
   $scope.assessment.B0200 = "0";
@@ -48,6 +48,57 @@ angular.module('Mds3Builder')
   $scope.assessment.B1000 = "0";
   $scope.assessment.B1200 = "0";
   $scope.assessment.E0200A = "0";
+  $scope.assessment.E0800 = "0";
+  $scope.assessment.G0110A1 = "0";
+  $scope.assessment.G0110B1 = "0";
+  $scope.assessment.G0110D1 = "0";
+  $scope.assessment.G0110E1 = "0";
+  $scope.assessment.G0110G1 = "0";
+  $scope.assessment.G0110H1 = "0";
+  $scope.assessment.G0110I1 = "0";
+  $scope.assessment.G0110J1 = "0";
+  $scope.assessment.G0120A = "0";
+  $scope.assessment.G0400A = "0";
+  $scope.assessment.G0600B = "0";
+  $scope.assessment.G0400B = "0";
+  $scope.assessment.G0600C = "0";
+  $scope.assessment.H0100A = "0";
+  $scope.assessment.H0300 = "0";
+  $scope.assessment.H0400 = "0";
+  $scope.assessment.I0200 = "0";
+  $scope.assessment.I0600 = "0";
+  $scope.assessment.I1550 = "0";
+  $scope.assessment.I1700 = "0";
+  $scope.assessment.I2000 = "0";
+  $scope.assessment.I2100 = "0";
+  $scope.assessment.I2300 = "0";
+  $scope.assessment.I2500 = "0";
+  $scope.assessment.I2900 = "0";
+  $scope.assessment.I3700 = "0";
+  $scope.assessment.I3800 = "0";
+  $scope.assessment.I4200 = "0";
+  $scope.assessment.I4500 = "0";
+  $scope.assessment.I4800 = "0";
+  $scope.assessment.I4900 = "0";
+  $scope.assessment.I5100 = "0";
+  $scope.assessment.I5400 = "0";
+  $scope.assessment.I6200 = "0";
+  $scope.assessment.I6300 = "0";
+
+  $scope.assessment.I8000A = "^";
+  $scope.assessment.I8000B = "^";
+  $scope.assessment.I8000C = "^";
+  $scope.assessment.I8000D = "^";
+  $scope.assessment.I8000E = "^";
+  $scope.assessment.I8000F = "^";
+  $scope.assessment.I8000G = "^";
+  $scope.assessment.I8000H = "^";
+  $scope.assessment.I8000I = "^";
+  $scope.assessment.I8000J = "^";
+  $scope.assessment.J1100B = "0";
+  $scope.assessment.J1400 = "0";
+  $scope.assessment.J1550A = "0";
+  $scope.assessment.J1550C = "0";
   }
 
   $scope.baseFields = [
@@ -55,19 +106,18 @@ angular.module('Mds3Builder')
     "a0310d", "a0310e", "a0310f", "a0500a", "a0500b", "a0500c", "a0600a", "a0600b", "a0800", "a0900",
     "a1300a", "a1300b", "a1300c", "a1600", "a1800", "a1900", "a2000", "a2300"
   ]
-
   $scope.dischargeFields = ["a2100"]
-
   $scope.correctionFields = ["a2200"]
-
   $scope.comprehensiveFields = [
-    "b0100", "b0200", 'b0300', "b1000", "b1200", "e0200a"
+    "b0100", "b0200", 'b0300', "b1000", "b1200", "e0200a", "e0800", "g0110a1", "g0110b1", "g0110d1",
+    "g0110e1", "g0110g1", "g0110h1", "g0110i1", "g0110j1", "g0120a", "g0400a", "g0400b", "g0600b",
+    "g0600c", "h0100a", "h0300", "h0400", "i0200", "i0600", "i1550", "i1700", "i2000", "i2100", "i2300", 
+    "i2500", "i2900", "i3700", "i3800", "i4200", "i4500", "i4800", "i4900", "i5100", "i5400", "i6200", 
+    "i6300", "i8000a", "i8000b", "i8000c", "i8000d", "i8000e", "i8000f", "i8000g", "i8000h", "i8000i", 
+    "i8000j", "j1100b", "j1400", "j1550a", "j1550c"
   ]
 
-  //E0800 G0110a1 G0110b1 G0110d1 G0110e1 G0110g1 G0110h1
-  //G0110i1 G0110j1 G0120a G0400a G0400b G0600b G0600c H0100a H0300 H0400 I0200 I0600 I1550 I1700 I2000
-  //I2100 I2300 I2500 I2900 I3700 I3800 I4200 I4500 I4800 I4900 I5100 I5400 I6200 I6300 I8000a I8000b I8000c
-  //I8000d I8000e I8000f I8000g I8000h I8000i I8000j J1100b J1400 J1550a J1550c K0200a K0200b K0300 K0510b2 L0200a
+  //K0200a K0200b K0300 K0510b2 L0200a
   //L0200b L0200c L0200d L0200e L0200f L0200g L0200z M0210 M0300a M0300b1 M0300b2 M0300c1 M0300c2
   //M0300d1 M0300d2 M0300e1 M0300e2 M0300f1 M0300f2 M0300g1 M0300g2 N0410a N0410b N0410c N0410d N0410e
   //N0410f N0410g O0250a O0300a O0400b4 O0400c4 P0100b P0100c P0100d P0100e P0100f P0100g
