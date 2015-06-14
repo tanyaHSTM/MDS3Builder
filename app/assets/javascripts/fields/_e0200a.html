@@ -1,22 +1,9 @@
-class E0200a
-  attr_reader :title, :options, :name, :field_type, :node
-
-  def initialize
-    @title = "Behavior"
-    @name = "Physical behavioral symptoms directed toward others (eg, hitting, kicking, ect...) (E0200a)"
-    @field_type = DROPDOWN
-    @node = "E0200A"
-
-    @options = []
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "Behavior not exhibited")
-    @options << FieldOption.new("1", "Behavior of this type occured 1 to 3 days")
-    @options << FieldOption.new("2", "Behavior of this type occured 4 to 6 days, but less than daily")
-    @options << FieldOption.new("3", "Behavior of this type occured daily")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-
-end
+<h3>Behavior</h3>
+<strong>Physical behavioral symptoms directed toward others (eg, hitting, kicking, ect...) (E0200a)</strong><br>
+<select ng-model="assessment.E0200A">
+  <option value="^">^ - NA</option>
+  <option value="0">0 - Behavior not exhibited</option>
+  <option value="1">1 - Behavior of this type occured 1 to 3 days</option>
+  <option value="2">2 - Behavior of this type occured 4 to 6 days, but less than daily</option>
+  <option value="3">3 - Behavior of this type occured daily</option>
+</select>

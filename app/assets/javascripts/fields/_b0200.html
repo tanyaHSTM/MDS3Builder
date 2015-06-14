@@ -1,22 +1,8 @@
-class B0200 
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Ability to hear (with hearing aid or hearing appliances if normally used) (B0200)"
-    @field_type = DROPDOWN
-    @node = "B0200"
-    
-    @options = []
-    @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "Adequate")
-    @options << FieldOption.new("1", "Minimal difficulty")
-    @options << FieldOption.new("2", "Moderate difficulty")
-    @options << FieldOption.new("3", "Highly impaired")
-  end
-
-  def set_values_for_type(klass)
-    return "0"
-  end
-
-
-end
+<strong>Ability to hear (with hearing aid or hearing appliances if normally used) (B0200)</strong><br>
+<select ng-model="assessment.B0200">
+  <option value="^">^ - NA</option>
+  <option value="0">0 - Adequate</option>
+  <option value="1">1 - Minimal difficulty</option>
+  <option value="2">2 - Moderate difficulty</option>
+  <option value="3">3 - Highly impaired</option>
+</select>

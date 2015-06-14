@@ -8,6 +8,6 @@ angular.module('Mds3Builder')
   $scope.assessment.ITM_SBST_CD = "XX";
   $scope.assessment.A0050 = "3";
 
-  $scope.fields = $scope.baseFields
+  $scope.fields = []
   $scope.fields.push();
 }]);
