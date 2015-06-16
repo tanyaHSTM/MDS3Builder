@@ -1,19 +1,6 @@
-class X0600d 
-  attr_reader :options, :name, :field_type, :node
-
-  def initialize
-    @name = "Is this a Swing Bed clinical change assessment? (X0600d) (Complete only if X0150 = Swing Bed)"
-    @field_type = DROPDOWN
-    @node = "X0600D"    
-
-    @options = []
-    @options << FieldOption.new("0", "No")
-    @options << FieldOption.new("1", "Yes")
-    @options << FieldOption.new("^", "NA (not a swing bed provider) ")
-  end
-
-  def set_values_for_type(klass)
-    return "^"
-  end
-
-end
+<strong>Is this a Swing Bed clinical change assessment? (x0600d)(Complete only if x0150 = Swing Bed)</strong><br>
+<select ng-model="assessment.x0600d">
+  <option value="0">0 - No</option>
+  <option value="1">1 - Yes</option>
+  <option value="^">2 - NA (not a swing bed provider)</option>
+</select>

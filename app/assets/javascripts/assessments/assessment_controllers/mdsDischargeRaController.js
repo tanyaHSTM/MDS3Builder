@@ -5,6 +5,7 @@ angular.module('Mds3Builder')
 
   $scope.header = "Discharge RA Assessment"
   //default values
+  $scope.initRecordInfoValues();
   $scope.initBaseValues();
   $scope.initDischargeValues();
   $scope.initComprehisiveValues();
@@ -14,8 +15,10 @@ angular.module('Mds3Builder')
   $scope.assessment.a0310f = "11";
   $scope.assessment.a2000 = moment().subtract(13, 'days').format('YYYYMMDD');
   $scope.assessment.a2300 = "^";
+  $scope.assessment.x0600f = "11";
   //fields
-  $scope.fields = $scope.baseFields;
+  $scope.fields = $scope.recordInfoFields
+  $scope.fields = $scope.fields.concat($scope.baseFields);
   $scope.fields = $scope.fields.concat($scope.dischargeFields);
   $scope.fields = $scope.fields.concat($scope.comprehensiveFields);
 }]);

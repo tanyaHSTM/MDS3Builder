@@ -5,6 +5,7 @@ angular.module('Mds3Builder')
 
   $scope.header = "Death Assessment"
   //default values
+  $scope.initRecordInfoValues();
   $scope.initBaseValues();
   $scope.initDischargeValues();
   //traits
@@ -15,6 +16,7 @@ angular.module('Mds3Builder')
   $scope.assessment.a2300 = "^";
   $scope.assessment.a2100 = "08";
   //fields
-  $scope.fields = $scope.baseFields;
+  $scope.fields = $scope.recordInfoFields
+  $scope.fields = $scope.fields.concat($scope.baseFields);
   $scope.fields = $scope.fields.concat($scope.dischargeField);
 }]);

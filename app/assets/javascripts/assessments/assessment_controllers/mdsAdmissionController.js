@@ -5,6 +5,7 @@ angular.module('Mds3Builder')
 
   $scope.header = "Admission Assessment";
   //default values
+  $scope.initRecordInfoValues();
   $scope.initBaseValues();
   $scope.initComprehisiveValues();
   //traits
@@ -13,6 +14,7 @@ angular.module('Mds3Builder')
   $scope.assessment.a0310a = "01";
   $scope.assessment.a2300 = moment().subtract(20, 'days').format('YYYYMMDD');
   //fields
-  $scope.fields = $scope.baseFields;
+  $scope.fields = $scope.recordInfoFields
+  $scope.fields = $scope.fields.concat($scope.baseFields);
   $scope.fields = $scope.fields.concat($scope.comprehensiveFields);
 }]);

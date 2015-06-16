@@ -7,7 +7,8 @@ angular.module('Mds3Builder')
 
   $scope.assessment.itm_sbst_cd = "XX";
   $scope.assessment.a0050 = "3";
+  $scope.assessment.x0600a = "02";
 
-  $scope.fields = []
-  $scope.fields.push();
+  $scope.fields = $scope.recordInfoFields
+  $scope.fields = $scope.fields.concat($scope.correctionRequestFields);
 }]);
