@@ -10,6 +10,9 @@ angular.module('Mds3Builder')
     $scope.assessment.a0050 = "1";
     $scope.assessment.a0100b = "whisper";
     $scope.assessment.a0200 = "1";
+    $scope.recordInfoFields = [
+      "item_sbst_cd", "state_cd", "fac_id", "a0050", "a0100b", "a0200"
+    ]
   }
   //resident and stay values
   $scope.initBaseValues = function() {
@@ -34,14 +37,20 @@ angular.module('Mds3Builder')
     $scope.assessment.a1900 = moment().subtract(29, 'days').format('YYYYMMDD');
     $scope.assessment.a2000 = "^";
     $scope.assessment.a2300 = moment().subtract(19, 'days').format('YYYYMMDD');
+    $scope.baseFields = [
+      "a0310a", "a0310b", "a0310c", "a0310d", "a0310e", "a0310f", "a0500a", "a0500b", "a0500c", "a0600a", "a0600b",
+      "a0800", "a0900", "a1300a", "a1300b", "a1300c", "a1600", "a1800", "a1900", "a2000", "a2300"
+    ]
   }
   //discharge values
   $scope.initDischargeValues = function() {
     $scope.assessment.a2100 = "01";
+    $scope.dischargeFields = ["a2100"]
   }
   //correction values
   $scope.initCorrectionValues = function() {
     $scope.assessment.a2200 = moment().subtract(19, 'days').format('YYYYMMDD');
+    $scope.correctionFields = ["a2200"]
   }
   //comprehisvie values
   $scope.initComprehisiveValues = function() {
@@ -144,6 +153,18 @@ angular.module('Mds3Builder')
     $scope.assessment.p0100e = "0";
     $scope.assessment.p0100f = "0";
     $scope.assessment.p0100g = "0";
+    $scope.comprehensiveFields = [
+      "b0100", "b0200", 'b0300', "b1000", "b1200", "e0200a", "e0800", "g0110a1", "g0110b1", "g0110d1",
+      "g0110e1", "g0110g1", "g0110h1", "g0110i1", "g0110j1", "g0120a", "g0400a", "g0400b", "g0600b",
+      "g0600c", "h0100a", "h0300", "h0400", "i0200", "i0600", "i1550", "i1700", "i2000", "i2100", "i2300", 
+      "i2500", "i2900", "i3700", "i3800", "i4200", "i4500", "i4800", "i4900", "i5100", "i5400", "i6200", 
+      "i6300", "i8000a", "i8000b", "i8000c", "i8000d", "i8000e", "i8000f", "i8000g", "i8000h", "i8000i", 
+      "i8000j", "j1100b", "j1400", "j1550a", "j1550c", "k0200a", "k0200b", "k0300", "k0510b2", "l0200a",
+      "l0200b", "l0200c", "l0200d", "l0200e", "l0200f", "l0200g", "l0200z", "m0210", "m0300a", "m0300b1", 
+      "m0300b2", "m0300c1", "m0300c2", "m0300d1", "m0300d2", "m0300e1", "m0300e2", "m0300f1", "m0300f2",
+      "m0300g1", "m0300g2", "n0410a", "n0410b", "n0410c", "n0410d", "n0410e", "n0410f","n0410g", "o0250a",
+      "o0300a", "o0400b4", "o0400c4", "p0100b", "p0100c", "p0100d", "p0100e", "p0100f", "p0100g"
+    ]
   }
   //inactivation values
   $scope.initCorrectionRequestValues = function() {
@@ -161,33 +182,11 @@ angular.module('Mds3Builder')
     $scope.assessment.x0700a = moment().subtract(10, 'days').format('YYYYDDMM');
     $scope.assessment.x0700b = "^";
     $scope.assessment.x0700c = "^";
+    $scope.correctionRequestFields = [
+      "x0150", "x0200a", "x0200c", "x0300", "x0400", "x0500", "x0600a", "x0600b", "x0600c", "x0600d", "x0600f",
+      "x0700a", "x0700b", "x0700c"
+    ]
   }
-
-  $scope.recordInfoFields = [
-    "item_sbst_cd", "state_cd", "fac_id", "a0050", "a0100b", "a0200"
-  ]
-  $scope.baseFields = [
-    "a0310a", "a0310b", "a0310c", "a0310d", "a0310e", "a0310f", "a0500a", "a0500b", "a0500c", "a0600a", "a0600b",
-    "a0800", "a0900", "a1300a", "a1300b", "a1300c", "a1600", "a1800", "a1900", "a2000", "a2300"
-  ]
-  $scope.dischargeFields = ["a2100"]
-  $scope.correctionFields = ["a2200"]
-  $scope.comprehensiveFields = [
-    "b0100", "b0200", 'b0300', "b1000", "b1200", "e0200a", "e0800", "g0110a1", "g0110b1", "g0110d1",
-    "g0110e1", "g0110g1", "g0110h1", "g0110i1", "g0110j1", "g0120a", "g0400a", "g0400b", "g0600b",
-    "g0600c", "h0100a", "h0300", "h0400", "i0200", "i0600", "i1550", "i1700", "i2000", "i2100", "i2300", 
-    "i2500", "i2900", "i3700", "i3800", "i4200", "i4500", "i4800", "i4900", "i5100", "i5400", "i6200", 
-    "i6300", "i8000a", "i8000b", "i8000c", "i8000d", "i8000e", "i8000f", "i8000g", "i8000h", "i8000i", 
-    "i8000j", "j1100b", "j1400", "j1550a", "j1550c", "k0200a", "k0200b", "k0300", "k0510b2", "l0200a",
-    "l0200b", "l0200c", "l0200d", "l0200e", "l0200f", "l0200g", "l0200z", "m0210", "m0300a", "m0300b1", 
-    "m0300b2", "m0300c1", "m0300c2", "m0300d1", "m0300d2", "m0300e1", "m0300e2", "m0300f1", "m0300f2",
-    "m0300g1", "m0300g2", "n0410a", "n0410b", "n0410c", "n0410d", "n0410e", "n0410f","n0410g", "o0250a",
-    "o0300a", "o0400b4", "o0400c4", "p0100b", "p0100c", "p0100d", "p0100e", "p0100f", "p0100g"
-  ]
-  $scope.correctionRequestFields = [
-    "x0150", "x0200a", "x0200c", "x0300", "x0400", "x0500", "x0600a", "x0600b", "x0600c", "x0600d", "x0600f",
-    "x0700a", "x0700b", "x0700c"
-  ]
 
   $scope.viewXml = function() {
     $scope.xmlPreview = !$scope.xmlPreview;
@@ -201,7 +200,7 @@ angular.module('Mds3Builder')
     var blob = new Blob(['<?xml version="1.0" encoding="UTF-8"?>\n' + $scope.xml], {
         type: "application/xml;charset=utf-8"
     });
-    saveAs(blob, "MDS Assessment.xml");
+    saveAs(blob, $scope.header);
   }
 
   // Xml Builder
