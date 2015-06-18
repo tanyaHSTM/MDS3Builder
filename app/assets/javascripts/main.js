@@ -14,6 +14,7 @@ function($stateProvider, $urlRouterProvider) {
     .state('test_cases', {
       url: '/test_cases',
       templateUrl: 'test_cases/_test_cases.html',
+      controller: 'testCasesController'
     })
 
     .state('mds_admission', {

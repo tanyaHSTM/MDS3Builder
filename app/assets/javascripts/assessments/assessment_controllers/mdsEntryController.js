@@ -16,5 +16,4 @@ angular.module('Mds3Builder')
   //fields
   $scope.fields = $scope.recordInfoFields
   $scope.fields = $scope.fields.concat($scope.baseFields);
-  $scope.fields = $scope.fields.concat($scope.comprehensiveFields);
 }]);
