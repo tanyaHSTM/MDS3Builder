@@ -1,0 +1,78 @@
+<header class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <a href="#/assessment" id="logo">MDS 3.0 Builder</a>
+    <h2>{{header}}</h2>
+    <input type="button" class="btn default btn-submit" ng-click="exportXml()" value="Export XML" />
+  </div>
+</header><br><br>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span3">
+      <ul class="nav nav-list">
+        <li class="nav-header">Orba Assesments</li>
+        <li class="active"><a data-toggle="tab" ng-click="admissionAssessment()">Admission</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfAdmission()">Correction of Admission</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfAdmission()">Inactivation of Admission</a></li>
+        <li class="divider"></li>
+        <li><a data-toggle="tab" ng-click="quarterlyAssessment()">Quarterly</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfQuarterly()">Correction of Quarterly</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfQuarterly()">Inactivation of Quarterly</a></li>
+        <li class="divider"></li>
+        <li><a data-toggle="tab" ng-click="annualAssessment()">Annual</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfAnnual()">Correction of Annual</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfAnnual()">Inactivation of Annual</a></li>
+        <li class="divider"></li>
+        <li><a data-toggle="tab" ng-click="significantChangeAssessment()">Significant Change</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfSignificantChange()">Correction of Significant Change</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfSignificantChange()">Inactivation of Significant Change</a></li>
+        <li class="nav-header">Entry and Discharge</li>
+        <li><a data-toggle="tab" ng-click="entryAssessment()">Entry</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfEntry()">Correction of Entry</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfEntry()">Inactivation of Entry</a></li>
+        <li class="divider"></li>
+        <li><a data-toggle="tab" ng-click="dischargeRaAssessment()">Discharge RA</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfDischargeRa()">Correction of Discharge RA</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfDischargeRa()">Inactivation of Discharge RA</a></li>
+        <li class="divider"></li>
+        <li><a data-toggle="tab" ng-click="dischargeRnaAssessment()">Discharge RNA</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfDischargeRna()">Correction of Discharge RNA</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfDischargeRna()">Inactivation of Discharge RNA</a></li>
+        <li class="divider"></li>
+        <li><a data-toggle="tab" ng-click="deathAssessment()">Death</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfDeath()">Correction of Death</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfDeath()">Inactivation of Death</a></li>
+        <li class="nav-header">PPS Assessment</li>
+        <li><a data-toggle="tab" ng-click="pps5DayAssessment()">PPS 5-Day</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfPps5Day()">Correction of PPS 5-Day</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfPps5Day()">Inactivation of PPS 5-Day</a></li>
+        <li class="divider"></li>
+        <li><a data-toggle="tab" ng-click="pps14DayAssessment()">PPS 14-Day</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfPps14Day()">Correction of PPS 14-Day</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfPps14Day()">Inactivation of PPS 14-Day</a></li>
+        <li class="divider"></li>
+        <li><a data-toggle="tab" ng-click="pps30DayAssessment()">PPS 30-Day</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfPps30Day()">Correction of PPS 30-Day</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfPps30Day()">Inactivation of PPS 30-Day</a></li>
+        <li class="divider"></li>
+        <li><a data-toggle="tab" ng-click="pps60DayAssessment()">PPS 60-Day</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfPps60Day()">Correction of PPS 60-Day</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfPps60Day()">Inactivation of PPS 60-Day</a></li>
+        <li class="divider"></li>
+        <li><a data-toggle="tab" ng-click="pps90DayAssessment()">PPS 90-Day</a></li>
+        <li><a data-toggle="tab" ng-click="correctionOfPps90Day()">Correction of PPS 90-Day</a></li>
+        <li><a data-toggle="tab" ng-click="inactivationOfPps90Day()">Inactivation of PPS 90-Day</a></li>
+      </ul>
+    </div>
+    <div class="span6">
+    <form>
+      <div ng-repeat="field in fields" class="form-item">
+        <div ng-include="'fields/_'+field+'.html'"></div>
+      </div>
+    </form>
+    <pre ng-hide="xmlPreview">{{xml_view}}</pre>
+    <input type="button" class="btn default btn-submit" ng-click="viewXml()" value="View XML" /><br>
+    </div>
+  <div class="span3">
+      test cases will eventually go here
+  </div>
+</div>

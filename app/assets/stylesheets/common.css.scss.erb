@@ -45,7 +45,7 @@ textarea {
 }
 
 .btn-submit {
-    width: 150px;
+    width: 100% !important;
     background-color: hsl(0, 69%, 22%) !important; 
     background-repeat: repeat-x; 
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b42121", endColorstr="#5e1111"); 
@@ -122,12 +122,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
   font-weight: normal;
   color: $grayLight;
+  margin-left: 40%;
 }
 
 h3 {
@@ -157,8 +156,14 @@ li {
 ul {
   list-style: none;
   display:inline-block;
+  border: 2px solid $grayLight;
+  border-left: transparent;
+  border-bottom: transparent;
  }
 
+.active {
+  width: 90%;
+}
 
 #green li a {
     color: green;
@@ -181,11 +186,29 @@ ul {
     }
   }
 
+a, a:hover { 
+  color: brown;
+  font-size: 1.0em;
+  cursor: pointer;
+}
+.nav-list > li.active > a,
+.nav-list > li.active > a:hover,
+.nav-list > li.active > a:focus {
+  color: brown;
+  background-color: transparent;
+  font-size: 1.3em;
+  border: 2px solid brown;
+  cursor: pointer;
+} 
+.nav-header {
+  font-size: 1.0em;
+}
+
 /* header */
 
 #logo {
   float: left;
-  margin-right: 10px;
+  margin-left: 20px;
   font-size: 1.7em;
   color: brown;
   text-transform: uppercase;
