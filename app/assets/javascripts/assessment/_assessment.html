@@ -2,12 +2,13 @@
   <div class="navbar-inner">
     <a href="#/assessment" id="logo">MDS 3.0 Builder</a>
     <h2>{{header}}</h2>
-    <input type="button" class="btn default btn-submit" ng-click="exportXml()" value="Export XML" />
+    <a type="button" class="btn toggle-nav">Toggle Assessment Nav</a>
+    <button type="button" class="btn default btn-submit" ng-click="exportXml()">Export XML</button>
   </div>
-</header><br><br>
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span3">
+</header><br><br><br>
+<div id="site-wrapper">
+   <div id="site-canvas">
+     <div id="site-menu">
       <ul class="nav nav-list">
         <li class="nav-header">Orba Assesments</li>
         <li class="active"><a data-toggle="tab" ng-click="admissionAssessment()">Admission</a></li>
@@ -62,17 +63,11 @@
         <li><a data-toggle="tab" ng-click="correctionOfPps90Day()">Correction of PPS 90-Day</a></li>
         <li><a data-toggle="tab" ng-click="inactivationOfPps90Day()">Inactivation of PPS 90-Day</a></li>
       </ul>
-    </div>
-    <div class="span6">
-    <form>
-      <div ng-repeat="field in fields" class="form-item">
-        <div ng-include="'fields/_'+field+'.html'"></div>
-      </div>
-    </form>
-    <pre ng-hide="xmlPreview">{{xml_view}}</pre>
-    <input type="button" class="btn default btn-submit" ng-click="viewXml()" value="View XML" /><br>
-    </div>
-  <div class="span3">
-      test cases will eventually go here
+     </div>
+     <form style="margin-left:20%;">
+       <div ng-repeat="field in fields" class="form-item">
+         <div ng-include="'fields/_'+field+'.html'"></div>
+       </div>
+     </form><br>
   </div>
 </div>
