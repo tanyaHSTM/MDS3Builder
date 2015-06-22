@@ -38,7 +38,7 @@ angular.module('Mds3Builder')
     $scope.assessment.a0600a = "123456789";
     $scope.assessment.a0600b = "^";
     $scope.assessment.a0800 = "1";
-    $scope.assessment.a0900 = moment().subtract(80, 'years').format('YYYYDDMM');
+    $scope.assessment.a0900 = moment().subtract(80, 'years').format('YYYYMMDD');
     $scope.assessment.a1300a = "^";
     $scope.assessment.a1300b = "A100";
     $scope.assessment.a1300c = "JD";
@@ -708,6 +708,6 @@ angular.module('Mds3Builder')
     var blob = new Blob(['<?xml version="1.0" encoding="UTF-8"?>\n' + $scope.xml], {
         type: "application/xml;charset=utf-8"
     });
-    saveAs(blob, $scope.header);
+    saveAs(blob, $scope.header+".xml");
   }
 }]);
