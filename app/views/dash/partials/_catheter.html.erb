@@ -1,29 +1,29 @@
 <span>
 	<li><strong>QP010-</strong>Prevalence of Indwelling Catheters</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp010", pos_or_neg: "pos", resident: "Positive", ssn: "111111124"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp010", pos_or_neg: "pos", resident: "Positive", ssn: "111111124"}), :id => "qp010_0_green"%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp010", pos_or_neg: "neg", resident: "Negative", ssn: "111111125"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp010", pos_or_neg: "neg", resident: "Negative", ssn: "111111125"}), :id => "qp010_0_red"%></li>
   </ul>
 </span>
 <span>
 	<li><strong>QP012-</strong>Prevalence of Urinary Tract Infections</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "pos", resident: "Positive", ssn: "111111126"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "pos", resident: "Positive", ssn: "111111126"}), :id => "qp012_0_green"%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "neg", resident: "Negative", ssn: "111111127"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp012", pos_or_neg: "neg", resident: "Negative", ssn: "111111127"}), :id => "qp012_0_red"%></li>
   </ul>
 </span>
 <span>
 	<li><strong>QP047-</strong>Continence Decline Since Admission</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128"})%></li>
-    <li><%= link_to "Change in Status", new_assessment_path({type: "SignificantChange", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128"}), :id => "qp047_0_green"%></li>
+    <li><%= link_to "Change in Status", new_assessment_path({type: "SignificantChange", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128", :id => "qp047_1_green"})%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos", resident: "Negative", ssn: "111111129"})%></li>
-    <li><%= link_to "Change in Status", new_assessment_path({type: "SignificantChange", qp_name: "Qp047", pos_or_neg: "neg", resident: "Negative", ssn: "111111129"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos", resident: "Negative", ssn: "111111129"}), :id => "qp047_0_red"%></li>
+    <li><%= link_to "Change in Status", new_assessment_path({type: "SignificantChange", qp_name: "Qp047", pos_or_neg: "neg", resident: "Negative", ssn: "111111129"}), :id => "qp047_1_red"%></li>
   </ul>
 </span>

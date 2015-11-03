@@ -1,9 +1,9 @@
 <span>
 	<li><strong>QP013-</strong>Prevalence of Weight Loss</li>
   <ul id="green">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp013", pos_or_neg: "pos", resident: "Positive", ssn: "111111140"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp013", pos_or_neg: "pos", resident: "Positive", ssn: "111111140"}), :id => "qp013_0_green"%></li>
   </ul>
   <ul id="red">
-    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp013", pos_or_neg: "neg", resident: "Negative", ssn: "111111141"})%></li>
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp013", pos_or_neg: "neg", resident: "Negative", ssn: "111111141"}), :id => "qp013_0_red"%></li>
   </ul>
 </span>
