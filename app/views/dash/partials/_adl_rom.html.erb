@@ -1,4 +1,14 @@
 <span>
+  <li><strong>QP290-</strong>Incidence of Decline in ADLs</li>
+  <ul id="green">
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp290", pos_or_neg: "pos", resident: "Positive", ssn: "101111111"})%></li>
+    <li><%= link_to "Quarterly", new_assessment_path({type: "Quarterly", qp_name: "Qp290", pos_or_neg: "pos", resident: "Positive", ssn: "101111111"})%></li>
+  </ul>
+  <ul id="red">
+    <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp290", pos_or_neg: "pos", resident: "Negative", ssn: "101111112"})%></li>
+    <li><%= link_to "Quarterly", new_assessment_path({type: "Quarterly", qp_name: "Qp290", pos_or_neg: "neg", resident: "Negative", ssn: "101111112"})%></li>
+  </ul>
+</span>
 	<li><strong>QP017-</strong>Decline in Late Loss ADLs</li>
   <ul id="green">
     <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp017", pos_or_neg: "pos", resident: "Positive", ssn: "111111111"})%></li>
