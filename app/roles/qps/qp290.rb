@@ -67,7 +67,7 @@ module Qps::Qp290
     field = klasses.detect {|x| x.node == "G0110I1"}
     nilled_option = field.options.detect{|x| x.value == "^"}
     nilled_option.selected = false
-    field_option = field.options.detect{|x| x.value == "2"} 
+    field_option = field.options.detect{|x| x.value == "0"} 
     field_option.selected = true
   end
 
