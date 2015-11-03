@@ -20,7 +20,7 @@
 	<li><strong>QP047-</strong>Continence Decline Since Admission</li>
   <ul id="green">
     <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128"}), :id => "qp047_0_green"%></li>
-    <li><%= link_to "Change in Status", new_assessment_path({type: "SignificantChange", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128", :id => "qp047_1_green"})%></li>
+    <li><%= link_to "Change in Status", new_assessment_path({type: "SignificantChange", qp_name: "Qp047", pos_or_neg: "pos", resident: "Positive", ssn: "111111128"}), :id => "qp047_1_green"%></li>
   </ul>
   <ul id="red">
     <li><%= link_to "Admission", new_assessment_path({type: "Admission", qp_name: "Qp047", pos_or_neg: "pos", resident: "Negative", ssn: "111111129"}), :id => "qp047_0_red"%></li>
