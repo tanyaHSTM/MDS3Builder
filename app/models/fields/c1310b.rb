@@ -1,8 +1,7 @@
 class C1310b
-  attr_reader :title, :options, :name, :field_type, :node
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @title = "Cognitive Patterns"
     @name = "Inattention - Did the resident have difficulty focusing attention? (C1310b)"
     @field_type = DROPDOWN
     @node = "C1310B" 
