@@ -22,11 +22,11 @@ class GG0170d1
   def set_values_for_type(klass)
     case klass
     when "MdsPpsSos" then return "06"
-    when "MdsPpsEos" then return "06"
+    when "MdsPpsEos" then return "^"
     when "CorrectionOfPpsSos" then return "06"
-    when "CorrectionOfPpsEos" then return "06"
+    when "CorrectionOfPpsEos" then return "^"
     when "InactivationOfPpsSos" then return "06"
-    when "InactivationOfPpsEos" then return "06" 
+    when "InactivationOfPpsEos" then return "^" 
     else return "^"
     end
   end
