@@ -45,16 +45,22 @@ class AssessmentsController < ApplicationController
     when "Pps30Day" then return MdsPps30Day.new
     when "Pps60Day" then return MdsPps60Day.new
     when "Pps90Day" then return MdsPps90Day.new
+    when "PpsSos" then return MdsPpsSos.new
+    when "PpsEos" then return MdsPpsEos.new
     when "CorrectionOfPps5Day" then return CorrectionOfPps5Day.new
     when "CorrectionOfPps14Day" then return CorrectionOfPps14Day.new
     when "CorrectionOfPps30Day" then return CorrectionOfPps30Day.new
     when "CorrectionOfPps60Day" then return CorrectionOfPps60Day.new
     when "CorrectionOfPps90Day" then return CorrectionOfPps90Day.new
+    when "CorrectionOfPpsSos" then return CorrectionOfPpsSos.new
+    when "CorrectionOfPpsEos" then return CorrectionOfPpsEos.new
     when "InactivationOfPps5Day" then return InactivationOfPps5Day.new
     when "InactivationOfPps14Day" then return InactivationOfPps14Day.new 
     when "InactivationOfPps30Day" then return InactivationOfPps30Day.new
     when "InactivationOfPps60Day" then return InactivationOfPps60Day.new 
-    when "InactivationOfPps90Day" then return InactivationOfPps90Day.new 
+    when "InactivationOfPps90Day" then return InactivationOfPps90Day.new
+    when "InactivationOfPpsSos" then return InactivationOfPpsSos.new 
+    when "InactivationOfPpsEos" then return InactivationOfPpsEos.new 
     end
   end
 
