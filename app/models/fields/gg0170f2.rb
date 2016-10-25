@@ -20,7 +20,7 @@ class GG0170f2
   end
 
   def set_values_for_type(klass)
-    return "06"
+    return "^"
   end
 
 end
