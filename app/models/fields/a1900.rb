@@ -10,7 +10,6 @@ class A1900
     @options << FieldOption.new("")
   end
 
-
   def set_values_for_type(klass)
     date = Date.today - 29.days
     return date.strftime("%Y%m%d")
