@@ -2,7 +2,7 @@ class GG0130c1
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Self Care - Toileting Hygiene (Start of Stay Performance) - The ability to maintain perineal hygiene, adjust clothes before and after using the toilet, commode, bedpan, or urinal (GG0130c1)"
+    @name = "Self-Care - Toileting Hygiene (Start of Stay Performance) - The ability to maintain perineal hygiene, adjust clothes before and after using the toilet, commode, bedpan, or urinal (GG0130c1)"
     @field_type = DROPDOWN
     @node = "GG0130C1" 
 

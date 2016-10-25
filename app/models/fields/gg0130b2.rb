@@ -2,7 +2,7 @@ class GG0130b2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Self Care - Oral Hygiene (Discharge Goal) - The ability to use suitable items to clean teeth (GG0130b2)"
+    @name = "Self-Care - Oral Hygiene (Discharge Goal) - The ability to use suitable items to clean teeth (GG0130b2)"
     @field_type = DROPDOWN
     @node = "GG0130B2" 
 

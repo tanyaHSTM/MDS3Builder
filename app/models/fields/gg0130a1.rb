@@ -3,7 +3,7 @@ class GG0130a1
 
   def initialize
     @title = "Functional Abilities and Goals"
-    @name = "Self Care Eating - (Start of Stay Performance) - The ability to use suitable utensils to bring food to the mouth and swallow food once the meal is presented on a table/tray (GG0130a1)"
+    @name = "Self-Care - Eating (Start of Stay Performance) - The ability to use suitable utensils to bring food to the mouth and swallow food once the meal is presented on a table/tray (GG0130a1)"
     @field_type = DROPDOWN
     @node = "GG0130A1" 
 

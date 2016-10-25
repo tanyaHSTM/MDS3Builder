@@ -2,7 +2,7 @@ class GG0130a2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Self Care - Eating (Discharge Goal) - The ability to use suitable utensils to bring food to the mouth and swallow food once the meal is presented on a table/tray (GG0130a2)"
+    @name = "Self-Care - Eating (Discharge Goal) - The ability to use suitable utensils to bring food to the mouth and swallow food once the meal is presented on a table/tray (GG0130a2)"
     @field_type = DROPDOWN
     @node = "GG0130A2" 
 

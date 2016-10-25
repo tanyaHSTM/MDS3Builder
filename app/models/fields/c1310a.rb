@@ -3,7 +3,7 @@ class C1310a
 
   def initialize
     @title = "Cognitive Patterns"
-    @name = "Acute Onset Metal Change - Evidence of an acute change in menatl status from the residetns baseline? (C1310a)"
+    @name = "Acute Onset Mental Change - Is there evidence of an acute change in mental status from the resident's baseline? (C1310a)"
     @field_type = DROPDOWN
     @node = "C1310A" 
 
