@@ -1,12 +1,14 @@
-class O0250a
+class C0100
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @name = "Did the resident receive the influenza vaccine in this facility for this years influenza season? (O0250a)"
+    @title = "Cognitive Patterns"
+    @name = "Should Brief Interview for Mental Status (C0200-C0500) be Conducted? (C0100)"
     @field_type = RADIO
-    @node = "O0250A"
+    @node = "C0100"
 
     @options = []
+
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")

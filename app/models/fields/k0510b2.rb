@@ -2,7 +2,7 @@ class K0510b2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Feeding Tube (K0510b2)"
+    @name = "Feeding Tube: Performed in the last 7 days while a resident (K0510b2)"
     @field_type = RADIO
     @node = "K0510B2"
     

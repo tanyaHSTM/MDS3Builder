@@ -1,10 +1,10 @@
-class O0250a
-  attr_reader :title, :options, :name, :field_type, :node
+class O0100b1
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Did the resident receive the influenza vaccine in this facility for this years influenza season? (O0250a)"
+    @name = "Radiation: Performed in the last 14 days while NOT a resident (O0100b1)"
     @field_type = RADIO
-    @node = "O0250A"
+    @node = "O0100B1"
 
     @options = []
     @options << FieldOption.new("^", "NA")
