@@ -2,7 +2,7 @@ class A0310h
   attr_reader :options, :name, :field_type, :node
 
   def initialize 
-    @name = "Is this a SNF PPS Part A Discharge (End of Stay) Assessment? (A0310h)"
+    @name = "Is this a SNF Part A PPS Discharge (End of Stay) Assessment? (A0310h)"
     @field_type = DROPDOWN
     @node = "A0310H" 
 

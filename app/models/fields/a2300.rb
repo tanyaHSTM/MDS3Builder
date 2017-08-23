@@ -2,7 +2,7 @@ class A2300
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Assessment Reference Date (Observaton end date) (format = yyyymmdd) (A2300)"
+    @name = "Assessment Reference Date (Observation end date) (format = yyyymmdd) (A2300)"
     @field_type = TEXT
     @node = "A2300"
 

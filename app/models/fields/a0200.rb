@@ -2,7 +2,7 @@ class A0200
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Provider Type (A0200)"
+    @name = "Type of Provider (A0200)"
     @field_type = DROPDOWN
     @node = "A0200" 
 

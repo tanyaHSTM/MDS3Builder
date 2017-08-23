@@ -1,17 +1,17 @@
-class A1300c 
+class N0450e
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Name by which resident prefers to be addressed (A1300c)"
+    @name = "Date physician documented GDR (format = mmddyyyy) (N0450e)"
     @field_type = TEXT
-    @node = "A1300C" 
+    @node = "N0450E"     
 
     @options = []
     @options << FieldOption.new("")
   end
-
+  
   def set_values_for_type(klass)
-    return "JD"
+    return "^"
   end
-
+  
 end

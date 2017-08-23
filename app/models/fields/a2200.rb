@@ -2,7 +2,7 @@ class A2200
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Previous Assessment Reference Date for Significat Correction (format = yyyymmdd) (A2200)"
+    @name = "Previous Assessment Reference Date for Significant Correction (format = yyyymmdd) (A2200)"
     @field_type = TEXT
     @node = "A2200" 
 
