@@ -2,7 +2,7 @@ class A0900
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Birth Date (format = yyyyddmm) (A0900)"
+    @name = "Birth Date (format = yyyymmdd) (A0900)"
     @field_type = TEXT
     @node = "A0900"
 
