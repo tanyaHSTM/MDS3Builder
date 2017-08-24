@@ -4,7 +4,7 @@ class P0200a
   def initialize
     @name = "Bed alarm (P0200a)"
     @field_type = RADIO
-    @node = "P0100A"     
+    @node = "P0200A"     
 
     @options = []
     @options << FieldOption.new("^", "NA")
