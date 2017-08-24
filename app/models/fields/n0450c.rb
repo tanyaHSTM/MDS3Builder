@@ -2,7 +2,7 @@ class N0450c
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Date of last attempted GDR (format = mmddyyyy) (N0450c)"
+    @name = "Date of last attempted GDR (format = yyyymmdd) (N0450c)"
     @field_type = TEXT
     @node = "N0450C"     
 
