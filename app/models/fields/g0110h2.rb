@@ -1,10 +1,10 @@
-class G0110h1
+class G0110h2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Eating (Self Performance) - How resident eats and drinks, regardless of skill. (G0110h1)"
+    @name = "Eating (Support) - How resident eats and drinks, regardless of skill. (G0110h2)"
     @field_type = DROPDOWN
-    @node = "G0110H1"
+    @node = "G0110H2"
 
     @options = []
     @options << FieldOption.new("^", "NA")
