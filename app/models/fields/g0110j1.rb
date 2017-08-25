@@ -2,7 +2,7 @@ class G0110j1
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Personal hygiene - how resident maintains personal hygiene. (G0110j1)"
+    @name = "Personal hygiene (Self-Performance) - how resident maintains personal hygiene. (G0110j1)"
     @field_type = DROPDOWN
     @node = "G0110J1"
 

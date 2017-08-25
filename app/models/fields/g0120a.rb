@@ -2,7 +2,7 @@ class G0120a
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Bathing - How resident takes bath/shower, sponge bath, and transfers in/out of tub/shower . (G0120a)"
+    @name = "Bathing (Self-Performance) - how resident takes bath/shower, sponge bath, and transfers in/out of tub/shower . (G0120a)"
     @field_type = DROPDOWN
     @node = "G0120A"
 
