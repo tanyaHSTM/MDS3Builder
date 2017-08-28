@@ -2,7 +2,7 @@ class A1510a
   attr_reader :options, :name, :field_type, :node 
 
   def initialize
-    @name = "Preadmission Screening: Serious Mental Illness (A1510a)"
+    @name = "Preadmission Screening: Serious mental illness (A1510a)"
     @field_type = DROPDOWN
     @node = "A1510A" 
 

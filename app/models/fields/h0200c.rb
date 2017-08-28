@@ -1,10 +1,10 @@
-class K0510b2
+class H0200c
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Feeding tube: Performed in the last 7 days while a resident (K0510b2)"
-    @field_type = RADIO
-    @node = "K0510B2"
+    @name = "Urinary Toileting Program: Current toileting program or trial - is a toileting program currently being used to manage the resident's urinary continence? (H0200c)"
+    @field_type = DROPDOWN
+    @node = "H0200C"
     
     @options = []
     @options << FieldOption.new("^", "NA")

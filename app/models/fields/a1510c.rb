@@ -2,7 +2,7 @@ class A1510c
   attr_reader :options, :name, :field_type, :node 
 
   def initialize
-    @name = "Preadmission Screening: Other related Conditions (A1510c)"
+    @name = "Preadmission Screening: Other related conditions (A1510c)"
     @field_type = DROPDOWN
     @node = "A1510C" 
 

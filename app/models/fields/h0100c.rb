@@ -1,11 +1,11 @@
-class K0510b2
+class H0100c
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Feeding tube: Performed in the last 7 days while a resident (K0510b2)"
+    @name = "Ostomy (including urostomy, ileostomy, and colostomy) (H0100c)"
     @field_type = RADIO
-    @node = "K0510B2"
-    
+    @node = "H0100C"
+
     @options = []
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")

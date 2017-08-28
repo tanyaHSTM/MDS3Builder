@@ -2,7 +2,7 @@ class O0100k2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Hospice Care: Performed in the last 14 days while a resident (O0100k2)"
+    @name = "Hospice care: Performed in the last 14 days while a resident (O0100k2)"
     @field_type = RADIO
     @node = "O0100k2"
 

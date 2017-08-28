@@ -3,14 +3,14 @@ class H0100a
 
   def initialize
     @title = "Bladder and Bowel"
-    @name = "Appliances (H0100a)"
+    @name = "Indwelling catheter (H0100a)"
     @field_type = RADIO
     @node = "H0100A"
 
     @options = []
     @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "None")
-    @options << FieldOption.new("1", "Indwelling Catheter")
+    @options << FieldOption.new("0", "No")
+    @options << FieldOption.new("1", "Yes")
   end
 
   def set_values_for_type(klass)
