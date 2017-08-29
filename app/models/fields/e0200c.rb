@@ -1,10 +1,10 @@
-class E0200a
+class E0200c
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Physical behavioral symptoms directed toward others (eg, hitting, kicking, ect...) (E0200a)"
+    @name = "Other behavioral symptoms not directed toward others (e.g., physical symptoms such as hitting or scratching self, pacing, rummaging, etc...) (E0200c)"
     @field_type = DROPDOWN
-    @node = "E0200A"
+    @node = "E0200C"
 
     @options = []
     @options << FieldOption.new("^", "NA")

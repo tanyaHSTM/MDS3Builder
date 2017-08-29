@@ -1,10 +1,10 @@
-class A1000f 
+class E0500b
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Race/Ethnicity: White (A1000f)"
-    @field_type = RADIO
-    @node = "A1000F" 
+    @name = "Impact on Resident: Did any of the identified symptoms significantly interfere with the resident's care? (E0500b)"
+    @field_type = DROPDOWN
+    @node = "E0500B"
 
     @options = []
     @options << FieldOption.new("^", "NA")
@@ -13,7 +13,7 @@ class A1000f
   end
 
   def set_values_for_type(klass)
-    return "1"
+    return "0"
   end
 
 end

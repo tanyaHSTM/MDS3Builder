@@ -1,8 +1,7 @@
 class J1100b
-  attr_reader :title, :options, :name, :field_type, :node
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @title = "Health Conditions"
     @name = "Does the resident have shortness of breath when sitting at rest (J1100b)"
     @field_type = RADIO
     @node = "J1100B"

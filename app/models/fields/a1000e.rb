@@ -7,10 +7,11 @@ class A1000e
     @node = "A1000E" 
 
     @options = []
+    @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")
   end
-
+  
   def set_values_for_type(klass)
     return "0"
   end

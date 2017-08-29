@@ -1,10 +1,11 @@
-class A1000d
-  attr_reader :options, :name, :field_type, :node
+class E0100a
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @name = "Race/Ethnicity: Hispanic or Latino (A1000d)"
-    @field_type = RADIO
-    @node = "A1000D" 
+    @title = "Behavior"
+    @name = "Potential Indicators of Psychosis: Hallucinations (E0100a)"
+    @field_type = DROPDOWN
+    @node = "E0100a"
 
     @options = []
     @options << FieldOption.new("^", "NA")
