@@ -2,7 +2,7 @@ class I6200
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Does the resident have Asthma, Cronic Obstructive Pulminary Disease(COPD), or Cronic Lung Disease? (I6200)"
+    @name = "Pulmonary: Does the resident have Asthma, Cronic Obstructive Pulminary Disease (COPD), or Cronic Lung Disease? (I6200)"
     @field_type = RADIO
     @node = "I6200"
 

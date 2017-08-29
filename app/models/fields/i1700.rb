@@ -2,7 +2,7 @@ class I1700
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Does the resident have a Multidrug-Resistant Organism? (I1700)"
+    @name = "Infections: Does the resident have a Multidrug-Resistant Organism? (I1700)"
     @field_type = RADIO
     @node = "I1700"
 

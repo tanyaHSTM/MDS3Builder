@@ -2,7 +2,7 @@ class I4900
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Does the resident have Hemiplegia or Hemiparesis? (I4900)"
+    @name = "Neurological: Does the resident have Hemiplegia or Hemiparesis? (I4900)"
     @field_type = RADIO
     @node = "I4900"
 

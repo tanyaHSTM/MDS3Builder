@@ -2,7 +2,7 @@ class I2000
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Does the resident have Pneumonia? (I2000)"
+    @name = "Infections: Does the resident have Pneumonia? (I2000)"
     @field_type = RADIO
     @node = "I2000"
 

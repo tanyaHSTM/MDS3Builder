@@ -2,7 +2,7 @@ class I4500
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Has the resident had a Cerebrovascular Accident(CVA), Transient Ischemic Attack(TIA), or Stroke? (I4500)"
+    @name = "Neurological: Has the resident had a Cerebrovascular Accident (CVA), Transient Ischemic Attack (TIA), or Stroke? (I4500)"
     @field_type = RADIO
     @node = "I4500"
 

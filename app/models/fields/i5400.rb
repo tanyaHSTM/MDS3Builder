@@ -2,7 +2,7 @@ class I5400
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Does the resident have Seisure Disorder or Epilepsy? (I5400)"
+    @name = "Neurological: Does the resident have Seisure Disorder or Epilepsy? (I5400)"
     @field_type = RADIO
     @node = "I5400"
 

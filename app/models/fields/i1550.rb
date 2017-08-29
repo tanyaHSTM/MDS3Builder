@@ -2,7 +2,7 @@ class I1550
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Does the resident have Neurogenic Bladder? (I1550)"
+    @name = "Genitourinary: Does the resident have Neurogenic Bladder? (I1550)"
     @field_type = RADIO
     @node = "I1550"
 

@@ -2,7 +2,7 @@ class I3800
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Does the resident have Osteoporosis? (I3800)"
+    @name = "Musculoskeletal: Does the resident have Osteoporosis? (I3800)"
     @field_type = RADIO
     @node = "I3800"
 

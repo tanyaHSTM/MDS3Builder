@@ -2,7 +2,7 @@ class I2900
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Does the resident have Diabetes Mellitus? (I2900)"
+    @name = "Metabolic: Does the resident have Diabetes Mellitus (DM)? (I2900)"
     @field_type = RADIO
     @node = "I2900"
 
