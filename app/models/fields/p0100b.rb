@@ -1,8 +1,7 @@
 class P0100b
-  attr_reader :title, :options, :name, :field_type, :node
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @title = "Restraints"
     @name = "Trunk Restraint - used in bed (P0100b)"
     @field_type = RADIO
     @node = "P0100B"     

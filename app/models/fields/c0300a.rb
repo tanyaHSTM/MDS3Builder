@@ -4,7 +4,7 @@ class C0300a
   def initialize
     @name = "Temporal Orientation - Able to report correct year (C0300a)"
     @field_type = DROPDOWN
-    @node = "C0300a" 
+    @node = "C0300A" 
 
     @options = []
     @options << FieldOption.new("^", "NA")
@@ -15,7 +15,7 @@ class C0300a
   end
 
   def set_values_for_type(klass)
-    return "3"
+    return "^"
   end
 
 end

@@ -2,7 +2,7 @@ class G0110d1
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Walk in corridor - how resident walks in corridor on unit. (G0110d1)"
+    @name = "Walk in corridor (Self-Performance) - how resident walks in corridor on unit. (G0110d1)"
     @field_type = DROPDOWN
     @node = "G0110D1"
 
