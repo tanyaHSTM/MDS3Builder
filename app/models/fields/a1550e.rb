@@ -4,7 +4,7 @@ class A1550e
   def initialize
     @name = "Conditions Related to ID/DD Status: ID/DD Without Organic condition - ID/DD with no organic condition (A1550e)"
     @field_type = RADIO
-    @node = "A1550e" 
+    @node = "A1550E" 
 
     @options = []
     @options << FieldOption.new("^", "NA")
