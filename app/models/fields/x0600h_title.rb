@@ -1,10 +1,11 @@
-class X0600h 
-  attr_reader  :options, :name, :field_type, :node
+class X0600h_title 
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
+    @title = "Correction Request"
     @name = "Is this a SNF PPS Part A Discharge (End of Stay) Assessment? (X0600h)"
     @field_type = DROPDOWN
-    @node = "X0600H" 
+    @node = "X0600H_title" 
 
     @options = []
     @options << FieldOption.new("0", "No")

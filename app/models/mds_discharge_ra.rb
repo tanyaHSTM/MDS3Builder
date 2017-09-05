@@ -24,6 +24,6 @@ class MdsDischargeRa < Assessment
               N0410a_title N0410b N0410c N0410d N0410e N0410f N0410g N0410h 
               O0100k2 O0250a O0300a O0400b4 O0400c4 
               P0100a P0100b P0100c P0100d P0100e P0100f P0100g P0100h 
-              X0600h )
+              X0600h_title )
   end
 end

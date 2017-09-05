@@ -1,8 +1,7 @@
 class E1000a
-  attr_reader :title, :options, :name, :field_type, :node
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @title = "Functional Status"
     @name = "Wandering Impact - Does the wandering place the resident at significant risk of getting to a potentially dangerous place? (E1000a)"
     @field_type = DROPDOWN
     @node = "E1000A"

@@ -1,5 +1,6 @@
 class A0050 
   attr_reader :options, :name, :field_type, :node
+
   def initialize
     @name = "Type of Record (A0050)"
   	@field_type = DROPDOWN

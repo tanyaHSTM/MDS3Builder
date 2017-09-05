@@ -1,7 +1,8 @@
 class G0110a1
-  attr_reader :options, :name, :field_type, :node
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
+    @title = "Functional Status"
     @name = "Bed Mobility (Self Performance) - How resident moves to and from lying position, turns side to side, and positions 
              body while in bed or alternate sleep furniture. (G0110a1)"
     @field_type = DROPDOWN
