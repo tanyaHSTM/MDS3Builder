@@ -5,7 +5,7 @@ class G0110a2
     @name = "Bed Mobility (Support) - How resident moves to and from lying position, turns side to side, and positions 
              body while in bed or alternate sleep furniture. (G0110a2)"
     @field_type = DROPDOWN
-    @node = "G0110A1"
+    @node = "G0110A2"
 
     @options = []
     @options << FieldOption.new("^", "NA")
