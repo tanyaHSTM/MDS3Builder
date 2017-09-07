@@ -4,7 +4,7 @@ class O0100m2
   def initialize
     @name = "Isolation or quarantine for active infectious disease: Performed in the last 14 days while a resident (O0100m2)"
     @field_type = RADIO
-    @node = "O0100m2"
+    @node = "O0100M2"
 
     @options = []
     @options << FieldOption.new("^", "NA")
