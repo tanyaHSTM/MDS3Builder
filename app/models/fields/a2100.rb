@@ -8,15 +8,15 @@ class A2100
 
     @options = []
     @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("1", "Community")
-    @options << FieldOption.new("2", "Another nursing home or swing bed")
-    @options << FieldOption.new("3", "Acute hospital")
-    @options << FieldOption.new("4", "Psychiatric hospital")
-    @options << FieldOption.new("5", "Inpatient rehabilitation facility")
-    @options << FieldOption.new("6", "MR/DD facility")
-    @options << FieldOption.new("7", "Hospice")
-    @options << FieldOption.new("8", "Deceased")
-    @options << FieldOption.new("9", "Long term care hospital")
+    @options << FieldOption.new("01", "Community")
+    @options << FieldOption.new("02", "Another nursing home or swing bed")
+    @options << FieldOption.new("03", "Acute hospital")
+    @options << FieldOption.new("04", "Psychiatric hospital")
+    @options << FieldOption.new("05", "Inpatient rehabilitation facility")
+    @options << FieldOption.new("06", "MR/DD facility")
+    @options << FieldOption.new("07", "Hospice")
+    @options << FieldOption.new("08", "Deceased")
+    @options << FieldOption.new("09", "Long term care hospital")
     @options << FieldOption.new("99", "Other")
   end
 
