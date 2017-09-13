@@ -4,7 +4,7 @@ class C0400b
   def initialize
     @name = "Recall - Able to recall word ('blue') previously listed in C0200 (C0400b)"
     @field_type = DROPDOWN
-    @node = "C0400b" 
+    @node = "C0400B" 
 
     @options = []
     @options << FieldOption.new("^", "NA")
