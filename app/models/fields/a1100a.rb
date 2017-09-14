@@ -4,7 +4,7 @@ class A1100a
   def initialize
     @name = "Language: Does the resident need or want an interpreter to communicate with a doctor or health care staff? (A1100a)"
     @field_type = DROPDOWN
-    @node = "A1100a" 
+    @node = "A1100A" 
 
     @options = []
     @options << FieldOption.new("^", "NA")
