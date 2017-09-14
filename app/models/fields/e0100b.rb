@@ -4,7 +4,7 @@ class E0100b
   def initialize
     @name = "Potential Indicators of Psychosis: Delusions (E0100b)"
     @field_type = DROPDOWN
-    @node = "E0100b"
+    @node = "E0100B"
 
     @options = []
     @options << FieldOption.new("^", "NA")

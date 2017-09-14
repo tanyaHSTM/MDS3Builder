@@ -4,7 +4,7 @@ class J1900c
   def initialize
     @name = "Number of falls since admission/entry or reentry or prior assessment resulting in major injury (J1900c)"
     @field_type = RADIO
-    @node = "J1900c"
+    @node = "J1900C"
 
     @options = []
     @options << FieldOption.new("^", "NA")

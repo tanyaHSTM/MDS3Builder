@@ -5,7 +5,7 @@ class E0100a
     @title = "Behavior"
     @name = "Potential Indicators of Psychosis: Hallucinations (E0100a)"
     @field_type = DROPDOWN
-    @node = "E0100a"
+    @node = "E0100A"
 
     @options = []
     @options << FieldOption.new("^", "NA")

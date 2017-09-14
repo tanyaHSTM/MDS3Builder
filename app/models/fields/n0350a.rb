@@ -4,7 +4,7 @@ class N0350a
   def initialize
     @name = "Insulin injections (N0350a)"
     @field_type = DROPDOWN
-    @node = "N0350a"     
+    @node = "N0350A"     
 
     @options = []
     @options << FieldOption.new("^", "NA")
