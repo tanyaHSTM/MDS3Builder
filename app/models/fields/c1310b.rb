@@ -2,7 +2,7 @@ class C1310b
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Inattention - Did the resident have difficulty focusing attention? (C1310b)"
+    @name = "Inattention - Did the resident have difficulty focusing attention, for example, being easily distractible or having difficulty keeping track of what was being said? (C1310b)"
     @field_type = DROPDOWN
     @node = "C1310B" 
 

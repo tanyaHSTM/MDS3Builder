@@ -1,10 +1,10 @@
-class GG0130b2
+class GG0130g2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Self-Care - Oral Hygiene (Discharge Goal) - The ability to use suitable items to clean teeth. Dentures (if applicable): The ability to insert and remove dentures into and from the mouth, and manage denture soaking and rinsing with use of equipment. (GG0130b2)"
+    @name = "Self-Care - Lower body dressing (Discharge Goal) - The ability to dress and undress below the waist, including fasteners; does not include footwear. (GG0130g2)"
     @field_type = DROPDOWN
-    @node = "GG0130B2" 
+    @node = "GG0130G2" 
 
     @options = []
     @options << FieldOption.new("^", "NA")

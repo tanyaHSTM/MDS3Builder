@@ -1,10 +1,10 @@
-class GG0130b2
+class GG0130f3
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Self-Care - Oral Hygiene (Discharge Goal) - The ability to use suitable items to clean teeth. Dentures (if applicable): The ability to insert and remove dentures into and from the mouth, and manage denture soaking and rinsing with use of equipment. (GG0130b2)"
+    @name = "Self-Care - Upper body dressing (Discharge Performance) - The ability to dress and undress above the waist; including fasteners, if applicable. (GG0130f3)"
     @field_type = DROPDOWN
-    @node = "GG0130B2" 
+    @node = "GG0130F3" 
 
     @options = []
     @options << FieldOption.new("^", "NA")
@@ -22,12 +22,12 @@ class GG0130b2
 
   def set_values_for_type(klass)
     case klass
-    when "MdsPpsSos" then return "06"
-    when "MdsPpsEos" then return "^"
-    when "CorrectionOfPpsSos" then return "06"
-    when "CorrectionOfPpsEos" then return "^"
-    when "InactivationOfPpsSos" then return "06"
-    when "InactivationOfPpsEos" then return "^" 
+    when "MdsPpsSos" then return "^"
+    when "MdsPpsEos" then return "06"
+    when "CorrectionOfPpsSos" then return "^"
+    when "CorrectionOfPpsEos" then return "06"
+    when "InactivationOfPpsSos" then return "^"
+    when "InactivationOfPpsEos" then return "06" 
     else return "^"
     end
   end

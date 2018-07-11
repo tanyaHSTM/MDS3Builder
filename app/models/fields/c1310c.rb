@@ -2,7 +2,7 @@ class C1310c
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Disorganized thinking - Was the resident's thinking disorganized or incoherent? (C1310c)"
+    @name = "Disorganized thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant converstaion, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)? (C1310c)"
     @field_type = DROPDOWN
     @node = "C1310C" 
 
