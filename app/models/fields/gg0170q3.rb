@@ -2,7 +2,7 @@ class GG0170q3
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Mobility - Does the resident use a wheelchair/scooter? (Discharge Performance) (GG0170q3)"
+    @name = "Mobility - Does the resident use a wheelchair and/or scooter? (Discharge Performance) (GG0170q3)"
     @field_type = DROPDOWN
     @node = "GG0170Q3" 
 

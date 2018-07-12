@@ -2,7 +2,7 @@ class GG0170ss3
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Mobility - Indicate the type of wheelchair/scooter used (Discharge Performance) (GG0170ss3)"
+    @name = "Mobility - Indicate the type of wheelchair or scooter used (Discharge Performance) (GG0170ss3)"
     @field_type = DROPDOWN
     @node = "GG0170SS3" 
 
