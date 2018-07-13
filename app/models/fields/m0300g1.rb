@@ -2,8 +2,8 @@ class M0300g1
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Number of unstageable pressure ulcers with suspected deep tissue injury in evolution 
-            (M0300g1) (If 0 or NA skip to the next section)"
+    @name = "Number of unstageable pressure injuries presenting as deep tissue injury
+            (M0300g1) (If 0 or NA skip to M1030, Number of Venous and Arterial Ulcers)"
     @field_type = TEXT
     @node = "M0300G1"     
 

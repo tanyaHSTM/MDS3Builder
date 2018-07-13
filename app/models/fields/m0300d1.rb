@@ -2,7 +2,7 @@ class M0300d1
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Number of stage 4 pressure ulcers (M0300d1) (If 0 or NA skip to M0300e Unstageable)"
+    @name = "Number of stage 4 pressure ulcers (M0300d1) (If 0 or NA skip to M0300e Unstageable - Non-removable dressing/device)"
     @field_type = TEXT
     @node = "M0300D1"     
 

@@ -1,8 +1,7 @@
 class I0100
-  attr_reader :title, :options, :name, :field_type, :node
+  attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @title = "Active Diagnoses"
     @name = "Cancer: Does the resident have Cancer (with or without metastasis)? (I0100)"
     @field_type = RADIO
     @node = "I0100"
