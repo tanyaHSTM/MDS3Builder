@@ -2,7 +2,7 @@ class O0100f2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Ventilator or respirator: Performed in the last 14 days while a resident (O0100f2)"
+    @name = "Invasive Mechanical Ventilator (ventilator or respirator): Performed in the last 14 days while a resident. (O0100f2)"
     @field_type = RADIO
     @node = "O0100F2"
 

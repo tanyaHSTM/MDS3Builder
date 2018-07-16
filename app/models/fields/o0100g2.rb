@@ -2,7 +2,7 @@ class O0100g2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "BiPAP/CPAP: Performed in the last 14 days while a resident (O0100g2)"
+    @name = "Non-Invasive Mechanical Ventilator (BiPAP/CPAP): Performed in the last 14 days while a resident. (O0100g2)"
     @field_type = RADIO
     @node = "O0100G2"
 
