@@ -3,7 +3,7 @@ class M0300g1
 
   def initialize
     @name = "Number of unstageable pressure injuries presenting as deep tissue injury
-            (M0300g1) (If 0 or NA skip to M1030, Number of Venous and Arterial Ulcers)"
+            (If 0 or NA skip to M1030, Number of Venous and Arterial Ulcers) (M0300g1)"
     @field_type = TEXT
     @node = "M0300G1"     
 
