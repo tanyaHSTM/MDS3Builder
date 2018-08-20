@@ -8,11 +8,11 @@ class GG0100d
 
     @options = []
     @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("03", "Independent - Resident completed the activities by him/herself, with or without an assistive device, with no assistance from a helper.")
-    @options << FieldOption.new("02", "Needed Some Help - Resident needed partial assistance from another person to complete activities.")
-    @options << FieldOption.new("01", "Dependent - A helper completed the activities for the resident.")
-    @options << FieldOption.new("08", "Unknown")
-    @options << FieldOption.new("09", "Not applicable")
+    @options << FieldOption.new("3", "Independent - Resident completed the activities by him/herself, with or without an assistive device, with no assistance from a helper.")
+    @options << FieldOption.new("2", "Needed Some Help - Resident needed partial assistance from another person to complete activities.")
+    @options << FieldOption.new("1", "Dependent - A helper completed the activities for the resident.")
+    @options << FieldOption.new("8", "Unknown")
+    @options << FieldOption.new("9", "Not applicable")
   end
 
   def set_values_for_type(klass)
