@@ -9,10 +9,12 @@ class A0310g
     @options = []
     @options << FieldOption.new("1", "Planned")
     @options << FieldOption.new("2", "Unplanned")
+    @options << FieldOption.new("^", "NA")
+
   end
 
   def set_values_for_type(klass)
-    return "1"
+    return "^"
   end
   
 end
