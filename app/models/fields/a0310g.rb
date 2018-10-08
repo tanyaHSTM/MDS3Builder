@@ -2,7 +2,7 @@ class A0310g
   attr_reader :options, :name, :field_type, :node
 
   def initialize 
-    @name = "Type of discharge (A0310g)"
+    @name = "Type of discharge (Complete only if A0310F = 10 or 11) (A0310g)"
     @field_type = DROPDOWN
     @node = "A0310G" 
 
