@@ -2,7 +2,7 @@ class B0600
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Speech Clarity: Select best description of speech pattern. (B0600)"
+    @name = "Speech Clarity: Select best description of speech pattern (B0600)"
     @field_type = DROPDOWN
     @node = "B0600"
 
@@ -16,6 +16,5 @@ class B0600
   def set_values_for_type(klass)
     return "0"
   end
-
 
 end

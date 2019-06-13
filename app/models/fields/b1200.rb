@@ -2,7 +2,7 @@ class B1200
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Corrective Lenses (Contacts, glasses or maginifying glass) used in completing B0100, Vision. (B1200)"
+    @name = "Corrective Lenses: Corrective lenses (contacts, glasses or maginifying glass) used in completing B0100, Vision (B1200)"
     @field_type = RADIO
     @node = "B1200" 
 
@@ -15,6 +15,5 @@ class B1200
   def set_values_for_type(klass)
     return "0"
   end
-
 
 end

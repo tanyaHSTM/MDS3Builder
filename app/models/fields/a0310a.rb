@@ -1,8 +1,7 @@
 class A0310a 
-  attr_reader :title, :options, :name, :field_type, :node 
+  attr_reader :options, :name, :field_type, :node 
 
   def initialize
-    @title = "Type of Assessment"
     @name = "Federal OBRA Reason for Assessment (A0310a)"
     @field_type = DROPDOWN
     @node = "A0310A" 

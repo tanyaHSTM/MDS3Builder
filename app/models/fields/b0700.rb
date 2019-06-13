@@ -2,7 +2,7 @@ class B0700
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Makes Self Understood: Ability to express ideas and wants, consider both verbal and non-verbal expression. (B0700)"
+    @name = "Makes Self Understood: Ability to express ideas and wants, consider both verbal and non-verbal expression (B0700)"
     @field_type = DROPDOWN
     @node = "B0700"
 
@@ -17,6 +17,5 @@ class B0700
   def set_values_for_type(klass)
     return "0"
   end
-
 
 end

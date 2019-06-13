@@ -13,7 +13,7 @@ class E0500c
   end
 
   def set_values_for_type(klass)
-    return "0"
+    return "^"
   end
 
 end

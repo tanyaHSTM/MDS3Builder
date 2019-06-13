@@ -14,7 +14,7 @@ class A1800
     @options << FieldOption.new("05", "Inpatient rehabilitation facility")
     @options << FieldOption.new("06", "ID/DD facility")
     @options << FieldOption.new("07", "Hospice")
-    @options << FieldOption.new("09", "Long term care hospital")
+    @options << FieldOption.new("09", "Long Term Care Hospital (LTCH)")
     @options << FieldOption.new("99", "Other")
   end
 

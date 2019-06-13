@@ -2,7 +2,7 @@ class A1510b
   attr_reader :options, :name, :field_type, :node 
 
   def initialize
-    @name = "Preadmission Screening: Intellectual Disability ('mental retardation' in federal regulation) (A1510b)"
+    @name = "Preadmission Screening: Intellectual Disability (A1510b)"
     @field_type = DROPDOWN
     @node = "A1510B" 
 
@@ -10,7 +10,6 @@ class A1510b
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")
-
   end
 
   def set_values_for_type(klass)

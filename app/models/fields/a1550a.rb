@@ -3,7 +3,7 @@ class A1550a
 
   def initialize
     @title = "Conditions Related to ID/DD Status"
-    @name = "ID/DD With Organic condition - Down Syndrome (A1550a)"
+    @name = "ID/DD With Organic Condition - Down syndrome (A1550a)"
     @field_type = RADIO
     @node = "A1550A" 
 

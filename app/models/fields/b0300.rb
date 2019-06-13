@@ -2,7 +2,7 @@ class B0300
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Hearing aid or other aplliance used (B0300)"
+    @name = "Hearing Aid: Hearing aid or other appliance used (B0300)"
     @field_type = RADIO
     @node = "B0300" 
 
@@ -15,6 +15,5 @@ class B0300
   def set_values_for_type(klass)
     return "0"
   end
-
 
 end

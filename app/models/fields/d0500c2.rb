@@ -2,7 +2,7 @@ class D0500c2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Staff Assessment of Resident Mood (PHQ-9-OV): Over last two weeks, how often has resident had trouble falling or staying asleep, or sleeping too much? (D0500c2)"
+    @name = "Staff Assessment of Resident Mood: Over last two weeks, how often has resident had trouble falling or staying asleep, or sleeping too much? (D0500c2)"
     @field_type = DROPDOWN
     @node = "D0500C2" 
 

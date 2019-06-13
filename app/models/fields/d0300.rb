@@ -11,7 +11,7 @@ class D0300
   end
 
   def set_values_for_type(klass)
-    return "^"
+    return "00"
   end
   
 end

@@ -2,7 +2,7 @@ class B0200
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Ability to hear (with hearing aid or hearing appliances if normally used) (B0200)"
+    @name = "Hearing: Ability to hear (with hearing aid or hearing appliances if normally used) (B0200)"
     @field_type = DROPDOWN
     @node = "B0200"
     
@@ -17,6 +17,5 @@ class B0200
   def set_values_for_type(klass)
     return "0"
   end
-
 
 end

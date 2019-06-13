@@ -2,7 +2,7 @@ class D0500b2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Staff Assessment of Resident Mood (PHQ-9-OV): Over last two weeks, how often has resident been feeling or appearing down, depressed, or hopeless? (D0500b2)"
+    @name = "Staff Assessment of Resident Mood: Over last two weeks, how often has resident been feeling or appearing down, depressed, or hopeless? (D0500b2)"
     @field_type = DROPDOWN
     @node = "D0500B2" 
 

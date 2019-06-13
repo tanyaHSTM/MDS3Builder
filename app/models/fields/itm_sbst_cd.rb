@@ -13,6 +13,7 @@ class ItmSbstCd
   	@options << FieldOption.new("NT", "Entry, Death in Facility")
   	@options << FieldOption.new("ND", "Discharge - Return Anticipated/Return not Anticipated")
     @options << FieldOption.new("NP", "Nursing Home PPS")
+    @options << FieldOption.new("IPA", "Interim Payment")
     @options << FieldOption.new("XX", "Inactivation")
 
   end

@@ -2,7 +2,7 @@ class D0200a2
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Resident Mood Interview (PHQ-9): Over last two weeks, how often has resident reported little interest or pleasure in doing things? (D0200a2)"
+    @name = "Resident Mood Interview: Over last two weeks, how often has resident reported little interest or pleasure in doing things? (D0200a2)"
     @field_type = DROPDOWN
     @node = "D0200A2" 
 

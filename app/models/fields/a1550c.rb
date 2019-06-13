@@ -2,7 +2,7 @@ class A1550c
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Conditions Related to ID/DD Status: ID/DD With Organic condition - Epilepsy (A1550c)"
+    @name = "ID/DD With Organic Condition - Epilepsy (A1550c)"
     @field_type = RADIO
     @node = "A1550C" 
 

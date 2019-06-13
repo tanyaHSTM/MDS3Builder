@@ -10,7 +10,6 @@ class A1510a
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")
-
   end
 
   def set_values_for_type(klass)

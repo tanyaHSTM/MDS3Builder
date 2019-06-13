@@ -1,15 +1,15 @@
-class A0310d 
+class F0800a
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Is this a Swing Bed clinical change assessment? (A0310d) (Complete only if A0200 = Swing Bed)"
+    @name = "Staff Assessment of Daily and Activity Preferences: Resident prefers choosing clothes to wear (F0800a)"
     @field_type = DROPDOWN
-    @node = "A0310D"
+    @node = "F0800A" 
 
     @options = []
+    @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")
-    @options << FieldOption.new("^", "NA (not a swing bed provider) ")
   end
 
   def set_values_for_type(klass)

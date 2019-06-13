@@ -2,7 +2,7 @@ class C0800
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Long-term Memory OK: Seems or appears to recall after 5 minutes (C0800)"
+    @name = "Long-term Memory OK: Seems or appears to recall long past (C0800)"
     @field_type = DROPDOWN
     @node = "C0800"     
 

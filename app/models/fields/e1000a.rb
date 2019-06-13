@@ -16,5 +16,4 @@ class E1000a
     return "0"
   end
 
-
 end

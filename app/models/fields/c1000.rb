@@ -2,7 +2,7 @@ class C1000
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Cognitive Skills for Daily Decision Making: Made decisions regarding tasks of daily life. (C1000)"
+    @name = "Cognitive Skills for Daily Decision Making: Made decisions regarding tasks of daily life (C1000)"
     @field_type = DROPDOWN
     @node = "C1000"
 
@@ -17,6 +17,5 @@ class C1000
   def set_values_for_type(klass)
     return "0"
   end
-
 
 end

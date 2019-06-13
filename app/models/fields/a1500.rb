@@ -3,7 +3,7 @@ class A1500
 
   def initialize
     @title = "Preadmission Screening & Resident Review (PASRR)"
-    @name = "Is the resident currently considered by the state level II PASRR process to have serious mental illness and/or intellectual disability ('mental retardation' in federal regulation) or a related condition? (A1500)"
+    @name = "Is the resident currently considered by the state level II PASRR process to have serious mental illness and/or intellectual disability or a related condition? (A1500)"
     @field_type = DROPDOWN
     @node = "A1500" 
 

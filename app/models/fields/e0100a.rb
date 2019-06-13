@@ -2,7 +2,7 @@ class E0100a
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Behavior"
+    @title = "Section E: Behavior"
     @name = "Potential Indicators of Psychosis: Hallucinations (E0100a)"
     @field_type = DROPDOWN
     @node = "E0100A"

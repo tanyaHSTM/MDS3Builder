@@ -2,7 +2,7 @@ class B1000
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Ability to see in adequate light (B1000)"
+    @name = "Vision: Ability to see in adequate light (B1000)"
     @field_type = DROPDOWN
     @node = "B1000"
 

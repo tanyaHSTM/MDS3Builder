@@ -1,7 +1,8 @@
 class A0050 
-  attr_reader :options, :name, :field_type, :node
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
+    @title = "Section A: Identification Information"
     @name = "Type of Record (A0050)"
   	@field_type = DROPDOWN
   	@node = "A0050" 
@@ -23,12 +24,6 @@ class A0050
     when "CorrectionOfDischargeRa" then return "2"
     when "CorrectionOfDeath" then return "2" 
     when "CorrectionOfPps5Day" then return "2"
-    when "CorrectionOfPps14Day" then return "2"
-    when "CorrectionOfPps30Day" then return "2"   
-    when "CorrectionOfPps60Day" then return "2"
-    when "CorrectionOfPps90Day" then return "2"
-    when "CorrectionOfPpsSos" then return "2"
-    when "CorrectionOfPpsEos" then return "2"
     when "InactivationOfAdmission" then return "3"
     when "InactivationOfQuarterly" then return "3" 
     when "InactivationOfAnnual" then return "3"
@@ -37,13 +32,7 @@ class A0050
     when "InactivationOfDischargeRna" then return "3"
     when "InactivationOfDischargeRa" then return "3"
     when "InactivationOfDeath" then return "3"  
-    when "InactivationOfPps5Day" then return "3"
-    when "InactivationOfPps14Day" then return "3"
-    when "InactivationOfPps30Day" then return "3"
-    when "InactivationOfPps60Day" then return "3"
-    when "InactivationOfPps90Day" then return "3"
-    when "InactivationOfPpsSos" then return "3"
-    when "InactivationOfPpsEos" then return "3"  
+    when "InactivationOfPps5Day" then return "3" 
     when "InactivationOfPpsCorrection" then return "3" 
     else return "1"
     end

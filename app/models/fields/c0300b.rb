@@ -8,10 +8,10 @@ class C0300b
 
     @options = []
     @options << FieldOption.new("^", "NA")
-    @options << FieldOption.new("0", "Missed by > 5 years or no answer")
-    @options << FieldOption.new("1", "Missed by 2-5 years")
+    @options << FieldOption.new("0", "Missed by > 1 month or no answer")
+    @options << FieldOption.new("1", "Missed by 6 days to 1 month")
     @options << FieldOption.new("2", "Missed by 1 year")
-    @options << FieldOption.new("3", "Correct")
+    @options << FieldOption.new("3", "Accurate within 5 days")
   end
 
   def set_values_for_type(klass)

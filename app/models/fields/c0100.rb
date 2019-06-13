@@ -2,7 +2,7 @@ class C0100
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Cognitive Patterns"
+    @title = "Section C: Cognitive Patterns"
     @name = "Should Brief Interview for Mental Status (C0200-C0500) be Conducted? (C0100)"
     @field_type = RADIO
     @node = "C0100"
