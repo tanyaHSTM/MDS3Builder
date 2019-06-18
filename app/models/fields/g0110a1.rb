@@ -2,7 +2,7 @@ class G0110a1
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Functional Status"
+    @title = "Section G: Functional Status"
     @name = "Bed Mobility (Self Performance) - How resident moves to and from lying position, turns side to side, and positions 
              body while in bed or alternate sleep furniture. (G0110a1)"
     @field_type = DROPDOWN
@@ -14,7 +14,7 @@ class G0110a1
     @options << FieldOption.new("1", "Supervision - oversight, encouragement or cueing")
     @options << FieldOption.new("2", "Limited assistance - resident highly involved in activity; staff provide guided maneuvering of limbs or other non-weight-bearing assistance")
     @options << FieldOption.new("3", "Extensive assistance - resident involved in activity, staff provide weight-bearing support")
-    @options << FieldOption.new("4", "Total dependance - full staff performance every time during entire 7-day period")
+    @options << FieldOption.new("4", "Total dependence - full staff performance every time during entire 7-day period")
     @options << FieldOption.new("7", "Activity occurred only once or twice - activity did occur but only once or twice")
     @options << FieldOption.new("8", "Activity did not occur - activity did not occur or family and/or non-facility staff provided care 100% of the time for that activity over the entire 7-day period")
   end
@@ -22,6 +22,5 @@ class G0110a1
   def set_values_for_type(klass)
     return "0"
   end
-
 
 end
