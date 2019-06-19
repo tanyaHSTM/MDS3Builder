@@ -1,10 +1,10 @@
-class M1040z
+class O0100f1
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Other Ulcers, Wounds & Skin Problems: None of the above. (M1040z)"
+    @name = "Invasive Mechanical Ventilator (ventilator or respirator): Performed in the last 14 days while NOT a resident (O0100f1)"
     @field_type = RADIO
-    @node = "M1040Z" 
+    @node = "O0100F1"
 
     @options = []
     @options << FieldOption.new("^", "NA")
@@ -14,7 +14,7 @@ class M1040z
 
   def set_values_for_type(klass)
     return "0"
-  endturn "0"
   end
-  
+
 end
+  

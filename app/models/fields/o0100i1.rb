@@ -1,10 +1,10 @@
-class L0200z
+class O0100i1
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "None of the above present (L0200z)"
+    @name = "Transfusions: Performed in the last 14 days while NOT a resident (O0100i1)"
     @field_type = RADIO
-    @node = "L0200Z"
+    @node = "O0100I1"
 
     @options = []
     @options << FieldOption.new("^", "NA")
