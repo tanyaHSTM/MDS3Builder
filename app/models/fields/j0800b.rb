@@ -1,20 +1,19 @@
-class GG0110z
+class J0800b
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Prior Device Use: None of the above (GG0110a - e). Used by the resident prior to the current illness, exacerbation, or injury? (GG0110z)"
+    @name = "Indicators of Pain or Possible Pain in the last 5 days: Verbal complaints of pain (J0800b)"
     @field_type = DROPDOWN
-    @node = "GG0110Z" 
-
+    @node = "J0800B"
+    
     @options = []
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")
   end
 
-
   def set_values_for_type(klass)
-    return "^"
+    return "0"
   end
 
 end

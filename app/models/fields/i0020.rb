@@ -3,7 +3,7 @@ class I0020
 
   def initialize
     @title = "Active Diagnoses"
-    @name = "Indicate the resident's primary medical condition category. (Complete only if A0310b = 01) (I0020)"
+    @name = "Indicate the resident's primary medical condition category. (Complete only if A0310b = 01 or 08) (I0020)"
     @field_type = DROPDOWN
     @node = "I0020"
     
@@ -22,11 +22,10 @@ class I0020
     @options << FieldOption.new("11", "Other Orthopedic Conditions")
     @options << FieldOption.new("12", "Debility, Cardiorespiratory Conditions")
     @options << FieldOption.new("13", "Medically Complex Conditions")
-    @options << FieldOption.new("14", "Other Medical Condition (if other medical condition, enter the ICD code in the boxes in i0020a)")
   end
 
   def set_values_for_type(klass)
-    return "0"
+    return "^"
   end
 
 end

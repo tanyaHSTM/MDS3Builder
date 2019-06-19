@@ -1,10 +1,10 @@
-class H0200c
+class J0800a
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Urinary Toileting Program: Current toileting program or trial - is a toileting program currently being used to manage the resident's urinary continence? (H0200c)"
+    @name = "Indicators of Pain or Possible Pain in the last 5 days: Non-verbal sounds (J0800a)"
     @field_type = DROPDOWN
-    @node = "H0200C"
+    @node = "J0800A"
     
     @options = []
     @options << FieldOption.new("^", "NA")
@@ -13,7 +13,7 @@ class H0200c
   end
 
   def set_values_for_type(klass)
-    return "^"
+    return "0"
   end
 
 end

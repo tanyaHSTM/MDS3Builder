@@ -1,11 +1,11 @@
-class H0200c
+class H0600
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Urinary Toileting Program: Current toileting program or trial - is a toileting program currently being used to manage the resident's urinary continence? (H0200c)"
-    @field_type = DROPDOWN
-    @node = "H0200C"
-    
+    @name = "Bowel Patterns: Consitpation present? (H0600)"
+    @field_type = RADIO
+    @node = "H0100D"
+
     @options = []
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
@@ -17,3 +17,4 @@ class H0200c
   end
 
 end
+  
