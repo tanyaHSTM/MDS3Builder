@@ -1,4 +1,4 @@
-class C0100
+class C0600
     attr_reader :options, :name, :field_type, :node
   
     def initialize

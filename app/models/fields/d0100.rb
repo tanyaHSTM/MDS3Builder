@@ -1,4 +1,4 @@
-class D0200a1 
+class D0100
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
