@@ -14,7 +14,6 @@ class M1040h
 
   def set_values_for_type(klass)
     return "0"
-  endturn "0"
   end
   
 end

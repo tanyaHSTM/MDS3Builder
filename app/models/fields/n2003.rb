@@ -14,7 +14,6 @@ class N2003
 
   def set_values_for_type(klass)
     return "^"
-  endturn "^"
   end
   
 end

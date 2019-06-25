@@ -12,7 +12,11 @@ class A0310h
   end
 
   def set_values_for_type(klass)
-    return "0"
+    case klass
+    when "MdsPpsDischarge" then return "1"
+    when "CorrectionOfPpsDischarge" then return "1"
+    else return "0"
+    end
   end
   
 end

@@ -26,10 +26,7 @@ class X0700a
     when "InactivationOfAnnual" then return date3.strftime("%Y%m%d")
     when "InactivationOfSignificantChange" then return date4.strftime("%Y%m%d")
     when "InactivationOfPps5Day" then return date5.strftime("%Y%m%d")
-    when "InactivationOfPps14Day" then return date6.strftime("%Y%m%d")
-    when "InactivationOfPps30Day" then return date7.strftime("%Y%m%d")
-    when "InactivationOfPps60Day" then return date8.strftime("%Y%m%d")
-    when "InactivationOfPps90Day" then return date9.strftime("%Y%m%d")
+    when "InactivationOfPpsDischarge" then return date6.strftime("%Y%m%d")
     else return date2.strftime("%Y%m%d")
     end
   end

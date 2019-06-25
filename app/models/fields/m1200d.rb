@@ -14,7 +14,6 @@ class M1200d
 
   def set_values_for_type(klass)
     return "^"
-  endturn "^"
   end
   
 end

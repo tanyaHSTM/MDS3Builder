@@ -14,7 +14,12 @@ class A0310g
   end
 
   def set_values_for_type(klass)
-    return "^"
+    case klass
+    when "MdsDischargeRa" then return "1"
+    when "MdsDischargeRna" then return "1"
+    when "CorrectionOfDischargeRna" then return "1"
+    when "CorrectionOfDischargeRa" then return "1"
+    else return "^"
   end
   
 end

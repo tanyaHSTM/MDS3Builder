@@ -2,7 +2,7 @@ class A2000
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Discharge Date (format = yyyymmdd) (A2000) (Complete only if A0310F = Discharge or Death)"
+    @name = "Discharge Date (format = yyyymmdd) (A2000) (Complete only if A0310F = 10, 11, or 12)"
     @field_type = TEXT
     @node = "A2000" 
 

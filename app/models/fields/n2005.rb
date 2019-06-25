@@ -14,7 +14,6 @@ class N2005
 
   def set_values_for_type(klass)
     return "9"
-  endturn "9"
   end
   
 end

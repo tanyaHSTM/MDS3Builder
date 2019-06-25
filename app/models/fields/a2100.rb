@@ -2,7 +2,7 @@ class A2100
   attr_reader :options, :name, :field_type, :node
 
   def initialize
-    @name = "Discharge status (Complete only if A0310f is = 10, 11, or 12) (A2100)"
+    @name = "Discharge status (Complete only if A0310f = 10, 11, or 12) (A2100)"
     @field_type = DROPDOWN
     @node = "A2100" 
 
