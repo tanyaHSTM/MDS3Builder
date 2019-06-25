@@ -24,6 +24,8 @@ class A0050
     when "CorrectionOfDischargeRa" then return "2"
     when "CorrectionOfDeath" then return "2" 
     when "CorrectionOfPps5Day" then return "2"
+    when "CorrectionOfPpsDischarge" then return "2"
+    when "CorrectionOfInterimPayment" then return "2"
     when "InactivationOfAdmission" then return "3"
     when "InactivationOfQuarterly" then return "3" 
     when "InactivationOfAnnual" then return "3"
@@ -34,6 +36,8 @@ class A0050
     when "InactivationOfDeath" then return "3"  
     when "InactivationOfPps5Day" then return "3" 
     when "InactivationOfPpsCorrection" then return "3" 
+    when "InactivationOfPpsDischarge" then return "3"
+    when "InactivationOfInterimPayment" then return "3"
     else return "1"
     end
   end

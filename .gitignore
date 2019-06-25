@@ -22,3 +22,5 @@
 /.ruby-gemset
 /.ruby-version
 /.rvmrc
+
+/app/models/OBSOLETE
