@@ -2,7 +2,7 @@ class L0200a
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Oral/Dental Status"
+    @title = "Section L: Oral/Dental Status"
     @name = "Broken or loosely fitting full or partial denture (L0200a)"
     @field_type = RADIO
     @node = "L0200A"

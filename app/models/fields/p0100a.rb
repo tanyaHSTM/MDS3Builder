@@ -2,7 +2,7 @@ class P0100a
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Restraints"
+    @title = "Section P: Restraints"
     @name = "Bed rail - used in bed (P0100a)"
     @field_type = RADIO
     @node = "P0100A"     

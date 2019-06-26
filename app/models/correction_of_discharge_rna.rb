@@ -7,7 +7,10 @@ class CorrectionOfDischargeRna < Assessment
   end
 
   def fields
-    super + %w( B0100 B0200 B0300 B1000 B1200 
+    super + %w( 
+              A2200 A2300 
+              
+              B0100 B0200 B0300 B1000 B1200 
               
               C0100 C0200 C0300a C0300b C0300c C0400a C0400b C0400c C0500 C0700 C1000 C1310a C1310b C1310c C1310d 
               

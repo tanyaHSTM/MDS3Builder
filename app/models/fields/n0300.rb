@@ -2,7 +2,7 @@ class N0300
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Medications ( number of days administered in the last 7 days )"
+    @title = "Section N: Medications"
     @name = "Injections of any type (N0300)"
     @field_type = DROPDOWN
     @node = "N0300"     

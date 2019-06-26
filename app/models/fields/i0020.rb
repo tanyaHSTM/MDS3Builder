@@ -2,7 +2,7 @@ class I0020
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Active Diagnoses"
+    @title = "Section I: Active Diagnoses"
     @name = "Indicate the resident's primary medical condition category. (Complete only if A0310b = 01 or 08) (I0020)"
     @field_type = DROPDOWN
     @node = "I0020"

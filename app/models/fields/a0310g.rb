@@ -20,6 +20,7 @@ class A0310g
     when "CorrectionOfDischargeRna" then return "1"
     when "CorrectionOfDischargeRa" then return "1"
     else return "^"
+    end
   end
   
 end

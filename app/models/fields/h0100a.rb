@@ -2,7 +2,7 @@ class H0100a
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Bladder and Bowel"
+    @title = "Section H: Bladder and Bowel"
     @name = "Indwelling catheter (H0100a)"
     @field_type = RADIO
     @node = "H0100A"

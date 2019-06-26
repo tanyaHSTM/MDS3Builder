@@ -2,7 +2,7 @@ class I0900_title
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Active Diagnoses"
+    @title = "Section I: Active Diagnoses"
     @name = "Heart/Circulation: Does the resident have Peripheral Vascular Disease (PVD) or Peripheral Arterial Disease (PAD)? (I0900)"
     @field_type = RADIO
     @node = "I0900_TITLE"

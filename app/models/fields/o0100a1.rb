@@ -2,7 +2,7 @@ class O0100a1
   attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @title = "Special Treaments, Procedures and Programs"
+    @title = "Section O: Special Treaments, Procedures and Programs"
     @name = "Chemotherapy: Performed in the last 14 days while NOT a resident (O0100a1)"
     @field_type = RADIO
     @node = "O0100A1"
