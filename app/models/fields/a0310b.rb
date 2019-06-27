@@ -16,7 +16,7 @@ class A0310b
     case klass
     when "MdsPps5Day" then return "01"
     when "CorrectionOfPps5Day" then return "01"
-    when "MdsInterimPyament" then return "08"
+    when "MdsInterimPayment" then return "08"
     when "CorrectionOfInterimPayment" then return "08"
     else return "99"
     end

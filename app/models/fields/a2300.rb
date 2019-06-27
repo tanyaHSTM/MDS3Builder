@@ -16,6 +16,8 @@ class A2300
     date3 = Date.today - 18.days
     date4 = Date.today - 17.days
     date5 = Date.today - 28.days
+    date6 = Date.today - 16.days
+    date7 = Date.today - 15.days
     case klass
     when "MdsAdmission" then return date1.strftime("%Y%m%d")
     when "MdsQuarterly" then return date2.strftime("%Y%m%d")
@@ -26,6 +28,8 @@ class A2300
     when "MdsDischargeRa" then return "^"
     when "MdsDeath" then return "^"
     when "MdsPps5Day" then return date5.strftime("%Y%m%d")
+    when "MdsInterimPayment" then return date6.strftime("%Y%m%d")
+    when "MdsPpsDischarge" then return date7.strftime("%Y%m%d")
     else return date2.strftime("%Y%m%d")
     end
   end

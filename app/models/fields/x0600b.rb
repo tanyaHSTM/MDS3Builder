@@ -17,7 +17,7 @@ class X0600b
     when "CorrectionOfPps5Day" then return "01"
     when "CorrectionOfInterimPayment" then return "08"
     when "InactivationOfPps5Day" then return "01"
-    when "InactivationOfInterimPyament" then return "08"
+    when "InactivationOfInterimPayment" then return "08"
     else return "99"
     end
   end
