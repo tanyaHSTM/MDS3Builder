@@ -18,7 +18,6 @@ class A2300
     date5 = Date.today - 28.days
     case klass
     when "MdsAdmission" then return date1.strftime("%Y%m%d")
-    when "CorrectionOfAdmission" then return date1.strftime("%Y%m%d")
     when "MdsQuarterly" then return date2.strftime("%Y%m%d")
     when "MdsAnnual" then return date3.strftime("%Y%m%d")
     when "MdsSignificantChange" then return date4.strftime("%Y%m%d")

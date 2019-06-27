@@ -25,7 +25,6 @@ class CorrectionOfDischargeRa < Assessment
               H0100a H0100b H0100c H0100d H0300 H0400 
               
               I0900_title I1500 I1550 I1650 I2300 I2900 I5250 I5350 I5600 I5700 I5900 I5950 I6000 I6100
-              I8000a I8000b I8000c I8000d I8000e I8000f I8000g I8000h I8000i I8000j 
               
               J0400 J1100b J1400 J1550a J1550b J1550c J1550d J1800 J1900b J1900c
               
