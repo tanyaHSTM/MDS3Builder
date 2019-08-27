@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 ruby '2.5.1'
 
-gem 'rails', '~> 4.2.10'
+gem 'rails', '~> 4.2'
 
 gem 'nokogiri'
-gem 'rubyzip', '~> 1.2.1', :require=>'zip'
+gem 'rubyzip', '~> 1', :require=>'zip'
 gem "actionpack-xml_parser"
 gem 'jquery-rails'
-gem 'jbuilder', '~> 1.5'
-gem 'bootstrap-sass', '2.3.2.0'
+gem 'jbuilder', '~> 1'
+gem 'bootstrap-sass', '2'
 gem 'bower-rails'
 
 gem 'sass-rails', '~> 4.0'
