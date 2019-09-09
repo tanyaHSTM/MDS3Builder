@@ -7,3 +7,36 @@ This program will generate MDS 3.0 files in XML format. Each assessment type has
 Inactivations of corrections are not explicitly handled by this application. To make an inactivation of correction set the inactivation reference date to match the reference date of the correction.
 
 This is an open-source project created by Mike Doise and Phillip Doise at Providigm.LLC for testing purposes only. 
+
+
+## Toolchain
+```
+Ruby 2.5.1
+Node v10.14.2
+Bower 1.8.8
+```
+
+## Local Setup
+```
+npm install bower -g
+```
+
+```
+brew install postgresql
+```
+
+```
+brew install postgresql
+```
+
+```
+bundle install
+```
+
+```
+cd vendor/assets
+```
+
+```
+bower install
+```
