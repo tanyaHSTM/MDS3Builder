@@ -8,7 +8,7 @@ gem 'rubyzip', '~> 1', :require=>'zip'
 gem "actionpack-xml_parser"
 gem 'jquery-rails'
 gem 'jbuilder', '~> 1'
-gem 'bootstrap-sass', '2'
+gem 'bootstrap-sass', '2.3.2'
 gem 'bower-rails'
 
 gem 'sass-rails', '~> 4.0'
