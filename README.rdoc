@@ -9,34 +9,21 @@ Inactivations of corrections are not explicitly handled by this application. To 
 This is an open-source project created by Mike Doise and Phillip Doise at Providigm.LLC for testing purposes only. 
 
 
-## Toolchain
-```
+# Toolchain
+
 Ruby 2.5.1
 Node v10.14.2
 Bower 1.8.8
-```
+
 
 ## Local Setup
-```
+
 npm install bower -g
-```
 
-```
 brew install postgresql
-```
 
-```
-brew install postgresql
-```
-
-```
 bundle install
-```
 
-```
 cd vendor/assets
-```
 
-```
 bower install
-```
