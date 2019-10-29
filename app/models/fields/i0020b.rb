@@ -2,7 +2,7 @@ class I0020b
     attr_reader :options, :name, :field_type, :node
   
     def initialize
-      @name = "ICD Code (I0020a)"
+      @name = "ICD Code (I0020b)"
       @field_type = TEXT
       @node = "I0020B"
   

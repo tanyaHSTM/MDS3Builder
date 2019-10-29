@@ -1,11 +1,12 @@
-class J1100c
-  attr_reader :options, :name, :field_type, :node
+class H0100c_title
+  attr_reader :title, :options, :name, :field_type, :node
 
   def initialize
-    @name = "Does the resident have shortness of breath or trouble breathing when lying flat? (J1100c)"
+    @title = "Section H: Bladder & Bowel"
+    @name = "Ostomy (including urostomy, ileostomy, and colostomy) (H0100c)"
     @field_type = RADIO
-    @node = "J1100C"
-    
+    @node = "H0100C"
+
     @options = []
     @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
@@ -17,4 +18,3 @@ class J1100c
   end
 
 end
-  
