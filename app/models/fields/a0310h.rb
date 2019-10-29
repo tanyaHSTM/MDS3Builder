@@ -7,6 +7,7 @@ class A0310h
     @node = "A0310H" 
 
     @options = []
+    @options << FieldOption.new("^", "NA")
     @options << FieldOption.new("0", "No")
     @options << FieldOption.new("1", "Yes")
   end
@@ -15,6 +16,8 @@ class A0310h
     case klass
     when "MdsPpsDischarge" then return "1"
     when "CorrectionOfPpsDischarge" then return "1"
+    when "MdsInterimPayment" then return "^"
+    when "CorrectionOfInterimPayment" then return "^"
     else return "0"
     end
   end
