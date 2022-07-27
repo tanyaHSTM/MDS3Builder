@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.5.1'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 5.2', '>= 5.2.8.1'
 
 gem 'nokogiri'
 gem 'rubyzip', '~> 1', :require=>'zip'
