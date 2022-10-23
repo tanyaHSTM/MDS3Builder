@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.5.1'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 4.2', '>= 4.2.11.1'
 
 gem 'nokogiri'
 gem 'rubyzip', '~> 1', :require=>'zip'
@@ -11,8 +11,8 @@ gem 'jbuilder', '~> 1'
 gem 'bootstrap-sass', '2.3.2'
 gem 'bower-rails'
 
-gem 'sass-rails', '~> 4.0'
-gem 'coffee-rails', '~> 4.0'
+gem 'sass-rails', '~> 4.0', '>= 4.0.5'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 gem 'uglifier', '>= 1.3'
 
 group :production, :staging do
