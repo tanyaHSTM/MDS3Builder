@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 ruby '2.5.1'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 6.1', '>= 6.1.7.3'
 
-gem 'nokogiri'
-gem 'rubyzip', '~> 1', :require=>'zip'
-gem "actionpack-xml_parser"
-gem 'jquery-rails'
-gem 'jbuilder', '~> 1'
-gem 'bootstrap-sass', '2.3.2'
+gem 'nokogiri', '>= 1.13.9'
+gem 'rubyzip', '~> 1', '>= 1.3.0', :require=>'zip'
+gem "actionpack-xml_parser", ">= 2.0.1"
+gem 'jquery-rails', '>= 4.4.0'
+gem 'jbuilder', '~> 1', '>= 1.5.3'
+gem 'bootstrap-sass', '3.4.0'
 gem 'bower-rails'
 
-gem 'sass-rails', '~> 4.0'
-gem 'coffee-rails', '~> 4.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 gem 'uglifier', '>= 1.3'
 
 group :production, :staging do
@@ -27,7 +27,7 @@ group :development, :test do
 end
 
 group :doc do
-  gem 'sdoc', '0.3.20', require: false
+  gem 'sdoc', '1.0.0', require: false
 end
 
 group :production do
