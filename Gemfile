@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.5.1'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 7.0', '>= 7.0.0'
 
 gem 'nokogiri'
 gem 'rubyzip', '~> 1', :require=>'zip'
@@ -11,7 +11,7 @@ gem 'jbuilder', '~> 1'
 gem 'bootstrap-sass', '2.3.2'
 gem 'bower-rails'
 
-gem 'sass-rails', '~> 4.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'coffee-rails', '~> 4.0'
 gem 'uglifier', '>= 1.3'
 
